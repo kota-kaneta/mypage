@@ -31,7 +31,7 @@
   opacity: 1;
   }
 .hr-about{
-  width: 35vw;
+  width: 40vw;
 }
 .profile-show{
   padding-top: 40px;
