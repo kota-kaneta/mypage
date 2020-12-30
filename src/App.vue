@@ -20,7 +20,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 50px;
   font-size: 25px;
 }
 
