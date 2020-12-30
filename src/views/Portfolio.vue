@@ -3,13 +3,15 @@
     <transition appear>
       <div>
         <Header>Portfolio</Header>
-        <Separation>○mypage(当サイト)</Separation>
+        <Separation>○mypage</Separation>
         <hr class="hr-portfolio">
         <p class="show">
           <a href="">ここにリンク</a> <br><br>
           <img src="@/assets/mypage.png" width="350" height="190" border="1"><br>
-          Vue.js / Netlify
+          Vue.js / Netlify<br><br>
+          当サイトです。<br>Vue.jsを学習する目的で作成致しました。
         </p>
+        <p class="blank"></p>
         <Separation>○L-searcher</Separation>
         <hr class="hr-portfolio">
         <p class="show">
@@ -48,7 +50,7 @@
   font-size: 25px;
 }
 .blank{
-  padding: 35px;
+  padding: 30px;
 }
 </style>
 
