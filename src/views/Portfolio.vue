@@ -1,7 +1,20 @@
 <template>
-  <div classs="about">
+  <div class="portfolio">
     <transition appear>
-      <Header>Portfolio</Header>
+      <div>
+        <Header>Portfolio</Header>
+        <Separation>mypage(当サイト)</Separation>
+        <hr class="hr-portfolio">
+        <p class="show">
+          <img src="public/mypage.png"> 
+          <a href="">mypage</a>
+        </p>
+        <Separation>L-searcher</Separation>
+        <hr class="hr-portfolio">
+        <p class="show">
+          <a href="https://l-searcher.com/">https://l-searcher.com/</a><br>
+        </p>
+      </div>
     </transition>
   </div>
 </template>
@@ -16,15 +29,27 @@
 .v-enter-to {
   opacity: 1;
   }
+.hr-portfolio{
+  width: 35vw;
+}
+.show{
+  font-size: 20px;
+}
+
+.show a{
+  text-decoration: none;
+}
 </style>
 
 <script>
 import Header from "@/components/Header.vue";
+import Separation from "@/components/Separation.vue";
 
 export default {
   name: "portfolio",
   components: {
-    Header 
+    Header,
+    Separation,
   },
 }
 </script>
