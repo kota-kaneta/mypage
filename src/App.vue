@@ -8,7 +8,7 @@
       <router-link to="/contact">Contact</router-link>
     </div>
     <hr id="hr">
-    <router-view/>
+      <router-view/>
   </div>
 </template>
 
@@ -19,6 +19,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  text-shadow: 1px 1px 2px #808080; 
 }
 
 #nav {

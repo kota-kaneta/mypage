@@ -12,7 +12,7 @@
 <style scoped>
 .home{
   font-size: 40px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .v-enter-active {
