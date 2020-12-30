@@ -1,7 +1,8 @@
 <template>
   <div classs="about">
     <transition appear>
-      <Header>Portfolio</Header>
+      <Header>About</Header>
+      <h2></h2>
     </transition>
   </div>
 </template>
@@ -22,7 +23,7 @@
 import Header from "@/components/Header.vue";
 
 export default {
-  name: "portfolio",
+  name: "about",
   components: {
     Header 
   },

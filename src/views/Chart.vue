@@ -9,7 +9,7 @@ export default ({
         labels: ['HTML', 'CSS', 'Ruby', 'Rails', 'JavaScript', 'Vue.js'],
         datasets: [
           {
-            data: [25, 22, 33, 44, 19, 24],
+            data: [25, 20, 28, 53, 18, 22],
             backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983']
           }
         ]

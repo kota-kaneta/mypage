@@ -11,12 +11,17 @@ const routes = [
     component: Home
   },
   {
-    path: '/skill',
-    name: 'Skill',
-    component: () => import('../views/Skill.vue')
+    path: '/about',
+    name: 'About',
+    component: () => import('../views/About.vue')
   },
   {
-    path: 'portfolio',
+    path: '/skillset',
+    name: 'Skillset',
+    component: () => import('../views/Skillset.vue')
+  },
+  {
+    path: '/portfolio',
     name: 'Portfolio',
     component: () => import('../views/Portfolio.vue')
   },
