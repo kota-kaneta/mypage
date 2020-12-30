@@ -3,7 +3,7 @@
     <transition appear>
       <div>
         <Header>About</Header>
-        <h2 class="profile">Profile / Career</h2>
+        <Separation>Profile / Career</Separation>
         <hr class="hr-about">
         <p class="profile-show">
           1998年生まれ/群馬県出身 <br> <br><br>
@@ -30,25 +30,24 @@
 .v-enter-to {
   opacity: 1;
   }
-.profile{
-  padding-top: 30px;
-}
 .hr-about{
   width: 35vw;
 }
 .profile-show{
   padding-top: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 </style>
 
 <script>
 import Header from "@/components/Header.vue";
+import Separation from "@/components/Separation.vue";
 
 export default {
   name: "about",
   components: {
-    Header 
+    Header,
+    Separation
   },
   data: function(){
     return{

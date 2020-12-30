@@ -2,8 +2,10 @@
   <div class="Doughnut">
     <transition appear>
       <Header>Skillset</Header>
-      </transition>
-    <chart></chart>
+    </transition>
+    <div class="chart">
+      <chart></chart>
+    </div>
   </div>
 </template>
 
@@ -21,6 +23,9 @@
 .v-enter-to {
   opacity: 1;
   }
+.chart{
+  padding-top: 30px;
+}
 </style>
 
 <script>

@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <transition appear>
-      <p>Nice to meet you, I'm Kota Kaneta. <br>
+      <p>
+      Thank you for visiting this site！<br><br>
+      Nice to meet you, I'm Kota Kaneta. <br>
       You can see the skills I have by looking at this site.<br>
       If you are interested, please send a message from the contact form.
       </p>
@@ -12,7 +14,6 @@
 <style scoped>
 .home{
   font-size: 40px;
-  padding-top: 10px;
 }
 
 .v-enter-active {

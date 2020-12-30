@@ -23,7 +23,7 @@
 }
 
 #nav {
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -41,7 +41,7 @@
 #hr{
   width: 95vw;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   border: solid 1px ;
 }
 </style>
