@@ -21,19 +21,18 @@ export default ({
           position: 'bottom',
           labels : {
             fontSize: 22,
+            padding: 40,
           }
         },
         tooltips: {
          bodyFontSize: 12,
          callbacks: {
             label: function(tooltipItem, data) {
-              let total = 0 // 合計格納
-              let indexItem = data.datasets[0].data[tooltipItem.index] // マウスを当てたデータ
-              // 全データの合計算出
+              let total = 0
+              let indexItem = data.datasets[0].data[tooltipItem.index]
               data.datasets[0].data.forEach(item => {
                 total += item
               })
-              // パーセント表示
               return Math.round(indexItem / total * 100) + ' %'
             }
          }

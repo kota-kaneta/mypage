@@ -23,7 +23,8 @@
 
 #nav {
   padding-top: 50px;
-  font-size: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 #nav a {
@@ -37,8 +38,9 @@
 }
 
 #hr{
-  width: 45vw;
+  width: 95vw;
   margin-top: 20px;
   margin-bottom: 60px;
+  border: solid 1px ;
 }
 </style>
