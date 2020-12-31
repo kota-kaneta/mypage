@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <transition appear>
-      <p>
-      Thank you for visiting this site！<br><br>
-      Nice to meet you, I'm Kota Kaneta. <br>
-      You can see the skills I have by looking at this site.<br>
-      If you are interested, please send a message from the contact form.
-      </p>
+        <p>
+        Thank you for visiting this site！<br><br>
+        Nice to meet you, I'm Kota Kaneta. <br>
+        You can see the skills I have by looking at this site.<br>
+        If you are interested, please send a message from the contact form.
+        </p>
     </transition>
   </div>
 </template>
@@ -26,3 +26,14 @@
   opacity: 1;
   }
 </style>
+
+<script>
+import Header from "@/components/Header.vue";
+
+export default {
+  name: "home",
+  components: {
+    Header
+  }
+}
+</script>
