@@ -9,7 +9,7 @@
           <a href="" ontouchstart="">ここにリンク</a> <br><br>
           <img src="@/assets/mypage.png" width="350" height="190" border="1"><br>
           Vue.js / Netlify<br><br>
-          当サイトです。<br>Vue.jsを学習する目的で作成致しました。
+          当サイトです。<br>作成したポートフォリオを掲載しています。
         </p>
         <p class="blank"></p>
         <Separation>L-searcher</Separation>
