@@ -8,7 +8,7 @@
         <p class="show">
           <a href="https://kota-kaneta.netlify.app/" ontouchstart="">https://kota-kaneta.netlify.app/</a> <br><br>
           <img src="@/assets/mypage.png" width="350" height="190" border="1"><br>
-          Vue.js / Netlify<br><br>
+          Vue.js / Netlify<br><p class="blank"></p>
           当サイトです。<br>作成したポートフォリオ一覧を掲載しています。
         </p>
         <p class="blank"></p>
@@ -17,7 +17,7 @@
         <p class="show">
           <a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a><br><br>
           <img src="@/assets/l-searcher.png" width="350" height="190" border="1"><br>
-          Rails / AWS / Capistrano ...etc<br><br>
+          Rails / AWS / Capistrano ...etc<br><p class="blank"></p>
           知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
           ユーザーIDを用いてアカウントを検索し、フォローすることができます。
         </p>
