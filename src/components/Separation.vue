@@ -4,7 +4,8 @@
 
 <style>
 .separation{
-  padding-top: 30px;
+  padding-top: 32px;
+  font-size: 26px;
 }
 </style>
 

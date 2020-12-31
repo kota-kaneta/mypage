@@ -4,6 +4,12 @@
     </header>
 </template>
 
+<style>
+header {
+  font-size: 20px;
+}
+</style>
+
 <script>
 export default {
   name: 'Header'

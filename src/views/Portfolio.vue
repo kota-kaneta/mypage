@@ -3,23 +3,23 @@
     <transition appear>
       <div>
         <Header>Portfolio</Header>
-        <Separation>○mypage</Separation>
+        <Separation>mypage</Separation>
         <hr class="hr-portfolio">
         <p class="show">
-          <a href="">ここにリンク</a> <br><br>
+          <a href="" ontouchstart="">ここにリンク</a> <br><br>
           <img src="@/assets/mypage.png" width="350" height="190" border="1"><br>
           Vue.js / Netlify<br><br>
           当サイトです。<br>Vue.jsを学習する目的で作成致しました。
         </p>
         <p class="blank"></p>
-        <Separation>○L-searcher</Separation>
+        <Separation>L-searcher</Separation>
         <hr class="hr-portfolio">
         <p class="show">
-          <a href="https://l-searcher.com/">https://l-searcher.com/</a><br><br>
+          <a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a><br><br>
           <img src="@/assets/l-searcher.png" width="350" height="190" border="1"><br>
           Rails / AWS / Capistrano ...etc<br><br>
           知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
-          ユーザーIDを用いてアカウントを検索してフォローすることができます。
+          ユーザーIDを用いてアカウントを検索し、フォローすることができます。
         </p>
         <p class="blank"></p>
       </div>
@@ -51,6 +51,12 @@
 }
 .blank{
   padding: 30px;
+}
+a:hover{
+  color : #ff7043;
+}
+a:active{
+  color : #26a69a;
 }
 </style>
 
