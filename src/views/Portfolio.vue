@@ -17,8 +17,9 @@
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
             <img src="@/assets/mypage.png" width="350" height="190" border="1">
-            <p> Vue.js / Node.js / Netlify ...etc<br><br>
-                当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br><br>
+            <p> 
+                当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br>
+                （Vue.js / Node.js / Netlify ...etc）<br><br>
                 GitHub⇨<a href="https://github.com/kota-kaneta/mypage">https://github.com/kota-kaneta/mypage</a><br>
                 サイト⇨<a href="https://kota-kaneta.netlify.app/" ontouchstart="">https://kota-kaneta.netlify.app/</a>
             </p>
@@ -28,14 +29,29 @@
 
         <Separation>L-searcher</Separation>
         <hr class="hr-portfolio">
+
         <p class="show">
-          <a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a><br><br>
-          <img src="@/assets/l-searcher.png" width="350" height="190" border="1"><br>
-          Rails / AWS / Capistrano ...etc<br><br>
-          知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
-          ユーザーIDを用いてアカウントを検索し、フォローすることができます。
+        <button v-on:click="l_openModal">
+          <img src="@/assets/l-searcher.png" width="350" height="190">
+        </button>
         </p>
+        Rails / AWS / Capistrano ...etc
         <p class="blank"></p>
+        （制作順）
+        <hr class="hr-portfolio">
+
+        <transition name="l_modal">
+        <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
+          <div id="l_content">
+            <img src="@/assets/l-searcher.png" width="350" height="190" border="1"><br><br>
+            知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
+            ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br>
+            （Rails / AWS / Capistrano ...etc）<br><br>
+            GitHub⇨<a href="https://github.com/kota-kaneta/L-searcher">https://github.com/kota-kaneta/L-searcher</a><br>
+            サイト⇨<a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a>
+          </div>
+        </div>
+        </transition>
       </div>
     </transition>
   </div>
@@ -66,7 +82,7 @@
   font-size: 25px;
 }
 .blank{
-  padding: 30px;
+  padding: 40px;
 }
 a:hover{
   color : #ff7043;
@@ -88,7 +104,27 @@ a:active{
   align-items: center;
   justify-content: center;
 }
+#l_overlay{
+  z-index:1;
+
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #content{
+  z-index:2;
+  width:50%;
+  padding: 1.0em;
+  background: #f0f1f1;
+}
+#l_content{
   z-index:2;
   width:50%;
   padding: 1.0em;
@@ -111,6 +147,23 @@ a:active{
     transform: scale(1);
   }
 }
+.l_modal-enter-active, .l_modal-leave-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.8s;
+  #l_content{
+    transform: scale(1.0);
+    transition: 1.5s;
+  }
+}
+.l_modal-enter, .l_modal-leave-to {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s, transform 0s 0.5s;
+  #l_content{
+    transform: scale(1);
+  }
+}
 </style>
 
 <script>
@@ -125,7 +178,8 @@ export default {
   },
   data: function(){
     return{
-      showContent: false
+      showContent: false,
+      l_showContent: false
     }
   },
   methods:{
@@ -134,6 +188,12 @@ export default {
     },
     closeModal: function(){
       this.showContent = false
+    },
+    l_openModal: function(){
+      this.l_showContent = true
+    },
+    l_closeModal: function(){
+      this.l_showContent = false
     }
   }
 }
