@@ -9,7 +9,7 @@
           <a href="https://kota-kaneta.netlify.app/" ontouchstart="">https://kota-kaneta.netlify.app/</a> <br><br>
           <img src="@/assets/mypage.png" width="350" height="190" border="1"><br>
           Vue.js / Netlify<br><br>
-          当サイトです。<br>作成したポートフォリオ一覧を掲載しています。
+          当サイトです。（制作中）<br>作成したポートフォリオ一覧を掲載しています。
         </p>
         <p class="blank"></p>
         <Separation>L-searcher</Separation>
