@@ -1,5 +1,5 @@
 <template>
-  <div classs="about">
+  <div id="about">
     <transition appear>
       <div>
         <Header>About</Header>
@@ -44,7 +44,7 @@ import Header from "@/components/Header.vue";
 import Separation from "@/components/Separation.vue";
 
 export default {
-  name: "about",
+  name: "#about",
   components: {
     Header,
     Separation
