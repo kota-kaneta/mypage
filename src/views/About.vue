@@ -14,7 +14,8 @@
           エンジニアを目指し同大学を中途退学<br><br>
           ↓<br><br>
           現在はJavaScriptを中心に学習を進めています
-        </p>
+        </p><br>
+        <hr class="hr-about">
       </div>
     </transition>
   </div>

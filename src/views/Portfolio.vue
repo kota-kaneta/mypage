@@ -4,7 +4,7 @@
       <div>
         <Header>Portfolio</Header>
         <Separation>mypage（制作中）</Separation>
-        <hr class="hr-portfolio">
+        <hr class="hr-portfolio"><br>
 
         <p class="show">
           <button v-on:click="openModal">
@@ -16,9 +16,10 @@
         <transition name="modal">
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
-            <img src="@/assets/mypage.png" width="350" height="190" border="1">
+            <h2>mypage</h2>
+            <img src="@/assets/mypage.png" width="400" height="220" border="1">
             <p> 
-                当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br>
+                当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br><br>
                 （Vue.js / Node.js / Netlify ...etc）<br><br>
                 GitHub⇨<a href="https://github.com/kota-kaneta/mypage">https://github.com/kota-kaneta/mypage</a><br>
                 サイト⇨<a href="https://kota-kaneta.netlify.app/" ontouchstart="">https://kota-kaneta.netlify.app/</a>
@@ -28,7 +29,7 @@
         </transition>
 
         <Separation>L-searcher</Separation>
-        <hr class="hr-portfolio">
+        <hr class="hr-portfolio"><br>
 
         <p class="show">
         <button v-on:click="l_openModal">
@@ -37,15 +38,17 @@
         </p>
         Rails / AWS / Capistrano ...etc
         <p class="blank"></p>
-        （制作順）
         <hr class="hr-portfolio">
+        （制作順）
+        <hr id="hr">
 
         <transition name="l_modal">
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
           <div id="l_content">
-            <img src="@/assets/l-searcher.png" width="350" height="190" border="1"><br><br>
+            <h2>L-searcher</h2>
+            <img src="@/assets/l-searcher.png" width="400" height="220" border="1"><br><br>
             知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
-            ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br>
+            ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br><br>
             （Rails / AWS / Capistrano ...etc）<br><br>
             GitHub⇨<a href="https://github.com/kota-kaneta/L-searcher">https://github.com/kota-kaneta/L-searcher</a><br>
             サイト⇨<a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a>
@@ -82,7 +85,7 @@
   font-size: 25px;
 }
 .blank{
-  padding: 40px;
+  padding: 48px;
 }
 a:hover{
   color : #ff7043;
