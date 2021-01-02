@@ -5,12 +5,14 @@ export default ({
   extends: Doughnut,
   data() {
     return {
+      
       datas: {
         labels: ['HTML', 'CSS', 'Ruby', 'Rails', 'JavaScript', 'Vue.js'],
         datasets: [
           {
             data: [25, 23, 28, 53, 14, 21],
-            backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983']
+            backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983'],
+            borderColor: 'lightgray'
           }
         ]
       },
@@ -21,7 +23,7 @@ export default ({
           position: 'bottom',
           labels : {
             fontSize: 22,
-            padding: 40
+            padding: 20
           }
         },
         tooltips: {

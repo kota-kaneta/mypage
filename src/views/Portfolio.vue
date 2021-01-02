@@ -16,6 +16,7 @@
         <transition name="modal">
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
+            <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
             <h2>mypage</h2>
             <img src="@/assets/mypage.png" width="400" height="220" border="1">
             <p> 
@@ -32,7 +33,7 @@
         <hr class="hr-portfolio"><br>
 
         <p class="show">
-        <button v-on:click="l_openModal">
+        <button v-on:click="l_openModal" class="l-button">
           <img src="@/assets/l-searcher.png" width="350" height="190">
         </button>
         </p>
@@ -45,6 +46,7 @@
         <transition name="l_modal">
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
           <div id="l_content">
+            <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
             <h2>L-searcher</h2>
             <img src="@/assets/l-searcher.png" width="400" height="220" border="1"><br><br>
             知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
@@ -122,16 +124,28 @@ a:active{
   justify-content: center;
 }
 #content{
+  position: relative;
   z-index:2;
   width:50%;
   padding: 1.0em;
   background: #f0f1f1;
 }
+.batu{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.close{
+  font-size:23px;
+  border-color: #f0f1f1;
+  outline: none;
+}
 #l_content{
+  position: relative;
   z-index:2;
   width:50%;
   padding: 1.0em;
-  background: #d6d8d7;
+  background:  #f0f1f1;
 }
 .modal-enter-active, .modal-leave-active {
   opacity: 1;
