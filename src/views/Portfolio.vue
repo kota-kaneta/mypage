@@ -17,6 +17,7 @@
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
             <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
+            <div class="details">2021 / 01 〜 現在</div>
             <h2>mypage</h2>
             <img src="@/assets/mypage.png" width="400" height="220" border="1">
             <p> 
@@ -46,11 +47,13 @@
         <transition name="l_modal">
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
           <div id="l_content">
-            <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
+            <div class="batu"><button class="close" @click="l_closeModal">✖️</button></div>
+            <div class="details">2020 / 11 〜 2020 / 12</div>
             <h2>L-searcher</h2>
             <img src="@/assets/l-searcher.png" width="400" height="220" border="1"><br><br>
             知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
-            ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br><br>
+            ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br>
+            ※機能ご確認の際はゲスト用ログインからお願いいたします。<br><br>
             （Rails / AWS / Capistrano ...etc）<br><br>
             GitHub⇨<a href="https://github.com/kota-kaneta/L-searcher">https://github.com/kota-kaneta/L-searcher</a><br>
             サイト⇨<a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a>
@@ -126,13 +129,18 @@ a:active{
 #content{
   position: relative;
   z-index:2;
-  width:50%;
+  width: 50%;
   padding: 1.0em;
   background: #f0f1f1;
 }
 .batu{
   position: absolute;
   right: 10px;
+  top: 10px;
+}
+.details{
+  position: absolute;
+  left: 10px;
   top: 10px;
 }
 .close{

@@ -16,7 +16,7 @@
           現在はVue.jsを中心に学習を進めています
         </p><br>
         <hr class="hr-about">
-        Gmail：arusabu0828@gmail.com
+        <p class="gmail">Gmail：arusabu0828@gmail.com</p>
       </div>
     </transition>
   </div>
@@ -38,6 +38,9 @@
 .profile-show{
   padding-top: 40px;
   padding-bottom: 30px;
+}
+.gmail{
+  font-size: 18px;
 }
 </style>
 

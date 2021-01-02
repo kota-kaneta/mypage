@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <vue-typer :text="text" repeat= "0" typeDelay="60"></vue-typer>
-        
   </div>
 </template>
 
