@@ -21,7 +21,7 @@ export default ({
           position: 'bottom',
           labels : {
             fontSize: 22,
-            padding: 40,
+            padding: 40
           }
         },
         tooltips: {

@@ -1,8 +1,7 @@
 <template>
+  <transition appear>
   <div class="Doughnut">
-    <transition appear>
       <Header>Skillset</Header>
-    </transition>
     <p class="blank"></p>
     <h2>Language / Framework</h2>
     <hr id="hr-skill">
@@ -10,6 +9,7 @@
       <chart></chart>
     </div>
   </div>
+  </transition>
 </template>
 
 <style scoped>
