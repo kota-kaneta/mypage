@@ -16,6 +16,7 @@
           現在はVue.jsを中心に学習を進めています
         </p><br>
         <hr class="hr-about">
+        Gmail：arusabu0828@gmail.com
       </div>
     </transition>
   </div>

@@ -1,13 +1,7 @@
 <template>
   <div class="home">
-    <transition appear>
-        <p>
-        Thank you for visiting this site！<br><br>
-        Nice to meet you, I'm Kota Kaneta. <br>
-        You can see the skills I have by looking at this site.<br>
-        If you are interested, please send a message from the contact form.
-        </p>
-    </transition>
+    <vue-typer :text="text" repeat= "0" typeDelay="60"></vue-typer>
+        
   </div>
 </template>
 
@@ -15,21 +9,23 @@
 .home{
   font-size: 40px;
 }
-
-.v-enter-active {
-  transition: opacity 6s;
-}
-.v-enter {
-  opacity: 0;
-}
-.v-enter-to {
-  opacity: 1;
-  }
 </style>
 
 <script>
+import { VueTyper } from 'vue-typer'
+// import { KinesisContainer, KinesisElement} from 'vue-kinesis'
 
 export default {
   name: "home",
+  components: {
+    'vue-typer': VueTyper,
+    // 'kinesis-container': KinesisContainer,
+    // 'kinesis-element': KinesisElement
+  },
+  data: function(){
+    return{
+      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nIf you are interested, please contact us from the gmail listed in About."
+    }
+  }
 }
 </script>
