@@ -1,7 +1,6 @@
 <template>
     <header>
         <h1><slot></slot></h1>
-        <hr id="hr-head">
     </header>
 </template>
 

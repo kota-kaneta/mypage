@@ -3,6 +3,9 @@
     <transition appear>
       <Header>Skillset</Header>
     </transition>
+    <p class="blank"></p>
+    <h2>Language / Framework</h2>
+    <hr id="hr-skill">
     <div class="chart">
       <chart></chart>
     </div>
@@ -25,6 +28,12 @@
   }
 .chart{
   padding-top: 30px;
+}
+#hr-skill{
+  width: 45vw;
+}
+.blank{
+  padding: 10px;
 }
 </style>
 
