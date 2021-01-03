@@ -7,7 +7,7 @@
         <hr class="hr-portfolio"><br>
 
         <p class="show">
-          <button v-on:click="openModal">
+          <button class="button" v-on:click="openModal">
             <img src="@/assets/mypage.png" width="350" height="190">
           </button>
         </p>
@@ -34,7 +34,7 @@
         <hr class="hr-portfolio"><br>
 
         <p class="show">
-        <button v-on:click="l_openModal" class="l-button">
+        <button v-on:click="l_openModal" class="button">
           <img src="@/assets/l-searcher.png" width="350" height="190">
         </button>
         </p>
@@ -65,6 +65,9 @@
 </template>
 
 <style lang="scss" scoped>
+.button{
+  min-height: 190px;
+}
 #portfolio{
   font-size: 23px;
 }
