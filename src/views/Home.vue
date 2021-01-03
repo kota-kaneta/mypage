@@ -20,7 +20,7 @@
 }
 .button{
   position: fixed;
-  top: 50%;
+  bottom: 100px;
   right: 100px;
   font-size: 20px;
   display: inline-block;
@@ -30,10 +30,15 @@
   border-radius: 15px;
 }
 .button:active {
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   border-bottom: none;
+}
+@media screen and (max-width: 768px) {
+  .button { 
+    display:none; 
+  }
 }
 </style>
 
