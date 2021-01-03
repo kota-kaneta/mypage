@@ -5,18 +5,19 @@ export default ({
   extends: Doughnut,
   data() {
     return {
-      
       datas: {
         labels: ['HTML', 'CSS', 'Ruby', 'Rails', 'JavaScript', 'Vue.js'],
         datasets: [
           {
             data: [25, 23, 28, 53, 14, 21],
             backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983'],
-            borderColor: 'lightgray'
-          }
+            borderColor: 'lightgray',
+            hoverBackgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983']
+          },
         ]
       },
       options: {
+        cutoutPercentage: 0,
         responsive: true,
         maintainAspectRatio: false,
         legend: {
@@ -26,9 +27,13 @@ export default ({
             padding: 20
           }
         },
+        animation: {
+        duration: 2000,
+        easing: 'easeOutBounce',
+        },
         tooltips: {
-         bodyFontSize: 12,
-         callbacks: {
+          bodyFontSize: 12,
+          callbacks: {
             label: function(tooltipItem, data) {
               let total = 0
               let indexItem = data.datasets[0].data[tooltipItem.index]
