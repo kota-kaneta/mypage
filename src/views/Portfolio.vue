@@ -3,7 +3,7 @@
     <transition appear>
       <div>
         <Header>Portfolio</Header>
-        <Separation>mypage（制作中）</Separation>
+        <Separation>mypage</Separation>
         <hr class="hr-portfolio"><br>
 
         <p class="show">
@@ -17,9 +17,9 @@
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
             <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
-            <div class="details">2021 / 01 〜 現在</div>
+            <div class="details">2021 / 01 〜 2020 / 01</div>
             <h2>mypage</h2>
-            <img src="@/assets/mypage.png" width="400" height="220" border="1">
+            <img src="@/assets/mypage.png" width="350" height="190" border="1">
             <p> 
                 当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br><br>
                 （Vue.js / Node.js / Netlify ...etc）<br><br>
@@ -50,10 +50,9 @@
             <div class="batu"><button class="close" @click="l_closeModal">✖️</button></div>
             <div class="details">2020 / 11 〜 2020 / 12</div>
             <h2>L-searcher</h2>
-            <img src="@/assets/l-searcher.png" width="400" height="220" border="1"><br><br>
+            <img src="@/assets/l-searcher.png" width="350" height="190" border="1"><br><br>
             知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
-            ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br>
-            ※機能ご確認の際はゲスト用ログインからお願いいたします。<br><br>
+            ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br><br>
             （Rails / AWS / Capistrano ...etc）<br><br>
             GitHub⇨<a href="https://github.com/kota-kaneta/L-searcher">https://github.com/kota-kaneta/L-searcher</a><br>
             サイト⇨<a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a>
@@ -90,7 +89,7 @@
   font-size: 25px;
 }
 .blank{
-  padding: 48px;
+  padding: 30px;
 }
 a:hover{
   color : #ff7043;
@@ -129,14 +128,16 @@ a:active{
 #content{
   position: relative;
   z-index:2;
-  width: 50%;
+  min-width: 50%;
   padding: 1.0em;
   background: #f0f1f1;
+  border-radius: 10px;
 }
 .batu{
   position: absolute;
   right: 10px;
   top: 10px;
+  border: 1px solid black;
 }
 .details{
   position: absolute;
@@ -151,9 +152,10 @@ a:active{
 #l_content{
   position: relative;
   z-index:2;
-  width:50%;
+  min-width: 50%;
   padding: 1.0em;
   background:  #f0f1f1;
+  border-radius: 10px;
 }
 .modal-enter-active, .modal-leave-active {
   opacity: 1;

@@ -96,6 +96,7 @@ body {
   -o-animation-timing-function:      linear;
   animation-timing-function:         linear;
 }
+
 </style>
 
 <script>
