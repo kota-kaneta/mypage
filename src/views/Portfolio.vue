@@ -55,7 +55,9 @@
             ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br><br>
             （Rails / AWS / Capistrano ...etc）<br><br>
             GitHub⇨<a href="https://github.com/kota-kaneta/L-searcher">https://github.com/kota-kaneta/L-searcher</a><br>
-            サイト⇨<a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a>
+            サイト⇨<a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a><br>
+            <p class="heroku">※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</p>
+            サイト⇨<a href="https://l-searcher.herokuapp.com/" ontouchstart="">https://l-searcher.herokuapp.com/</a>
           </div>
         </div>
         </transition>
@@ -65,6 +67,9 @@
 </template>
 
 <style lang="scss" scoped>
+.heroku{
+  color: red;
+}
 .button{
   min-height: 190px;
 }
