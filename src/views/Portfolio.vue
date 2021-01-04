@@ -8,7 +8,7 @@
 
         <p class="show">
           <button class="button" v-on:click="openModal">
-            <img src="@/assets/mypage.png" width="350" height="190">
+            <img src="@/assets/mypage.png" width="350" height="195">
           </button>
         </p>
         Vue.js / Node.js / Netlify ...etc
@@ -19,7 +19,7 @@
             <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
             <div class="details">2021 / 01 〜 2020 / 01</div>
             <h2>mypage</h2>
-            <img src="@/assets/mypage.gif" width="350" height="190" border="1">
+            <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
                 当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br><br>
                 （Vue.js / Node.js / Netlify ...etc）<br><br>
@@ -35,7 +35,7 @@
 
         <p class="show">
         <button v-on:click="l_openModal" class="button">
-          <img src="@/assets/l-searcher.png" width="350" height="190">
+          <img src="@/assets/l-searcher.png" width="350" height="195">
         </button>
         </p>
         Rails / AWS / Capistrano ...etc
@@ -50,7 +50,7 @@
             <div class="batu"><button class="close" @click="l_closeModal">✖️</button></div>
             <div class="details">2020 / 11 〜 2020 / 12</div>
             <h2>L-searcher</h2>
-            <img src="@/assets/l-searcher.gif" width="350" height="190" border="1"><br><br>
+            <img src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>
             知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
             ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br><br>
             （Rails / AWS / Capistrano ...etc）<br><br>
