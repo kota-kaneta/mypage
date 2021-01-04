@@ -19,6 +19,7 @@
             <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
             <div class="details">2021 / 01 〜 現在</div>
             <h2>mypage</h2>
+            <hr class="hr-portfolio">
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
                 当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br><br>
@@ -50,6 +51,7 @@
             <div class="batu"><button class="close" @click="l_closeModal">✖️</button></div>
             <div class="details">2020 / 11 〜 2020 / 12</div>
             <h2>L-searcher</h2>
+            <hr class="hr-portfolio">
             <img src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>
             知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
             ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br><br>
