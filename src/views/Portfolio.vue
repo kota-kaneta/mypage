@@ -17,7 +17,7 @@
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
             <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
-            <div class="details">2021 / 01 〜 2020 / 01</div>
+            <div class="details">2021 / 01 〜 現在</div>
             <h2>mypage</h2>
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
