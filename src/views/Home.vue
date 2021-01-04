@@ -7,6 +7,7 @@
       Thank you for visiting this site！<br><br>
       Nice to meet you, I'm Kota Kaneta.<br>
       You can see the skills I have by looking at this site.<br>
+      You can also check the source code of the portfolio.<br><br>
       If you are interested, please contact us from the gmail listed in About.
     </div>
     <button @click="skip" class="button">skip</button>
@@ -15,7 +16,7 @@
 
 <style scoped>
 .home{
-  font-size: 40px;
+  font-size: 42px;
   position: relative;
 }
 .button{
@@ -57,7 +58,7 @@ export default {
     return{
       skipContent: true,
       skipAfter: false,
-      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nIf you are interested, please contact us from the gmail listed in About."
+      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested, please contact us from the gmail listed in About."
     }
   },
   methods: {

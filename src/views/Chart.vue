@@ -9,7 +9,7 @@ export default ({
         labels: ['HTML', 'CSS', 'Ruby', 'Rails', 'JavaScript', 'Vue.js'],
         datasets: [
           {
-            data: [25, 23, 28, 53, 14, 21],
+            data: [25, 23, 28, 53, 14, 23],
             backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983'],
             borderColor: 'lightgray',
             hoverBackgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983']
