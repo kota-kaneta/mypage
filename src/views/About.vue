@@ -13,7 +13,7 @@
           ↓<br><br>
           エンジニアを目指し同大学を中途退学<br><br>
           ↓<br><br>
-          現在はVue.jsを中心に学習を進めています
+          現在はVue.jsなどの学習を進めています
         </p><br>
         <hr class="hr-about">
         <p class="gmail">Gmail：arusabu0828@gmail.com</p>
