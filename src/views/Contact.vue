@@ -5,7 +5,7 @@
         <Header>Contact</Header>
         <Separation>お問い合わせフォーム</Separation>
         <hr class="hr-contact">
-        <form name="contact" netlify>
+        <form name="contact" netlify method="POST">
           <div class="Form">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
@@ -19,7 +19,7 @@
               <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
               <textarea class="Form-Item-Textarea"></textarea>
             </div>
-              <input type="submit" class="Form-Btn" value="送信する">
+              <button type="submit" class="Form-Btn" value="送信する"></button>
           </div>
         </form>
       </div>
