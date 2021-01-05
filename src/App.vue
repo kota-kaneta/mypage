@@ -19,12 +19,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  text-shadow: 1px 1px 2px #808080; 
+  text-shadow: 1px 1px 3px #808080; 
 }
 
 #nav {
-  padding-top: 30px;
-  font-size: 1.2em;
+  padding-top: 20px;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
