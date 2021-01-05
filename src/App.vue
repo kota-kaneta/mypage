@@ -4,8 +4,8 @@
       <router-link to="/">Home</router-link>  |
       <router-link to="/about">About</router-link> |
       <router-link to="/skillset" >Skillset</router-link> |
-      <router-link to="portfolio">Portfolio</router-link>
-      <!-- <router-link to="/contact">Contact</router-link> -->
+      <router-link to="portfolio">Portfolio</router-link> |
+      <router-link to="/contact">Contact</router-link>
     </div>
     <hr id="hr">
       <router-view/>
@@ -24,7 +24,7 @@
 
 #nav {
   padding-top: 20px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
