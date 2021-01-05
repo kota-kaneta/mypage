@@ -5,7 +5,7 @@
         <Header>Contact</Header>
         <Separation>お問い合わせフォーム</Separation>
         <hr class="hr-contact">
-        <form name="contact" method="POST" netlify>
+        <form name="contact" netlify>
           <div class="Form">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
