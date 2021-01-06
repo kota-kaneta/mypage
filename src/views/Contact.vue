@@ -28,7 +28,7 @@
           <input type="text" name="bot-field" />
         </form>
         <div v-if="isSubmit === true" class="thank">
-          〜お問い合わせありがとうございました〜
+          〜Thank you〜
         </div>
       </div>
     </transition>
