@@ -4,7 +4,7 @@
         <Header>Contact</Header>
         <Separation>お問い合わせフォーム</Separation>
         <hr class="hr-contact">
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form name="contact" method="POST" data-netlify="true">
           <div class="Form">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
