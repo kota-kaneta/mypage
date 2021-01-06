@@ -4,7 +4,7 @@
         <Header>Contact</Header>
         <Separation v-if="isSubmit === false">お問い合わせフォーム</Separation>
         <hr class="hr-contact">
-        <form v-if="isSubmit === false" @submit.prevent="onSubmit" name="contact" netlify netlify-honeypot="bot-field">
+        <form v-if="isSubmit === false" @submit.prevent="onSubmit" name="contact" netlify>
           <div class="Form" name="contact">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
