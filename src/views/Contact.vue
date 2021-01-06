@@ -4,7 +4,7 @@
         <Header>Contact</Header>
         <Separation>お問い合わせフォーム</Separation>
         <hr class="hr-contact">
-        <form name="contact" method="POST" data-netlify="true">
+        <form v-if="isSubmit === false" @submit.prevent="onSubmit">
           <div class="Form">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
@@ -21,6 +21,9 @@
               <button type="submit" class="Form-Btn">送信する</button>
           </div>
         </form>
+      </div>
+      <div v-if="isSubmit === true">
+        <p>サンクス</p>
       </div>
     </transition>
 </template>
@@ -197,34 +200,37 @@
 <script>
 import Header from "@/components/Header.vue";
 import Separation from "@/components/Separation.vue";
+import axios from 'axios'
 
 export default {
+  data() {
+    return {
+      name: '',
+      email: '',
+      content: '',
+      isSubmit: false
+    }
+  },
   name: "contact",
   components: {
     Header,
     Separation
   },
   methods: {
-    encode (data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&')
-    },
-    handleSubmit () {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-      }
-      this.axios
-        .post(
-          '/',
-          this.encode({
-            'form-name': 'contact',
-            ...this.form
-          }),
-          axiosConfig
-        )
+    onSubmit() {
+      const params = new URLSearchParams()
+
+      params.append('form-name', 'contact')
+
+      params.append('name', this.name)
+      params.append('email', this.email)
+      params.append('content', this.content)
+
+      axios
+      .post('/', params)
+      .then(() => {
+          this.isSubmit = true
+        })
     }
   }
 }
