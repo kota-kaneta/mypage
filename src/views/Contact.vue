@@ -21,7 +21,7 @@
               <button type="submit" class="Form-Btn">送信する</button>
           </div>
         </form>
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <form name="ott" netlify netlify-honeypot="bot-field" hidden>
           <input type="text" name="name" />
           <input type="text" name="email" />
           <textarea name="message"></textarea>
