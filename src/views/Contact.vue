@@ -8,27 +8,27 @@
           <div class="Form" name="contact">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-              <input type="text" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
+              <input type="text" v-model="name" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
             </div>
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-              <input type="email" name="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+              <input type="email" v-model="email" name="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
             </div>
             <div class="Form-Item">
               <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
-              <textarea class="Form-Item-Textarea" name="message"></textarea>
+              <textarea class="Form-Item-Textarea" v-model="message" name="message"></textarea>
             </div>
               <button type="submit" class="Form-Btn">送信する</button>
           </div>
         </form>
-        <form name="ott" netlify netlify-honeypot="bot-field" hidden>
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
           <input type="text" name="name" />
           <input type="text" name="email" />
           <textarea name="message"></textarea>
           <input type="text" name="bot-field" />
         </form>
         <div v-if="isSubmit === true" class="thank">
-          〜Thank you〜
+          Thank you
         </div>
       </div>
     </transition>
@@ -36,7 +36,7 @@
 
 <style scoped>
 .thank{
-  font-size: 35px;
+  font-size: 45px;
   padding-top: 23vh;
 }
 .Form {
