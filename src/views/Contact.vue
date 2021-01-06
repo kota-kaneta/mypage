@@ -21,6 +21,12 @@
               <button type="submit" class="Form-Btn">送信する</button>
           </div>
         </form>
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" />
+          <input type="text" name="email" />
+          <textarea name="message"></textarea>
+          <input type="text" name="bot-field" />
+        </form>
         <div v-if="isSubmit === true" class="thank">
           〜お問い合わせありがとうございました〜
         </div>
