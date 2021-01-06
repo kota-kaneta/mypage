@@ -8,7 +8,7 @@
       Nice to meet you, I'm Kota Kaneta.<br>
       You can see the skills I have by looking at this site.<br>
       You can also check the source code of the portfolio.<br><br>
-      If you are interested, please contact us from the gmail listed in About.
+      If you are interested in me, please contact us using the contact form.
     </div>
     <button @click="skip" class="button">skip</button>
   </div>
@@ -58,7 +58,7 @@ export default {
     return{
       skipContent: true,
       skipAfter: false,
-      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested, please contact us from the gmail listed in About."
+      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form."
     }
   },
   methods: {

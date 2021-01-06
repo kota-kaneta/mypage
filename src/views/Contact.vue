@@ -4,7 +4,7 @@
         <Header>Contact</Header>
         <Separation v-if="isSubmit === false">お問い合わせフォーム</Separation>
         <hr class="hr-contact">
-        <form v-if="isSubmit === false" @submit.prevent="onSubmit">
+        <form v-if="isSubmit === false" @submit.prevent="onSubmit" name="contact">
           <div class="Form">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
@@ -211,7 +211,7 @@ export default {
     return {
       name: '',
       email: '',
-      content: '',
+      message: '',
       isSubmit: false
     }
   },
@@ -228,7 +228,7 @@ export default {
 
       params.append('name', this.name)
       params.append('email', this.email)
-      params.append('content', this.content)
+      params.append('message', this.message)
 
       axios
       .post('/', params)
