@@ -5,7 +5,7 @@
         <Separation v-if="isSubmit === false">お問い合わせフォーム</Separation>
         <hr class="hr-contact">
         <form v-if="isSubmit === false" @submit.prevent="onSubmit" name="contact" netlify netlify-honeypot="bot-field">
-          <div class="Form">
+          <div class="Form" name="contact">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
               <input type="text" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
@@ -37,6 +37,7 @@
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   max-width: 720px;
 }
 @media screen and (max-width: 480px) {
@@ -230,7 +231,7 @@ export default {
       params.append('email', this.email)
       params.append('message', this.message)
 
-      axios
+      this.$axios
       .post('/', params)
       .then(() => {
           this.isSubmit = true
