@@ -1,9 +1,10 @@
 <template>
+  <div>
     <transition appear>
       <div class="contect">
-        <Header>Contact</Header>
+        <Header v-if="isSubmit === false">Contact</Header>
         <Separation v-if="isSubmit === false">お問い合わせフォーム</Separation>
-        <hr class="hr-contact">
+        <hr class="hr-contact" v-if="isSubmit === false">
         <form v-if="isSubmit === false" @submit.prevent="onSubmit" name="contact" netlify>
           <div class="Form" name="contact">
             <div class="Form-Item">
@@ -27,17 +28,18 @@
           <textarea name="message"></textarea>
           <input type="text" name="bot-field" />
         </form>
-        <div v-if="isSubmit === true" class="thank">
-          Thank you
-        </div>
       </div>
     </transition>
+    <div v-if="isSubmit === true" class="thank">
+      お問い合わせありがとうございました。
+    </div>
+  </div>
 </template>
 
 <style scoped>
 .thank{
-  font-size: 45px;
-  padding-top: 23vh;
+  font-size: 35px;
+  padding-top: 25vh;
 }
 .Form {
   margin-top: 80px;
