@@ -231,7 +231,7 @@ export default {
       params.append('email', this.email)
       params.append('message', this.message)
 
-      this.$axios
+      axios
       .post('/', params)
       .then(() => {
           this.isSubmit = true
