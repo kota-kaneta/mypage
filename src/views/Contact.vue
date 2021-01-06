@@ -1,11 +1,10 @@
 <template>
-  <div classs="about">
     <transition appear>
       <div class="contect">
         <Header>Contact</Header>
         <Separation>お問い合わせフォーム</Separation>
         <hr class="hr-contact">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <div class="Form">
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
@@ -24,7 +23,6 @@
         </form>
       </div>
     </transition>
-  </div>
 </template>
 
 <style scoped>
@@ -206,5 +204,28 @@ export default {
     Header,
     Separation
   },
+  methods: {
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit () {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      this.axios
+        .post(
+          '/',
+          this.encode({
+            'form-name': 'contact',
+            ...this.form
+          }),
+          axiosConfig
+        )
+    }
+  }
 }
 </script>
