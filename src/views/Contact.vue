@@ -241,14 +241,15 @@ export default {
       params.append('email', this.email)
       params.append('message', this.message)
 
-      if(this.name!="" && this.email!="" && this.message!="")
-      axios
-      .post('/', params)
-      .then(() => {
-          this.isSubmit = true
-      })
-      else
-      this.nothing = true
+      if(this.name!="" && this.email!="" && this.message!=""){
+        axios
+        .post('/', params)
+        .then(() => {
+            this.isSubmit = true
+        })
+      }else{
+        this.nothing = true
+      }
     }
   }
 }
