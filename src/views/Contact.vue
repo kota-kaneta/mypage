@@ -247,8 +247,6 @@ export default {
         .then(() => {
             this.isSubmit = true
         })
-      }else{
-        this.nothing = true
       }
     }
   }
