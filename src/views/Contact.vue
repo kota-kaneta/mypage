@@ -19,7 +19,7 @@
               <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
               <textarea class="Form-Item-Textarea" v-model="message" name="message"></textarea>
             </div>
-              <button type="submit" class="Form-Btn" @click="check">送信する</button>
+              <button type="submit" class="Form-Btn">送信する</button>
           </div>
         </form>
         <form name="contact" netlify netlify-honeypot="bot-field" hidden>
@@ -240,11 +240,11 @@ export default {
       params.append('message', this.message)
 
       if(this.name!="" && this.email!="" && this.message!="")
-        axios
-        .post('/', params)
-        .then(() => {
-            this.isSubmit = true
-        })
+      axios
+      .post('/', params)
+      .then(() => {
+          this.isSubmit = true
+      })
     }
   }
 }
