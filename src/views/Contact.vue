@@ -33,6 +33,7 @@
     <div v-if="isSubmit === true" class="thank">
       お問い合わせありがとうございました。
     </div>
+    <div v-if="nothing === true">入力必須項目を埋めてください</div>
   </div>
 </template>
 
@@ -221,7 +222,8 @@ export default {
       name: '',
       email: '',
       message: '',
-      isSubmit: false
+      isSubmit: false,
+      nothing: false
     }
   },
   name: "contact",
@@ -239,11 +241,14 @@ export default {
       params.append('email', this.email)
       params.append('message', this.message)
 
+      if(this.name!="" && this.email!="" && this.message!="")
       axios
       .post('/', params)
       .then(() => {
           this.isSubmit = true
-        })
+      })
+      else
+      this.nothing = true
     }
   }
 }
