@@ -2,7 +2,7 @@
     <transition appear>
       <div class="contect">
         <Header>Contact</Header>
-        <Separation>お問い合わせフォーム</Separation>
+        <Separation v-if="isSubmit === false">お問い合わせフォーム</Separation>
         <hr class="hr-contact">
         <form v-if="isSubmit === false" @submit.prevent="onSubmit">
           <div class="Form">
@@ -21,14 +21,18 @@
               <button type="submit" class="Form-Btn">送信する</button>
           </div>
         </form>
-      </div>
-      <div v-if="isSubmit === true">
-        <p>サンクス</p>
+        <div v-if="isSubmit === true" class="thank">
+          〜お問い合わせありがとうございました〜
+        </div>
       </div>
     </transition>
 </template>
 
 <style scoped>
+.thank{
+  font-size: 35px;
+  padding-top: 23vh;
+}
 .Form {
   margin-top: 80px;
   margin-left: auto;
