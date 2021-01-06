@@ -3,7 +3,7 @@
     <transition appear>
       <div>
         <Header>Portfolio</Header>
-        <Separation>mypage</Separation>
+        <Separation>mypage（制作中）</Separation>
         <hr class="hr-portfolio"><br>
 
         <p class="show">
