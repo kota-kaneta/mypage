@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div v-show="skipContent">
+    <div v-show="skipBefore">
       <vue-typer :text="text" repeat= "0" typeDelay="60"></vue-typer>
     </div>
     <div v-show="skipAfter">
@@ -56,14 +56,14 @@ export default {
   },
   data: function(){
     return{
-      skipContent: true,
+      skipBefore: true,
       skipAfter: false,
       text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form."
     }
   },
   methods: {
     skip: function(){
-      this.skipContent = false,
+      this.skipBefore = false,
       this.skipAfter = true
     }
   }
