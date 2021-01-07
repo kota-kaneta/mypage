@@ -19,7 +19,7 @@
               <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
               <textarea class="Form-Item-Textarea" v-model="message" name="message"></textarea>
             </div>
-              <button type="submit" class="Form-Btn">送信する</button>
+              <button type="submit" class="Form-Btn"><span class="send">送信する</span></button>
           </div>
         </form>
         <form name="contact" netlify netlify-honeypot="bot-field" hidden>
@@ -42,6 +42,7 @@
   font-size: 35px;
   padding-top: 25vh;
 }
+
 .Form {
   margin-top: 80px;
   margin-left: auto;
@@ -130,6 +131,13 @@
   max-width: 410px;
   background: #eaedf2;
   font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Form-Item-Input:focus{
+  border-color  : #59b300;
+  background    : rgba(0, 179, 0, 0.214);
+  box-shadow    : 4px 4px 2px #999;
+  outline       : 0;
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Input {
@@ -152,6 +160,12 @@
   max-width: 410px;
   background: #eaedf2;
   font-size: 18px;
+}
+.Form-Item-Textarea:focus{
+  border-color  : #59b300;
+  background    :rgba(0, 179, 0, 0.214);
+  box-shadow    : 4px 4px 2px #999;
+  outline       : 0;
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Textarea {
@@ -196,7 +210,9 @@
     font-size: 16px;
   }
 }
-
+.send{
+  font-size: 17px;
+}
 .v-enter-active {
   transition: opacity 5s;
 }
