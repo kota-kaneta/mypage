@@ -20,7 +20,7 @@
         <hr class="hr-about">
         <p class="gmail">Gmail：arusabu0828@gmail.com</p>
         <a href="https://github.com/kota-kaneta">
-          <p><i class="fab fa-github"></i> GitHub</p>
+          <i class="fab fa-github"></i>GitHub
         </a>
       </div>
     </transition>
