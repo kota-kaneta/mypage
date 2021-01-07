@@ -24,7 +24,9 @@ export default ({
           position: 'bottom',
           labels : {
             fontSize: 22,
-            padding: 20
+            padding: 20,
+            fontFamily: "Osaka",
+            fontColor:  "#2c3e50",
           }
         },
         animation: {
