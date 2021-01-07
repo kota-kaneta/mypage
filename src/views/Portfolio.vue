@@ -2,8 +2,8 @@
   <div id="portfolio">
     <transition appear>
       <div>
-        <Header>Portfolio</Header>
-        <Separation>mypage（制作中）</Separation>
+        <Header>Portfolio<i class="fas fa-book-open"></i></Header>
+        <Separation><i class="far fa-sticky-note"></i>mypage</Separation>
         <hr class="hr-portfolio"><br>
 
         <p class="show">
@@ -22,16 +22,20 @@
             <hr class="hr-portfolio">
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
-                当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br><br>
-                （Vue.js / Node.js / Netlify ...etc）<br><br>
-                GitHub⇨<a href="https://github.com/kota-kaneta/mypage">https://github.com/kota-kaneta/mypage</a><br>
-                サイト⇨<a href="https://kota-kaneta.netlify.app/" ontouchstart="">https://kota-kaneta.netlify.app/</a>
+              当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br><br>
+              （Vue.js / Node.js / Netlify ...etc）<br><br>
+              <a href="https://kota-kaneta.netlify.app/" ontouchstart="">
+                <p><i class="far fa-sticky-note"></i> mypage</p>
+              </a>
+              <a href="https://github.com/kota-kaneta">
+                <p><i class="fab fa-github"></i> GitHub (mypage)</p>
+              </a>
             </p>
            </div>
         </div>
         </transition>
 
-        <Separation>L-searcher</Separation>
+        <Separation><i class="far fa-sticky-note"></i>L-searcher</Separation>
         <hr class="hr-portfolio"><br>
 
         <p class="show">
@@ -56,10 +60,13 @@
             知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
             ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br><br>
             （Rails / AWS / Capistrano ...etc）<br><br>
-            GitHub⇨<a href="https://github.com/kota-kaneta/L-searcher">https://github.com/kota-kaneta/L-searcher</a><br>
-            サイト⇨<a href="https://l-searcher.com/" ontouchstart="">https://l-searcher.com/</a><br>
+            <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
+              <p><i class="far fa-sticky-note"></i>L-searcher</p>
+            </a>
+            <a href="https://github.com/kota-kaneta/L-searcher">
+              <p><i class="fab fa-github"></i>GitHub (L-searcher)</p>
+            </a>
             <p class="heroku">※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</p>
-            サイト⇨<a href="https://l-searcher.herokuapp.com/" ontouchstart="">https://l-searcher.herokuapp.com/</a>
           </div>
         </div>
         </transition>
@@ -69,6 +76,13 @@
 </template>
 
 <style lang="scss" scoped>
+.fas{
+  padding-left: 7px;
+}
+.far{
+  font-size: 25px;
+  padding-right: 5px;
+}
 .heroku{
   color: red;
 }

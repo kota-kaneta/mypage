@@ -10,7 +10,10 @@
       You can also check the source code of the portfolio.<br><br>
       If you are interested in me, please contact us using the contact form.
     </div>
-    <button @click="skip" class="button">skip</button>
+    <button v-show="beforeButton" @click="skip" class="button">
+      <i class="fas fa-forward"></i>skip
+    </button>
+    <span v-show="afterButton"><i class="far fa-laugh-squint"></i></span>
   </div>
 </template>
 
@@ -19,13 +22,16 @@
   font-size: 42px;
   position: relative;
 }
+.fas{
+  padding-right: 5px;
+}
 .button{
   position: fixed;
   bottom: 100px;
   right: 100px;
   font-size: 20px;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.6em;
   outline: none;
   border-bottom: solid 4px #627295;
   border-radius: 15px;
@@ -58,13 +64,17 @@ export default {
     return{
       skipBefore: true,
       skipAfter: false,
-      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form."
+      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form.",
+      beforeButton: true,
+      afterButton: false
     }
   },
   methods: {
     skip: function(){
       this.skipBefore = false,
-      this.skipAfter = true
+      this.skipAfter = true,
+      this.beforeButton = false,
+      this.afterButton = true
     }
   }
 }

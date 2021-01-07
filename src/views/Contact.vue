@@ -2,21 +2,32 @@
   <div>
     <transition appear>
       <div class="contect">
-        <Header v-if="isSubmit === false">Contact</Header>
-        <Separation v-if="isSubmit === false">お問い合わせフォーム</Separation>
+        <Header v-if="isSubmit === false">Contact<i class="fab fa-telegram"></i></Header>
+        <Separation v-if="isSubmit === false">
+          お問い合わせフォーム
+        </Separation>
         <hr class="hr-contact" v-if="isSubmit === false">
         <form v-if="isSubmit === false" @submit.prevent="onSubmit" name="contact" netlify>
           <div class="Form" name="contact">
             <div class="Form-Item">
-              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+              <p class="Form-Item-Label">
+                <!-- <span class="Form-Item-Label-Required">必須</span> -->
+                <i class="fas fa-user-circle"></i>氏名
+              </p>
               <input type="text" v-model="name" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
             </div>
             <div class="Form-Item">
-              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+              <p class="Form-Item-Label">
+                <!-- <span class="Form-Item-Label-Required">必須</span> -->
+                <i class="fas fa-envelope"></i>メールアドレス
+              </p>
               <input type="email" v-model="email" name="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
             </div>
             <div class="Form-Item">
-              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+              <p class="Form-Item-Label isMsg">
+                <!-- <span class="Form-Item-Label-Required">必須</span> -->
+                <i class="fas fa-phone-square"></i>お問い合わせ内容
+              </p>
               <textarea class="Form-Item-Textarea" v-model="message" name="message"></textarea>
             </div>
               <button type="submit" class="Form-Btn"><span class="send">送信する</span></button>
@@ -31,13 +42,24 @@
       </div>
     </transition>
     <div v-if="isSubmit === true" class="thank">
-      お問い合わせありがとうございました。
+      お問い合わせありがとうございました<i class="far fa-laugh-squint"></i>
     </div>
     <div v-if="nothing === true">入力必須項目を埋めてください</div>
   </div>
 </template>
 
 <style scoped>
+.fas{
+  font-size: 25px;
+  padding-right: 5px;
+}
+.far{
+  font-size: 35px;
+  padding-left: 5px;
+}
+.fab{
+  padding-left: 7px;
+}
 .thank{
   font-size: 35px;
   padding-top: 25vh;

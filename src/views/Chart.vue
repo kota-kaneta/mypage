@@ -42,7 +42,7 @@ export default ({
               })
               return Math.round(indexItem / total * 100) + ' %'
             }
-         }
+          }
         }
       }
     }

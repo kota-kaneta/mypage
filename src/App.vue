@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <div id="nav">
       <router-link to="/">Home</router-link>  |
       <router-link to="/about">About</router-link> |
@@ -96,8 +97,16 @@ body {
   -o-animation-timing-function:      linear;
   animation-timing-function:         linear;
 }
-
+a {
+  text-decoration: none;
+}
+a:link { color: #0000ff; }
+a:visited { color: #000080; }
+a:hover { color: #ff0000; }
+a:active { color: #ff8000; }
 </style>
+
+<script src="https://kit.fontawesome.com/4194671020.js" crossorigin="anonymous"></script>
 
 <script>
 
