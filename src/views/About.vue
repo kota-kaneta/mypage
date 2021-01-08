@@ -20,7 +20,7 @@
         <hr class="hr-about">
         <p class="gmail">Gmail：arusabu0828@gmail.com</p>
         <a href="https://github.com/kota-kaneta">
-          <i class="fab fa-github"></i>GitHub
+          <i class="fab fa-github"></i><span class="github">GitHub</span>
         </a>
       </div>
     </transition>
@@ -30,6 +30,13 @@
 <style scoped>
 .fas{
   padding-left: 7px;
+}
+.github{
+  font-size: 20px;
+}
+.fab{
+  padding-right: 7px;
+  font-size: 22px;
 }
 .v-enter-active {
   transition: opacity 5s;

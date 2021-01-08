@@ -46,7 +46,7 @@
         Rails / AWS / Capistrano ...etc
         <p class="blank"></p>
         <hr class="hr-portfolio">
-        （制作順）
+        <Separation>（制作降順）</Separation>
         <hr id="hr">
 
         <transition name="l_modal">
