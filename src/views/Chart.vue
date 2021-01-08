@@ -9,11 +9,11 @@ export default ({
         labels: ['HTML5', 'CSS3', 'Ruby', 'Rails', 'JavaScript', 'Vue.js'],
         datasets: [
           {
-            data: [22, 22, 28, 53, 14, 23],
+            data: [20, 20, 28, 53, 14, 24],
             backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983'],
             borderColor: 'lightgray',
             hoverBackgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983']
-          },
+          }
         ]
       },
       options: {
@@ -26,15 +26,15 @@ export default ({
             fontSize: 22,
             padding: 20,
             fontFamily: "Osaka",
-            fontColor:  "#2c3e50",
+            fontColor:  "#2c3e50"
           }
         },
         animation: {
         duration: 2000,
-        easing: 'easeOutBounce',
+        easing: 'easeOutBounce'
         },
         tooltips: {
-          bodyFontSize: 12,
+          bodyFontSize: 13,
           callbacks: {
             label: function(tooltipItem, data) {
               let total = 0

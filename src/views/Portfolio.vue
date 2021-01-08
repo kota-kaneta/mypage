@@ -64,7 +64,7 @@
               <p><i class="far fa-sticky-note"></i>L-searcher</p>
             </a>
             <a href="https://github.com/kota-kaneta/L-searcher">
-              <p><i class="fab fa-github"></i>GitHub (L-searcher)</p>
+              <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
             </a>
             <p class="heroku">※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</p>
           </div>
