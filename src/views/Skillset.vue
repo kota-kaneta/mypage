@@ -1,7 +1,7 @@
 <template>
   <transition appear>
   <div class="Doughnut">
-      <Header>Skillset<i class="fas fa-pen-square"></i></Header>
+      <Header>Skillset<i class="fas fa-laptop-code"></i></Header>
     <p class="blank"></p>
     <h2>Language / Framework</h2>
     <hr id="hr-skill">
