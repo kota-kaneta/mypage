@@ -61,10 +61,18 @@
 }
 a {
   text-decoration: none;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 a:link { color: #0000ff; }
 a:visited { color: #000080; }
-a:hover { color: #ff0000; }
+a:hover {
+  color: #ff0000;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  }
 a:active { color: #ff8000; }
 </style>
 

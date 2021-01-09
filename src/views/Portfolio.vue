@@ -114,8 +114,16 @@
 .blank{
   padding: 30px;
 }
+a{
+  display: block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
 a:hover{
   color : #ff7043;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 a:active{
   color : #26a69a;
