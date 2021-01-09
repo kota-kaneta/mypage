@@ -20,7 +20,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  text-shadow: 1px 1px 3px #808080; 
+  text-shadow: 1px 1px 3px #808080;
 }
 
 #nav {
