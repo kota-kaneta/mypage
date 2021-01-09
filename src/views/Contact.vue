@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="contact">
     <transition appear>
-      <div class="contect">
+      <div>
         <Header v-if="isSubmit === false">Contact<i class="fab fa-telegram"></i></Header>
         <Separation v-if="isSubmit === false">
           お問い合わせフォーム
@@ -44,11 +44,14 @@
     <div v-if="isSubmit === true" class="thank">
       お問い合わせありがとうございました<i class="far fa-laugh-squint"></i>
     </div>
-    <div v-if="nothing === true">入力必須項目を埋めてください</div>
+    <div v-if="nothing === true" class="nothing">※各項目はすべて必須です</div>
   </div>
 </template>
 
 <style scoped>
+.contact{
+  position: relative;
+}
 .fas{
   font-size: 25px;
   padding-right: 5px;
@@ -246,6 +249,13 @@
   }
 .hr-contact{
   width: 40vw;
+}
+.nothing{
+  position: absolute;
+  font-size: 19px;
+  color: rgb(255, 51, 0);
+  top: 210px;
+  left: 42vw;
 }
 </style>
 
