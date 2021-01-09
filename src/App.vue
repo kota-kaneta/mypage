@@ -34,10 +34,20 @@
   color: #2c3e50;
   text-decoration: none;
   padding: 0 10px;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#nav a:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
+  transform: scale(1.1);
 }
 
 #hr{

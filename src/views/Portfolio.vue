@@ -6,10 +6,8 @@
         <Separation><i class="far fa-sticky-note"></i>mypage</Separation>
         <hr class="hr-portfolio"><br>
 
-        <p class="show">
-          <button class="button" v-on:click="openModal">
-            <img src="@/assets/mypage.png" width="350" height="195">
-          </button>
+        <p class="show" v-on:click="openModal">
+          <img src="@/assets/mypage.png" width="350" height="195" border="1">
         </p>
         Vue.js / Node.js / Netlify ...etc
  
@@ -38,10 +36,8 @@
         <Separation><i class="far fa-sticky-note"></i>L-searcher</Separation>
         <hr class="hr-portfolio"><br>
 
-        <p class="show">
-        <button v-on:click="l_openModal" class="button">
-          <img src="@/assets/l-searcher.png" width="350" height="195">
-        </button>
+        <p class="show" v-on:click="l_openModal">
+          <img src="@/assets/l-searcher.png" width="350" height="195" border="1">
         </p>
         Rails / AWS / Capistrano ...etc
         <p class="blank"></p>
@@ -86,9 +82,7 @@
 .heroku{
   color: red;
 }
-.button{
-  min-height: 190px;
-}
+
 #portfolio{
   font-size: 23px;
 }
@@ -107,10 +101,15 @@
 .show{
   font-size: 20px;
   height: 200px;
+  min-height: 190px;
 }
 .show a{
   text-decoration: none;
   font-size: 25px;
+}
+.show img:hover{
+  transform:scale(1.2,1.2);
+  transition:0.5s all;
 }
 .blank{
   padding: 30px;
