@@ -9,7 +9,7 @@
       <router-link to="/contact">Contact</router-link>
     </div>
     <hr id="hr">
-      <router-view/>
+    <router-view/>
   </div>
 </template>
 

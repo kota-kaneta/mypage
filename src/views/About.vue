@@ -18,7 +18,9 @@
           現在はVue.jsなどの学習を進めています
         </p><br>
         <hr class="hr-about">
-        <i class="fas fa-envelope"></i>：<a href="mailto:arusabu0828@gmail.com" class="gmail">arusabu0828@gmail.com</a><br><br>
+        <a href="mailto:arusabu0828@gmail.com" class="gmail">
+          <i class="fas fa-envelope"></i>：arusabu0828@gmail.com
+        </a><br><br>
         <a href="https://github.com/kota-kaneta">
           <i class="fab fa-github"></i><span class="github">GitHub</span>
         </a>
