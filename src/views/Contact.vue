@@ -257,6 +257,11 @@
   top: 210px;
   left: 42vw;
 }
+@media screen and (max-width: 768px) {
+  .nothing { 
+    display:none; 
+  }
+}
 </style>
 
 <script>
