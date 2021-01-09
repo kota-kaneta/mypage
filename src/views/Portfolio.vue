@@ -53,7 +53,7 @@
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
           <div id="l_content">
             <div class="batu"><button class="close" @click="l_closeModal">✖️</button></div>
-            <div class="details">2020 / 11 〜 2020 / 12</div>
+            <div class="details">2020 / 10 〜 2020 / 11</div>
             <h2>L-searcher</h2>
             <hr class="hr-portfolio">
             <img src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>

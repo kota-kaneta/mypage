@@ -284,6 +284,7 @@ export default {
         .post('/', params)
         .then(() => {
             this.isSubmit = true
+            this.nothing = false
         })
       }else{
         this.nothing = true
