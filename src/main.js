@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { KinesisContainer, KinesisElement } from 'vue-kinesis'
+import vuetify from './plugins/vuetify';
 
 
 Vue.component('kinesis-container', KinesisContainer)
@@ -11,5 +12,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')

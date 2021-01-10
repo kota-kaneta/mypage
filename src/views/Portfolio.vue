@@ -3,21 +3,27 @@
     <transition appear>
       <div>
         <Header>Portfolio<i class="fas fa-book-open"></i></Header>
-        <hr class="hr-portfolio">
-        <h3><i class="far fa-sticky-note"></i>mypage</h3>
-
-        <p class="show" v-on:click="openModal">
-          <img src="@/assets/contact.png" width="350" height="195" border="1">
-        </p>
-        Vue.js / Node.js / Netlify ...etc
- 
+      <div class="card">
+        <v-card class="mx-auto" max-width="344">
+          <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
+          <v-card-title>
+            <h3><i class="far fa-sticky-note"></i>mypage</h3>
+          </v-card-title>
+          <v-card-subtitle>
+             Vue.js / Node.js / Netlify ...etc
+          </v-card-subtitle>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn icon @click="openModal">
+              <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
         <transition name="modal">
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
-            <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
             <div class="details">2021 / 01 〜 現在</div>
             <h3>mypage</h3>
-            <hr class="hr-portfolio">
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
               当サイトです。<br>私が作成したサイトを載せていきます。<br>
@@ -33,25 +39,28 @@
            </div>
         </div>
         </transition>
-
-        <hr class="hr-portfolio">
-        <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
-
-        <p class="show" v-on:click="l_openModal">
-          <img src="@/assets/notifications.png" width="350" height="195" border="1">
-        </p>
-        Rails / AWS / Capistrano ...etc
-        <hr class="hr-portfolio">
-        <h3>（制作降順）</h3>
-        <hr id="hr">
+        <v-card class="mx-auto" max-width="344">
+          <v-img src="@/assets/notifications.png" width="350" height="195" border="1"></v-img>
+          <v-card-title>
+            <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
+          </v-card-title>
+          <v-card-subtitle>
+            Rails / AWS / Capistrano ...etc
+          </v-card-subtitle>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn icon @click="l_openModal">
+              <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </div>
 
         <transition name="l_modal">
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
           <div id="l_content">
-            <div class="batu"><button class="close" @click="l_closeModal">✖️</button></div>
             <div class="details">2020 / 10 〜 2020 / 11</div>
             <h3>L-searcher</h3>
-            <hr class="hr-portfolio">
             <img src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>
             知人の暇な時間を確認できるアプリケーションです。<br>
             ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
@@ -74,6 +83,29 @@
 </template>
 
 <style lang="scss" scoped>
+.card{
+    display: inline-flex;
+    justify-content: center;
+  }
+  .mx-auto{
+    margin: 40px;
+    border: lightgray solid 1px;
+  }
+@media screen and (max-width: 768px) {
+  .card{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mx-auto{
+    margin-bottom: 20px;
+    border: lightgray solid 1px;
+  }
+}
+.v-card__subtitle {
+  text-align: left;
+  padding-top: 10px;
+}
 .fas{
   padding-left: 7px;
 }
@@ -97,9 +129,6 @@
 .v-enter-to {
   opacity: 1;
   }
-.hr-portfolio{
-  width: 40vw;
-}
 .show{
   font-size: 20px;
   height: 200px;

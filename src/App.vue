@@ -2,13 +2,16 @@
   <div id="app">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <div id="nav">
-      <router-link to="/">Home</router-link>  |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/skillset" >Skillset</router-link> |
-      <router-link to="portfolio">Portfolio</router-link> |
-      <router-link to="/contact">Contact</router-link>
+      <v-card>
+      <v-tabs>
+        <v-tab to="/">Home </v-tab>
+        <v-tab to="/about">About </v-tab>
+        <v-tab to="/skillset" >Skillset </v-tab>
+        <v-tab to="portfolio">Portfolio </v-tab>
+        <v-tab to="/contact">Contact</v-tab>
+      </v-tabs>
+      </v-card>
     </div>
-    <hr id="hr">
     <router-view/>
   </div>
 </template>
@@ -22,13 +25,19 @@
   color: #2c3e50;
   text-shadow: 1px 1px 3px #808080;
 }
-
 #nav {
-  padding-top: 20px;
   font-size: 1.3em;
   font-weight: bold;
 }
-
+.v-tabs { 
+  display: flex; 
+  justify-content: center; 
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+.v-tab{
+  height: 100%;
+}
 #nav a {
   font-weight: bold;
   color: #2c3e50;
@@ -38,14 +47,14 @@
   transition: .3s;
   -webkit-transform: scale(1);
   transform: scale(1);
+  font-size: 18px;
 }
 
 #nav a:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
-#nav a.router-link-exact-active {
+.v-tab--active{
   color: #42b983;
   transform: scale(1.1);
 }
