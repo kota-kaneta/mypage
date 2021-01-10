@@ -7,7 +7,7 @@
         <h3><i class="far fa-sticky-note"></i>mypage</h3>
 
         <p class="show" v-on:click="openModal">
-          <img src="@/assets/mypage.png" width="350" height="195" border="1">
+          <img src="@/assets/contact.png" width="350" height="195" border="1">
         </p>
         Vue.js / Node.js / Netlify ...etc
  
@@ -20,7 +20,8 @@
             <hr class="hr-portfolio">
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
-              当サイトです。<br>作成したポートフォリオ一覧を掲載しています。<br><br>
+              当サイトです。<br>私が作成したサイトを載せていきます。<br>
+              Contactフォームから気軽にお問い合わせください<br><br>
               （Vue.js / Node.js / Netlify ...etc）<br><br>
               <a href="https://kota-kaneta.netlify.app/" ontouchstart="">
                 <p><i class="far fa-sticky-note"></i> mypage</p>
@@ -37,7 +38,7 @@
         <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
 
         <p class="show" v-on:click="l_openModal">
-          <img src="@/assets/l-searcher.png" width="350" height="195" border="1">
+          <img src="@/assets/notifications.png" width="350" height="195" border="1">
         </p>
         Rails / AWS / Capistrano ...etc
         <hr class="hr-portfolio">
@@ -52,8 +53,10 @@
             <h3>L-searcher</h3>
             <hr class="hr-portfolio">
             <img src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>
-            知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
-            ユーザーIDを用いてアカウントを検索し、フォローすることができます。<br><br>
+            知人の暇な時間を確認できるアプリケーションです。<br>
+            ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
+            そのユーザーが登録している週のスケジュールがタイムラインに表示されます。<br>
+            また、ダイレクトメッセージを送ることができます。<br><br>
             （Rails / AWS / Capistrano ...etc）<br><br>
             <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
               <p><i class="far fa-sticky-note"></i>L-searcher</p>
