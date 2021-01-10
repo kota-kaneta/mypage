@@ -10,9 +10,9 @@
       You can also check the source code of the portfolio.<br><br>
       If you are interested in me, please contact us using the contact form.
     </div>
-    <button v-show="beforeButton" @click="skip" class="button">
+    <span v-show="beforeButton" @click="skip" class="button">
       <i class="fas fa-forward"></i>skip
-    </button>
+    </span>
     <span v-show="afterButton"><i class="far fa-laugh-squint"></i></span>
   </div>
 </template>
@@ -29,12 +29,17 @@
   position: fixed;
   bottom: 100px;
   right: 100px;
-  font-size: 20px;
+  font-size: 25px;
   display: inline-block;
-  padding: 0.5em 0.6em;
   outline: none;
-  border-bottom: solid 4px #627295;
-  border-radius: 15px;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.button:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #ff8000;
 }
 .button:active {
   -webkit-transform: translateY(3px);
