@@ -16,16 +16,19 @@
             2017年4月<br><br>
             日本大学理工学部物質応用化学科に入学
           </v-timeline-item>
-          <v-timeline-item class="text-right">
+          <v-timeline-item>
             2020年9月<br><br>
             コロナによる研究困難により休学<br>
             同時にプログラミングの勉強を始める<br>
             （主にRuby on Railsを中心に開発を行う）
           </v-timeline-item>
-          <v-timeline-item class="text-right">
+          <v-timeline-item>
             2020年12月<br><br>
-            エンジニアとしてのキャリアを決意して同大学を中途退学<br>
-            （現在はVue.jsを学習中）
+            エンジニアとしてのキャリアを目指して大学を中途退学
+          </v-timeline-item>
+          <v-timeline-item>
+            現在<br><br>
+            Vue.jsを学習中...<br>
           </v-timeline-item>
           <br>
         </v-timeline>
@@ -34,6 +37,9 @@
 </template>
 
 <style scoped>
+.v-timeline{
+  font-size: 18px;
+}
 .theme--light {
     background: rgba(186, 187, 186, 0.324);
 }
