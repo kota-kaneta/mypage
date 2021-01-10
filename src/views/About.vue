@@ -4,18 +4,32 @@
       <div>
         <Header>About<i class="fas fa-user-circle"></i></Header>
         <Separation>Profile / Career</Separation>
-        <p class="profile-show">
-          <i class="fas fa-birthday-cake"></i>
-          1998年生まれ/群馬県出身 
-          <br> <br><br>
-          日本大学理工学部を休学しプログラミング学習を開始<br><br>
-          ↓<br><br>
-          主にRailsでアプリケーションの開発を進める<br><br>
-          ↓<br><br>
-          エンジニアを目指し同大学を中途退学<br><br>
-          ↓<br><br>
-          現在はVue.jsなどの学習を進めています
-        </p><br>
+        <v-timeline>
+          <v-timeline-item>
+            1998年8月<br><br>
+            群馬県にて生誕
+          </v-timeline-item>
+          <v-timeline-item>
+            2006年〜2016年<br><br>
+            小学校3年から高校3年までの10年間野球部に所属
+          </v-timeline-item>
+          <v-timeline-item>
+            2017年4月<br><br>
+            日本大学理工学部物質応用化学科に入学
+          </v-timeline-item>
+          <v-timeline-item class="text-right">
+            2020年9月<br><br>
+            コロナによる研究困難により休学<br>
+            同時にプログラミングの勉強を始める<br>
+            （主にRuby on Railsを中心に開発を行う）
+          </v-timeline-item>
+          <v-timeline-item class="text-right">
+            2020年12月<br><br>
+            エンジニアとしてのキャリアを決意して同大学を中途退学<br>
+            （現在はVue.jsを学習中）
+          </v-timeline-item>
+        </v-timeline>
+        <p class="profile-show"></p>
         <v-bottom-navigation v-model="value">
           <v-btn value="GitHub">
             <a href="https://github.com/kota-kaneta">
