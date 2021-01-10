@@ -3,8 +3,7 @@
   <div class="Doughnut">
       <Header>Skillset<i class="fas fa-laptop-code"></i></Header>
     <p class="blank"></p>
-    <h2>Language / Framework</h2>
-    <hr id="hr-skill">
+    <h2 class="lf">Language / Framework</h2>
     <div class="chart">
       <chart></chart>
     </div>
@@ -15,6 +14,9 @@
 <style scoped>
 .fas{
   padding-left: 7px;
+}
+.lf{
+  padding-bottom: 10px;
 }
 .Doughnut{
   justify-content: center;
@@ -31,9 +33,6 @@
   }
 .chart{
   padding-top: 30px;
-}
-#hr-skill{
-  width: 45vw;
 }
 .blank{
   padding: 10px;

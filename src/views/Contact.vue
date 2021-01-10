@@ -6,7 +6,6 @@
         <Separation v-if="isSubmit === false">
           お問い合わせフォーム
         </Separation>
-        <hr class="hr-contact" v-if="isSubmit === false">
         <form v-if="isSubmit === false" @submit.prevent="onSubmit" name="contact" netlify>
           <div class="Form" name="contact">
             <div class="Form-Item">
@@ -254,9 +253,6 @@
 .v-enter-to {
   opacity: 1;
   }
-.hr-contact{
-  width: 40vw;
-}
 .nothing{
   position: absolute;
   font-size: 19px;

@@ -4,7 +4,6 @@
       <div>
         <Header>About<i class="fas fa-user-circle"></i></Header>
         <Separation>Profile / Career</Separation>
-        <hr class="hr-about">
         <p class="profile-show">
           <i class="fas fa-birthday-cake"></i>
           1998年生まれ/群馬県出身 
@@ -17,10 +16,13 @@
           ↓<br><br>
           現在はVue.jsなどの学習を進めています
         </p><br>
-        <hr class="hr-about"><br>
-        <a href="https://github.com/kota-kaneta">
-          <i class="fab fa-github"></i><span class="github">GitHub</span>
-        </a>
+        <v-bottom-navigation v-model="value">
+          <v-btn value="GitHub">
+            <a href="https://github.com/kota-kaneta">
+              <i class="fab fa-github"></i>
+            </a>
+          </v-btn>
+        </v-bottom-navigation>
       </div>
     </transition>
   </div>
@@ -30,12 +32,9 @@
 .fas{
   padding-left: 7px;
 }
-.github{
-  font-size: 20px;
-}
 .fab{
   padding-right: 7px;
-  font-size: 22px;
+  font-size: 30px;
 }
 .v-enter-active {
   transition: opacity 5s;
@@ -46,14 +45,9 @@
 .v-enter-to {
   opacity: 1;
   }
-.hr-about{
-  width: 40vw;
-}
 .profile-show{
   padding-top: 40px;
   padding-bottom: 30px;
-}
-.gmail{
   font-size: 20px;
 }
 .g-tag{
@@ -88,7 +82,8 @@ export default {
   },
   data: function(){
     return{
-      profile: "Profile"
+      profile: "Profile",
+      value: "GitHub"
     }
   }
 };

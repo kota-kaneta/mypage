@@ -7,10 +7,7 @@
 <style>
 header {
   font-size: 20px;
-}
-#hr-head{
-  width: 70vw;
-  border: solid 1px ;
+  padding-bottom: 50px;
 }
 </style>
 
