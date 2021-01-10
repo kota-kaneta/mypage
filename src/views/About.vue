@@ -1,9 +1,8 @@
 <template>
-  <div id="about">
     <transition appear>
-      <div>
+      <div id="about">
         <Header>About<i class="fas fa-user-circle"></i></Header>
-        <Separation>Profile / Career</Separation>
+        <Separation>Profile / Career</Separation><br><br>
         <v-timeline>
           <v-timeline-item>
             1998年8月<br><br>
@@ -28,21 +27,16 @@
             エンジニアとしてのキャリアを決意して同大学を中途退学<br>
             （現在はVue.jsを学習中）
           </v-timeline-item>
+          <br>
         </v-timeline>
-        <p class="profile-show"></p>
-        <v-bottom-navigation v-model="value">
-          <v-btn value="GitHub">
-            <a href="https://github.com/kota-kaneta">
-              <i class="fab fa-github"></i>
-            </a>
-          </v-btn>
-        </v-bottom-navigation>
       </div>
     </transition>
-  </div>
 </template>
 
 <style scoped>
+.theme--light {
+    background: rgba(186, 187, 186, 0.324);
+}
 .fas{
   padding-left: 7px;
 }
@@ -59,11 +53,6 @@
 .v-enter-to {
   opacity: 1;
   }
-.profile-show{
-  padding-top: 40px;
-  padding-bottom: 30px;
-  font-size: 20px;
-}
 .g-tag{
   font-size: 20px;
 }
