@@ -1,14 +1,16 @@
 <template>
-  <transition appear>
   <div class="Doughnut">
-      <Header>Skillset<i class="fas fa-laptop-code"></i></Header>
-    <p class="blank"></p>
-    <h2 class="lf">Language / Framework</h2>
-    <div class="chart">
-      <chart></chart>
-    </div>
+    <transition appear>
+      <div>
+        <Header>Skillset<i class="fas fa-laptop-code"></i></Header>
+        <p class="blank"></p>
+        <h2 class="lf">Language / Framework</h2>
+        <div class="chart">
+          <chart></chart>
+        </div>
+      </div>
+    </transition>
   </div>
-  </transition>
 </template>
 
 <style scoped>
@@ -22,15 +24,6 @@
   justify-content: center;
   align-items: center;
 }
-.v-enter-active {
-  transition: opacity 5s;
-}
-.v-enter {
-  opacity: 0;
-}
-.v-enter-to {
-  opacity: 1;
-  }
 .chart{
   padding-top: 30px;
 }

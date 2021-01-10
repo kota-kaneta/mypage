@@ -17,6 +17,27 @@
 </template>
 
 <style lang="scss">
+.v-enter {
+  transform: translate(100px, 0);
+  opacity: 0;
+}
+.v-enter-to {
+  opacity: 1;
+}
+.v-enter-active {
+  transition: all 1.5s 0s ease;
+}
+.v-leave {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.v-leave-to {
+  transform: translate(-100px, 0);
+  opacity: 0.5;
+}
+.v-leave-active {
+  transition: all 0.5s 0s ease;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -120,15 +120,6 @@
 #portfolio{
   font-size: 23px;
 }
-.v-enter-active {
-  transition: opacity 5s;
-}
-.v-enter {
-  opacity: 0;
-}
-.v-enter-to {
-  opacity: 1;
-  }
 .show{
   font-size: 20px;
   height: 200px;

@@ -244,15 +244,6 @@
 .send{
   font-size: 17px;
 }
-.v-enter-active {
-  transition: opacity 5s;
-}
-.v-enter {
-  opacity: 0;
-}
-.v-enter-to {
-  opacity: 1;
-  }
 .nothing{
   position: absolute;
   font-size: 19px;

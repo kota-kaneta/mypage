@@ -1,4 +1,5 @@
 <template>
+  <div>
     <transition appear>
       <div id="about">
         <Header>About<i class="fas fa-user-circle"></i></Header>
@@ -24,7 +25,7 @@
           </v-timeline-item>
           <v-timeline-item>
             2020年12月<br><br>
-            エンジニアとしてのキャリアを目指して大学を中途退学
+            エンジニアを目指して大学を中途退学
           </v-timeline-item>
           <v-timeline-item>
             現在<br><br>
@@ -34,6 +35,7 @@
         </v-timeline>
       </div>
     </transition>
+  </div>
 </template>
 
 <style scoped>
@@ -50,15 +52,7 @@
   padding-right: 7px;
   font-size: 30px;
 }
-.v-enter-active {
-  transition: opacity 5s;
-}
-.v-enter {
-  opacity: 0;
-}
-.v-enter-to {
-  opacity: 1;
-  }
+
 .g-tag{
   font-size: 20px;
 }
