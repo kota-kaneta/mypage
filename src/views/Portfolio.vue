@@ -3,8 +3,8 @@
     <transition appear>
       <div>
         <Header>Portfolio<i class="fas fa-book-open"></i></Header>
-        <Separation><i class="far fa-sticky-note"></i>mypage</Separation>
-        <hr class="hr-portfolio"><br>
+        <hr class="hr-portfolio">
+        <h3><i class="far fa-sticky-note"></i>mypage</h3>
 
         <p class="show" v-on:click="openModal">
           <img src="@/assets/mypage.png" width="350" height="195" border="1">
@@ -16,7 +16,7 @@
           <div id="content">
             <div class="batu"><button class="close" @click="closeModal">✖️</button></div>
             <div class="details">2021 / 01 〜 現在</div>
-            <h2>mypage</h2>
+            <h3>mypage</h3>
             <hr class="hr-portfolio">
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
@@ -33,16 +33,15 @@
         </div>
         </transition>
 
-        <Separation><i class="far fa-sticky-note"></i>L-searcher</Separation>
-        <hr class="hr-portfolio"><br>
+        <hr class="hr-portfolio">
+        <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
 
         <p class="show" v-on:click="l_openModal">
           <img src="@/assets/l-searcher.png" width="350" height="195" border="1">
         </p>
         Rails / AWS / Capistrano ...etc
-        <p class="blank"></p>
         <hr class="hr-portfolio">
-        <Separation>（制作降順）</Separation>
+        <h3>（制作降順）</h3>
         <hr id="hr">
 
         <transition name="l_modal">
@@ -50,7 +49,7 @@
           <div id="l_content">
             <div class="batu"><button class="close" @click="l_closeModal">✖️</button></div>
             <div class="details">2020 / 10 〜 2020 / 11</div>
-            <h2>L-searcher</h2>
+            <h3>L-searcher</h3>
             <hr class="hr-portfolio">
             <img src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>
             知人の暇な時間をタイムラインで表示できるアプリケーションです。<br>
@@ -102,6 +101,7 @@
   font-size: 20px;
   height: 200px;
   min-height: 190px;
+  padding-bottom: 20px;
 }
 .show a{
   text-decoration: none;
@@ -226,13 +226,11 @@ a:active{
 
 <script>
 import Header from "@/components/Header.vue";
-import Separation from "@/components/Separation.vue";
 
 export default {
   name: "#portfolio",
   components: {
-    Header,
-    Separation,
+    Header
   },
   data: function(){
     return{
