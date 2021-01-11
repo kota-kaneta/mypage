@@ -3,7 +3,7 @@
     <transition appear>
       <div id="about">
         <Header>About<i class="fas fa-user-circle"></i></Header>
-        <Separation>Profile / Career</Separation><br><br>
+        <Separation>Profile / Career</Separation><br>
         <v-timeline>
           <v-timeline-item>
             1998年8月<br><br>

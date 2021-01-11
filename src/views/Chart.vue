@@ -25,7 +25,7 @@ export default ({
           labels : {
             fontSize: 22,
             padding: 20,
-            fontFamily: "Osaka",
+            fontFamily: "Georgia",
             fontColor:  "#2c3e50"
           }
         },

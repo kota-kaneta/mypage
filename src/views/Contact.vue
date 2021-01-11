@@ -158,8 +158,8 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .Form-Item-Input:focus{
-  border-color  : #59b300;
-  background    : rgba(0, 179, 0, 0.214);
+  border-color  : #0b160069;
+  background    : rgba(1, 99, 1, 0.214);
   box-shadow    : 4px 4px 2px #999;
   outline       : 0;
 }
@@ -186,8 +186,8 @@
   font-size: 18px;
 }
 .Form-Item-Textarea:focus{
-  border-color  : #59b300;
-  background    :rgba(0, 179, 0, 0.214);
+  border-color  : #0b160069;
+  background    : rgba(1, 99, 1, 0.214);
   box-shadow    : 4px 4px 2px #999;
   outline       : 0;
 }

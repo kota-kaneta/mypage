@@ -1,8 +1,7 @@
-<template>
+<template id="body">
   <div id="app">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <div id="nav">
-      <v-card>
       <v-tabs>
         <v-tab to="/">Home </v-tab>
         <v-tab to="/about">About </v-tab>
@@ -10,7 +9,6 @@
         <v-tab to="portfolio">Portfolio </v-tab>
         <v-tab to="/contact">Contact</v-tab>
       </v-tabs>
-      </v-card>
     </div>
     <router-view/>
   </div>
@@ -39,12 +37,14 @@
   transition: all 0.5s 0s ease;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: global-variable-exists($name: a);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   text-shadow: 1px 1px 3px #808080;
+  height: 100vh;
+  background-color: rgba(199, 198, 198, 0.331);
 }
 #nav {
   font-size: 1.3em;
@@ -61,7 +61,7 @@
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 20px;
   transition: .3s;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -73,16 +73,8 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.v-tab--active{
-  color: #42b983;
-  transform: scale(1.1);
-}
-
-#hr{
-  width: 95vw;
-  margin-top: 20px;
-  margin-bottom: 35px;
-  border: solid 1px ;
+.v-tabs-slider{
+  color: #2c3e50;
 }
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
 
