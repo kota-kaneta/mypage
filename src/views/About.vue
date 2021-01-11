@@ -28,10 +28,8 @@
             エンジニアを目指して大学を中途退学
           </v-timeline-item>
           <v-timeline-item>
-            現在<br><br>
-            Vue.jsを学習中...<br>
+            Vue.jsを学習中...
           </v-timeline-item>
-          <br>
         </v-timeline>
       </div>
     </transition>

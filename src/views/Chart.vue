@@ -35,6 +35,7 @@ export default ({
         },
         tooltips: {
           bodyFontSize: 13,
+          bodyFontFamily: "Georgia",
           callbacks: {
             label: function(tooltipItem, data) {
               let total = 0
