@@ -3,18 +3,37 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <div id="nav">
       <v-tabs>
-        <v-tab to="/">Home </v-tab>
-        <v-tab to="/about">About </v-tab>
-        <v-tab to="/skillset" >Skillset </v-tab>
-        <v-tab to="portfolio">Portfolio </v-tab>
+        <v-tab to="/">Home</v-tab>
+        <v-tab to="/about">About</v-tab>
+        <v-tab to="/skillset">Skillset</v-tab>
+        <v-tab to="portfolio">Portfolio</v-tab>
         <v-tab to="/contact">Contact</v-tab>
       </v-tabs>
     </div>
     <router-view/>
+    <!-- <footer>
+      <v-bottom-navigation :value="value" color="primary" horizontal>
+        <v-btn>
+          <a href="https://github.com/kota-kaneta">
+            <span>GitHub</span>
+            <v-icon>mdi-github</v-icon>
+          </a>
+        </v-btn>
+      </v-bottom-navigation>
+    </footer> -->
   </div>
 </template>
 
 <style lang="scss">
+.v-bottom-navigation{
+  display: flex;
+  align-items: center;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .v-enter {
   transform: translate(100px, 0);
   opacity: 0;
@@ -33,17 +52,19 @@
   color: #2c3e50;
   text-shadow: 1px 1px 3px #808080;
   height: 100vh;
+  position: relative;
   background-color: rgba(199, 198, 198, 0.331);
 }
 #nav {
   font-size: 1.3em;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 .v-tabs { 
   display: flex; 
   justify-content: center;
-  margin-bottom: 40px;
-  background-color: rgb(239, 241, 239);
+  background-color: rgb(238, 234, 234);
+  border: rgb(209, 208, 208) 2px solid;
 }
 
 #nav a {
@@ -55,7 +76,7 @@
   -webkit-transform: scale(1);
   transform: scale(1);
   font-size: 18px;
-  background-color: rgb(239, 241, 239);
+  background-color:rgb(238, 234, 234);
 }
 
 #nav a:hover{

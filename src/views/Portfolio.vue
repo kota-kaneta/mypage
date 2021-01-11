@@ -88,6 +88,7 @@
 .card{
   display: inline-flex;
   justify-content: center;
+  margin-top: 100px;
 }
 .mx-auto{
   margin: 40px;
