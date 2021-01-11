@@ -23,7 +23,7 @@
   opacity: 1;
 }
 .v-enter-active {
-  transition: all 1.5s 0s ease;
+  transition: all 1.2s 0s ease;
 }
 .v-leave {
   transform: translate(0, 0);
@@ -129,6 +129,8 @@ body {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
 }
 a:link { color: #0000ff; }
 a:visited { color: #000080; }

@@ -35,6 +35,8 @@
   transition: .3s;
   -webkit-transform: scale(1);
   transform: scale(1);
+  cursor: pointer;
+  cursor: hand;
 }
 .button:hover{
   -webkit-transform: scale(1.2);
