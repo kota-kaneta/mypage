@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .home{
   font-size: 42px;
   position: relative;
