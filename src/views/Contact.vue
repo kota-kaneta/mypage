@@ -159,7 +159,7 @@
 }
 .Form-Item-Input:focus{
   border-color  : #0b160069;
-  background    : rgba(1, 99, 1, 0.214);
+  background    : rgba(146, 146, 146, 0.214);
   box-shadow    : 4px 4px 2px #999;
   outline       : 0;
 }
@@ -187,7 +187,7 @@
 }
 .Form-Item-Textarea:focus{
   border-color  : #0b160069;
-  background    : rgba(1, 99, 1, 0.214);
+  background    : rgba(143, 143, 143, 0.214);
   box-shadow    : 4px 4px 2px #999;
   outline       : 0;
 }

@@ -18,7 +18,7 @@
   padding-left: 7px;
 }
 .lf{
-  padding-bottom: 10px;
+  padding: 40px 0 10px 0;
 }
 .Doughnut{
   justify-content: center;

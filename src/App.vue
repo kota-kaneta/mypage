@@ -11,29 +11,11 @@
       </v-tabs>
     </div>
     <router-view/>
-    <!-- <footer>
-      <v-bottom-navigation :value="value" color="primary" horizontal>
-        <v-btn>
-          <a href="https://github.com/kota-kaneta">
-            <span>GitHub</span>
-            <v-icon>mdi-github</v-icon>
-          </a>
-        </v-btn>
-      </v-bottom-navigation>
-    </footer> -->
   </div>
 </template>
 
 <style lang="scss">
-.v-bottom-navigation{
-  display: flex;
-  align-items: center;
-}
-footer{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+
 .v-enter {
   transform: translate(100px, 0);
   opacity: 0;
@@ -70,7 +52,6 @@ footer{
 #nav a {
   font-weight: bold;
   color: #2c3e50;
-  text-decoration: none;
   padding: 0 20px;
   transition: .3s;
   -webkit-transform: scale(1);
@@ -79,10 +60,6 @@ footer{
   background-color:rgb(238, 234, 234);
 }
 
-#nav a:hover{
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
 .v-tabs-slider{
   color: #2c3e50;
 }
