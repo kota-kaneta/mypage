@@ -155,7 +155,7 @@
   max-width: 410px;
   background: #eaedf2;
   font-size: 18px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Georgia";
 }
 .Form-Item-Input:focus{
   border-color  : #0b160069;
