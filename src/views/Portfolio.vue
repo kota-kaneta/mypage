@@ -19,6 +19,7 @@
             </v-btn>
           </v-card-actions>
         </v-card>
+
         <transition name="modal">
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
@@ -27,7 +28,7 @@
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
               当サイトです。<br>私が作成したサイトを載せていきます。<br>
-              Contactフォームから気軽にお問い合わせください<br><br>
+              Contactフォームから気軽にお問い合わせください。<br><br>
               （Vue.js / Node.js / Netlify ...etc）<br><br>
               <a href="https://kota-kaneta.netlify.app/" ontouchstart="">
                 <p><i class="far fa-sticky-note"></i> mypage</p>
@@ -39,6 +40,7 @@
            </div>
         </div>
         </transition>
+
         <v-card class="mx-auto" max-width="344">
           <v-img src="@/assets/notifications.png" width="350" height="195" border="1"></v-img>
           <v-card-title>
@@ -72,7 +74,7 @@
             </a>
             <a href="https://github.com/kota-kaneta/L-searcher">
               <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
-            </a>
+            </a><br>
             <p class="heroku">※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</p>
           </div>
         </div>
@@ -84,13 +86,14 @@
 
 <style lang="scss" scoped>
 .card{
-    display: inline-flex;
-    justify-content: center;
-  }
-  .mx-auto{
-    margin: 40px;
-    border: lightgray solid 1px;
-  }
+  display: inline-flex;
+  justify-content: center;
+
+}
+.mx-auto{
+  margin: 40px;
+  border: lightgray solid 1px;
+}
 @media screen and (max-width: 768px) {
   .card{
     display: inline-flex;

@@ -52,23 +52,21 @@
 }
 .v-tabs { 
   display: flex; 
-  justify-content: center; 
-  padding-top: 20px;
+  justify-content: center;
   margin-bottom: 40px;
+  background-color: rgb(239, 241, 239);
 }
-.v-tab{
-  height: 100%;
-}
+
 #nav a {
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
   padding: 0 10px;
-  display: inline-block;
   transition: .3s;
   -webkit-transform: scale(1);
   transform: scale(1);
   font-size: 18px;
+  background-color: rgb(239, 241, 239);
 }
 
 #nav a:hover{
