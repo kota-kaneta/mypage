@@ -24,7 +24,7 @@
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
             <div class="details">2021 / 01 〜 現在</div>
-            <h3>mypage</h3>
+            <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
               当サイトです。<br>私が作成したサイトを載せていきます。<br>
@@ -62,7 +62,7 @@
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
           <div id="l_content">
             <div class="details">2020 / 10 〜 2020 / 11</div>
-            <h3>L-searcher</h3>
+            <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
             <img src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>
             知人の暇な時間を確認できるアプリケーションです。<br>
             ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
@@ -88,7 +88,6 @@
 .card{
   display: inline-flex;
   justify-content: center;
-
 }
 .mx-auto{
   margin: 40px;
