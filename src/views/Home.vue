@@ -46,8 +46,6 @@
 .button:active {
   -webkit-transform: translateY(3px);
   transform: translateY(3px);
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-  border-bottom: none;
 }
 @media screen and (max-width: 768px) {
   .button { 
