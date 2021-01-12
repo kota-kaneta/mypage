@@ -24,9 +24,9 @@ export default ({
           position: 'bottom',
           labels : {
             fontSize: 22,
-            padding: 20,
             fontFamily: "Georgia",
-            fontColor:  "#2c3e50"
+            fontColor:  "#2c3e50",
+            padding: 25
           }
         },
         animation: {

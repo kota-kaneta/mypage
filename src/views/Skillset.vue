@@ -27,9 +27,6 @@
 .chart{
   padding-top: 30px;
 }
-.blank{
-  padding: 10px;
-}
 </style>
 
 <script>

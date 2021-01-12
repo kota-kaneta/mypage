@@ -23,7 +23,7 @@
         <transition name="modal">
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
-            <div class="details">2021 / 01 〜 現在</div>
+            <div class="details">2021/01</div>
             <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
@@ -61,7 +61,7 @@
         <transition name="l_modal">
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
           <div id="l_content">
-            <div class="details">2020 / 10 〜 2020 / 11</div>
+            <div class="details">2020/11</div>
             <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
             <img src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>
             知人の暇な時間を確認できるアプリケーションです。<br>
@@ -92,6 +92,7 @@
 .mx-auto{
   margin: 40px;
   border: lightgray solid 1px;
+  box-shadow: 4px 4px;
 }
 @media screen and (max-width: 768px) {
   .card{
@@ -135,9 +136,6 @@
 .show img:hover{
   transform:scale(1.2,1.2);
   transition:0.5s all;
-}
-.blank{
-  padding: 30px;
 }
 a{
   display: block;
@@ -189,21 +187,10 @@ a:active{
   background: #f0f1f1;
   border-radius: 10px;
 }
-.batu{
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  border: 1px solid black;
-}
 .details{
   position: absolute;
   left: 10px;
   top: 10px;
-}
-.close{
-  font-size:23px;
-  border-color: #f0f1f1;
-  outline: none;
 }
 #l_content{
   position: relative;

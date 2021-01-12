@@ -11,6 +11,9 @@
       </v-tabs>
     </div>
     <router-view/>
+    <!-- <p class="github">
+      <i class="fab fa-github"></i>
+    </p> -->
   </div>
 </template>
 
