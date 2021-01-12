@@ -71,7 +71,8 @@ export default {
       skipAfter: false,
       text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form.",
       beforeButton: true,
-      afterButton: false
+      afterButton: false,
+      reverse: "hello!"
     }
   },
   methods: {

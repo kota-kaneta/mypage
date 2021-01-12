@@ -4,44 +4,80 @@
       <div id="about">
         <Header>About<i class="fas fa-user-circle"></i></Header>
         <Separation>Profile / Career</Separation><br>
-        <v-timeline>
-          <v-timeline-item>
-            1998年8月<br><br>
-            群馬県にて生誕
-          </v-timeline-item>
-          <v-timeline-item>
-            2006年〜2016年<br><br>
-            小学校3年から高校3年までの10年間野球部に所属
-          </v-timeline-item>
-          <v-timeline-item>
-            2017年4月<br><br>
-            日本大学理工学部物質応用化学科に入学
-          </v-timeline-item>
-          <v-timeline-item>
-            2020年9月<br><br>
-            コロナによる研究困難により休学<br>
-            同時にプログラミングの勉強を始める<br>
-            （主にRuby on Railsを中心に開発を行う）
-          </v-timeline-item>
-          <v-timeline-item>
-            2020年12月<br><br>
-            エンジニアを目指して大学を中途退学
-          </v-timeline-item>
-          <v-timeline-item>
-            Vue.jsを学習中...
-          </v-timeline-item>
-        </v-timeline>
+        <div>
+          <v-app>
+            <v-timeline>
+              <v-timeline-item color="white">
+                <v-card class="elevation-2">
+                  <v-card-text>
+                  1998年8月
+                  </v-card-text>
+                  群馬県にて生誕
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item color="white">
+                <v-card class="elevation-2">
+                  <v-card-text>
+                2006年〜2016年
+                  </v-card-text>
+                  小学校3年から高校3年までの10年間野球部に所属
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item color="white">
+                <v-card class="elevation-2">
+                  <v-card-text>
+                  2017年4月
+                  </v-card-text>
+                  日本大学理工学部物質応用化学科に入学
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item color="white">
+                <v-card class="elevation-2">
+                  <v-card-text>
+                  2020年9月
+                  </v-card-text>
+                  <p class="blank">
+                  コロナによる研究困難により休学<br>
+                  同時にプログラミングの勉強を始める<br>
+                  （主にRuby on Railsを中心に開発を行う）
+                  </p>
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item color="white">
+                <v-card class="elevation-2">
+                  <v-card-text>
+                  2020年12月
+                  </v-card-text>
+                  エンジニアを目指して大学を中途退学
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item color="white">
+                <v-card class="elevation-2">
+                  <v-card-text>
+                  現在
+                  </v-card-text>
+                  Vue.jsを学習中...
+                </v-card>
+                <p class="timeline"></p>
+              </v-timeline-item>
+            </v-timeline>
+          </v-app>
+        </div>
       </div>
     </transition>
   </div>
 </template>
 
 <style scoped>
-.v-timeline{
-  font-size: 18px;
+.timeline{
+  margin-bottom: 35px;
+}
+.elevation-2{
+  min-height: 95px;
+  margin: 10px 30px;
 }
 .theme--light {
-    background: rgba(186, 187, 186, 0.324);
+    background: rgb(220, 221, 220);
 }
 .fas{
   padding-left: 7px;
@@ -69,6 +105,9 @@ a:hover {
   transform: scale(1.1);
   }
 a:active { color: #ff8000; }
+.blank{
+  padding-bottom: 20px;
+}
 </style>
 
 <script>
