@@ -20,14 +20,14 @@
 <style lang="scss">
 
 .v-enter {
-  transform: translate(100px, 0);
+  transform: translate(0, 100px);
   opacity: 0;
 }
 .v-enter-to {
   opacity: 1;
 }
 .v-enter-active {
-  transition: all 1.2s 0s ease;
+  transition: all 1.5s 0s ease;
 }
 #app {
   font-family: global-variable-exists($name: a);
