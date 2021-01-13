@@ -58,8 +58,8 @@
                   </v-card-text>
                   Vue.jsを学習中...
                 </v-card>
-                <p class="timeline"></p>
               </v-timeline-item>
+              <p class="timeline"></p>
             </v-timeline>
           </v-app>
         </div>
