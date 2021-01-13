@@ -7,7 +7,7 @@
         <div>
           <v-app>
             <v-timeline>
-              <v-timeline-item color="white">
+              <v-timeline-item color="#BDBDBD">
                 <v-card class="elevation-2">
                   <v-card-text>
                   1998年8月
@@ -15,7 +15,7 @@
                   群馬県にて生誕
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="white">
+              <v-timeline-item color="#BDBDBD">
                 <v-card class="elevation-2">
                   <v-card-text>
                 2006年〜2016年
@@ -23,7 +23,7 @@
                   小学校3年から高校3年までの10年間野球部に所属
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="white">
+              <v-timeline-item color="#BDBDBD">
                 <v-card class="elevation-2">
                   <v-card-text>
                   2017年4月
@@ -31,7 +31,7 @@
                   日本大学理工学部物質応用化学科に入学
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="white">
+              <v-timeline-item color="#BDBDBD">
                 <v-card class="elevation-2">
                   <v-card-text>
                   2020年9月
@@ -43,7 +43,7 @@
                   </p>
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="white">
+              <v-timeline-item color="#BDBDBD">
                 <v-card class="elevation-2">
                   <v-card-text>
                   2020年12月
@@ -51,7 +51,7 @@
                   エンジニアを目指して大学を中途退学
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="white">
+              <v-timeline-item color="#FF7043">
                 <v-card class="elevation-2">
                   <v-card-text>
                   現在
@@ -63,12 +63,21 @@
             </v-timeline>
           </v-app>
         </div>
+        <div class="a-git">
+          <a href="https://github.com/kota-kaneta">
+          kota-kaneta <i class="fab fa-github"></i>
+          </a>
+        </div
+        >
       </div>
     </transition>
   </div>
 </template>
 
 <style scoped>
+#about{
+  position: relative;
+}
 .timeline{
   margin-bottom: 35px;
 }
@@ -107,6 +116,11 @@ a:hover {
 a:active { color: #ff8000; }
 .blank{
   padding-bottom: 20px;
+}
+.a-git{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
 }
 </style>
 
