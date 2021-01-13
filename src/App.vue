@@ -220,14 +220,14 @@ a:active { color: #ff8000; }
 //   }
 // }
 
-@keyframes contentScale{
-  70%{
-    transform:perspective(800px) scale(0.9) rotateX(15deg);
-  }
-  100%{
-    transform:perspective(800px) scale(1) rotateX(0);
-  }
-}
+// @keyframes contentScale{
+//   70%{
+//     transform:perspective(800px) scale(0.9) rotateX(15deg);
+//   }
+//   100%{
+//     transform:perspective(800px) scale(1) rotateX(0);
+//   }
+// }
 </style>
 
 <script src="https://kit.fontawesome.com/4194671020.js" crossorigin="anonymous"></script>
