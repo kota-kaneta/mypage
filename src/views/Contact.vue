@@ -220,17 +220,15 @@
   border-radius: 15px;
 }
 .Form-Btn:hover{
-  -webkit-transform: scale(1.08,1.08);
-	-moz-transform: scale(1.08,1.08);
-	-o-transform: scale(1.08,1.08);
-	-ms-transform: scale(1.08,1.08);
-	transform: scale(1.08,1.08);
+  -webkit-transform: scale(1.05,1.05);
+	-moz-transform: scale(1.05,1.05);
+	-o-transform: scale(1.05,1.05);
+	-ms-transform: scale(1.05,1.05);
+	transform: scale(1.05,1.05);
 }
 .Form-Btn:active{
   -webkit-transform: translateY(3px);
   transform: translateY(3px);
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-  border-bottom: none;
 }
 @media screen and (max-width: 480px) {
   .Form-Btn {
@@ -248,7 +246,7 @@
   position: absolute;
   font-size: 19px;
   color: rgb(255, 51, 0);
-  top: 210px;
+  top: 190px;
   left: 42vw;
 }
 @media screen and (max-width: 768px) {

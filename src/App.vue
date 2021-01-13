@@ -10,10 +10,14 @@
         <v-tab to="/contact">Contact</v-tab>
       </v-tabs>
     </div>
+    <!-- （1）アニメーションどこかで使う -->
+    <!-- <div class="shutter"></div>
+    <section class="container"> -->
     <router-view/>
     <!-- <p class="github">
       <i class="fab fa-github"></i>
     </p> -->
+    <!-- </section> -->
   </div>
 </template>
 
@@ -73,7 +77,7 @@ $bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAA
 $bg-width: 50px;
 $bg-height: 50px;
 
-/* Animations */
+/* 常時アニメーション */
 @-webkit-keyframes bg-scrolling-reverse {
   100% { background-position: $bg-width $bg-height; }
 }
@@ -126,6 +130,104 @@ a:link { color: #0000ff; }
 a:visited { color: #000080; }
 a:hover { color: #ff0000; }
 a:active { color: #ff8000; }
+
+// （1）アニメーションどこかで使う
+// .shutter{
+//   position:fixed;
+//   top:0;
+//   left:0;
+//   right:0;
+//   bottom:0;
+//   background-color:#474552;
+//   z-index:9999;
+//   animation: byeShutter 3.0s forwards;
+  
+//   &::before,
+//   &::after{
+//     content:'';
+//     position:absolute;
+//     top:0;
+//     left:0;
+//     bottom:0;
+//     margin:auto;
+//   }
+  
+//   &::before{
+//     background-color:#afb9ce;
+//     width:0;
+//     height:1px;
+//     animation: shutterOpen1 3.0s forwards;
+//   }
+  
+//   &::after{
+//     width:120%;
+//     height:0;
+//     margin-left:-10%;
+//     background-color:#eff1ed2f;
+//     animation: shutterOpen2 3.0s forwards;
+//   }
+// }
+
+// .content{
+//   animation: contentScale 3.0s forwards;
+// }
+
+// @keyframes byeShutter{
+//   70%{
+//     opacity:1;
+//   }
+//   100%{
+//     opacity:0;
+//     display:none;
+//     z-index:-1;
+//   }
+// }
+
+// @keyframes shutterOpen1{
+//   0%{
+//     width:0;
+//     height:1px;
+//   }
+//   50%{
+//     width:100%;
+//     height:1px;
+//   }
+//   90%{
+//     width:100%;
+//     height:100%;
+//   }
+//   100%{
+//     width:100%;
+//     height:100%;
+//   }
+// }
+
+// @keyframes shutterOpen2{
+//   60%{
+//     width:120%;
+//     height:0;
+//     transform:rotate(5deg);
+//   }
+//   90%{
+//     width:120%;
+//     height:100%;
+//     transform:rotate(-5deg);
+//   }
+//   100%{
+//     width:120%;
+//     height:100%;
+//     transform:rotate(-5deg);
+//   }
+// }
+
+@keyframes contentScale{
+  70%{
+    transform:perspective(800px) scale(0.9) rotateX(15deg);
+  }
+  100%{
+    transform:perspective(800px) scale(1) rotateX(0);
+  }
+}
 </style>
 
 <script src="https://kit.fontawesome.com/4194671020.js" crossorigin="anonymous"></script>

@@ -4,7 +4,6 @@
       <div id="about">
         <Header>About<i class="fas fa-user-circle"></i></Header>
         <Separation>Profile / Career</Separation><br>
-        <div>
           <v-app>
             <v-timeline>
               <v-timeline-item color="#BDBDBD">
@@ -51,7 +50,7 @@
                   エンジニアを目指して大学を中途退学
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="#FF7043">
+              <v-timeline-item color="#FF7043" large>
                 <v-card class="elevation-2">
                   <v-card-text>
                   現在
@@ -62,13 +61,11 @@
               <p class="timeline"></p>
             </v-timeline>
           </v-app>
-        </div>
         <div class="a-git">
           <a href="https://github.com/kota-kaneta">
           kota-kaneta <i class="fab fa-github"></i>
           </a>
-        </div
-        >
+        </div>
       </div>
     </transition>
   </div>
