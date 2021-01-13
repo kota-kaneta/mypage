@@ -246,7 +246,7 @@
   position: absolute;
   font-size: 19px;
   color: rgb(255, 51, 0);
-  top: 190px;
+  top: 260px;
   left: 42vw;
 }
 @media screen and (max-width: 768px) {

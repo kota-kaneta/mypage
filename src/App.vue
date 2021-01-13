@@ -47,13 +47,11 @@
 #nav {
   font-size: 1.3em;
   font-weight: bold;
-  margin-bottom: 40px;
 }
 .v-tabs { 
   display: flex; 
   justify-content: center;
   background-color: rgb(238, 234, 234);
-  border: rgb(209, 208, 208) 2px solid;
 }
 
 #nav a {

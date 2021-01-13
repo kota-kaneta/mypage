@@ -21,6 +21,7 @@
 .home{
   font-size: 42px;
   position: relative;
+  padding-top: 40px;
 }
 .button{
   position: fixed;

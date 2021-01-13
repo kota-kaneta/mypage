@@ -4,7 +4,7 @@
       <div id="about">
         <Header>About<i class="fas fa-user-circle"></i></Header>
         <Separation>Profile / Career</Separation><br>
-          <v-app>
+          <v-app class="v-app">
             <v-timeline>
               <v-timeline-item color="#FFF3E0">
                 <v-card class="elevation-2">
@@ -72,11 +72,14 @@
 </template>
 
 <style scoped>
+.v-app{
+  border: 2px solid rgb(211, 209, 209);
+}
 #about{
   position: relative;
 }
 .timeline{
-  margin-bottom: 35px;
+  margin-bottom: 21px;
 }
 .elevation-2{
   min-height: 95px;

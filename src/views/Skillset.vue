@@ -21,6 +21,7 @@
   padding: 40px 0 10px 0;
 }
 .Doughnut{
+  position: relative;
   justify-content: center;
   align-items: center;
 }

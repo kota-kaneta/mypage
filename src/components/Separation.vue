@@ -7,6 +7,7 @@
   padding-top: 42px;
   font-size: 26px;
 }
+
 </style>
 
 <script>

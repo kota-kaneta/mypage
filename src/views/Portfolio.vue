@@ -84,6 +84,9 @@
 </template>
 
 <style lang="scss" scoped>
+#portfolio{
+  position: relative;
+}
 .card{
   display: inline-flex;
   justify-content: center;
