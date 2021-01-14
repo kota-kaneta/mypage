@@ -46,6 +46,7 @@
 #nav {
   font-size: 1.3em;
   font-weight: bold;
+  background-color:rgb(252, 248, 248);
 }
 .v-tabs { 
   display: flex; 
@@ -58,9 +59,6 @@
   font-weight: bold;
   color: #2c3e50;
   padding: 0 20px;
-  transition: .3s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
   font-size: 18px;
   background-color:rgb(252, 248, 248);
 }
