@@ -68,7 +68,7 @@
 }
 
 .Form {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -210,13 +210,13 @@
   width: 280px;
   display: block;
   letter-spacing: 0.05em;
-  background: #5bc8ac;
+  background:  #2c3e50;
   color: #fff;
   font-weight: bold;
   display: inline-block;
   padding: 1em 1em;
   outline: none;
-  border-bottom: solid 4px #627295;
+  border: solid 2px #627295;
   border-radius: 15px;
 }
 .Form-Btn:hover{
@@ -246,7 +246,7 @@
   position: absolute;
   font-size: 19px;
   color: rgb(255, 51, 0);
-  top: 260px;
+  top: 230px;
   left: 42vw;
 }
 @media screen and (max-width: 768px) {
