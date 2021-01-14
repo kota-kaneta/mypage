@@ -1,8 +1,9 @@
 <template>
-  <div id="portfolio">
+  <div id="works">
     <transition appear>
       <div>
-        <Header>Portfolio<i class="fas fa-book-open"></i></Header>
+        <Header>Works<i class="fas fa-book-open"></i></Header>
+        <Separation>Portfolio</Separation>
       <div class="card">
         <v-card class="mx-auto" max-width="344">
           <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
@@ -84,13 +85,13 @@
 </template>
 
 <style lang="scss" scoped>
-#portfolio{
+#works{
   position: relative;
 }
 .card{
   display: inline-flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .mx-auto{
   margin: 40px;
@@ -123,7 +124,7 @@
   color: red;
 }
 
-#portfolio{
+#works{
   font-size: 23px;
 }
 .show{
@@ -241,11 +242,13 @@ a:active{
 
 <script>
 import Header from "@/components/Header.vue";
+import Separation from '../components/Separation.vue';
 
 export default {
-  name: "#portfolio",
+  name: "#Works",
   components: {
-    Header
+    Header,
+    Separation
   },
   data: function(){
     return{

@@ -3,8 +3,7 @@
     <transition appear>
       <div>
         <Header>Skillset<i class="fas fa-laptop-code"></i></Header>
-        <p class="blank"></p>
-        <h2 class="lf">Language / Framework</h2>
+        <Separation>Language / Framework</Separation>
         <div class="chart">
           <chart></chart>
         </div>
@@ -33,12 +32,14 @@
 <script>
 import Header from "@/components/Header.vue"
 import Chart from './Chart';
+import Separation from '../components/Separation.vue';
 
 export default {
   name: "skillset",
   components: {
     Chart,
-    Header
+    Header,
+    Separation
   },
 }
 </script>

@@ -4,7 +4,7 @@
       <div>
         <Header v-if="isSubmit === false">Contact<i class="fab fa-telegram"></i></Header>
         <Separation v-if="isSubmit === false">
-          お問い合わせフォーム
+          Contact Form
         </Separation>
         <form v-if="isSubmit === false" @submit.prevent="onSubmit" name="contact" netlify>
           <div class="Form" name="contact">
