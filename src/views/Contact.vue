@@ -43,7 +43,9 @@
     <div v-if="isSubmit === true" class="thank">
       お問い合わせありがとうございました<i class="far fa-laugh-squint"></i>
     </div>
-    <div v-if="nothing === true" class="nothing">※各項目はすべて必須です</div>
+    <div v-if="nothing === true" class="nothing">
+      <i class="fas fa-exclamation-triangle"></i>各項目はすべて必須です
+    </div>
   </div>
 </template>
 
@@ -216,7 +218,7 @@
   display: inline-block;
   padding: 1em 1em;
   outline: none;
-  border: solid 2px #627295;
+  border: solid 1px #627295;
   border-radius: 15px;
 }
 .Form-Btn:hover{
