@@ -73,7 +73,7 @@
 
 <style scoped>
 .v-app{
-  border: 2px solid rgb(211, 209, 209);
+  border: 1px solid rgb(233, 230, 230);
 }
 #about{
   position: relative;
@@ -86,7 +86,7 @@
   margin: 10px 30px;
 }
 .theme--light {
-    background: rgb(221, 221, 220);
+    background: rgba(202, 202, 201, 0.577);
 }
 .fas{
   padding-left: 7px;

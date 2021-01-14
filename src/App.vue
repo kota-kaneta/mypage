@@ -42,7 +42,6 @@
   text-shadow: 1px 1px 3px #808080;
   height: 100vh;
   position: relative;
-  background-color: rgba(199, 198, 198, 0.331);
 }
 #nav {
   font-size: 1.3em;
@@ -51,7 +50,8 @@
 .v-tabs { 
   display: flex; 
   justify-content: center;
-  background-color: rgb(238, 234, 234);
+  background-color: rgb(252, 248, 248);
+  border: 2px solid rgba(233, 233, 233, 0.769);
 }
 
 #nav a {
@@ -62,7 +62,7 @@
   -webkit-transform: scale(1);
   transform: scale(1);
   font-size: 18px;
-  background-color:rgb(238, 234, 234);
+  background-color:rgb(252, 248, 248);
 }
 
 .v-tabs-slider{
