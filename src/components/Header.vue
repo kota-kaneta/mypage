@@ -7,11 +7,8 @@
 <style>
 header {
   font-size: 20px;
-  margin: 0px auto 30px auto;
   padding-top: 30px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #2c3e50;
-  width: 30vw;
+  padding-bottom: 30px;
 }
 </style>
 

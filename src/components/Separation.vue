@@ -4,9 +4,31 @@
 
 <style>
 .separation{
-  padding-top: 42px;
-  font-size: 26px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  font-size: 27px;
+  padding-bottom: 30px;
+}
+h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+h2:before, h2:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 530px;
+  height: 1px;
+  background-color: #2c3e50;
+}
+
+h2:before {
+  left:-500px;
+}
+h2:after {
+  right: -500px;
 }
 </style>
 

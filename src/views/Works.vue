@@ -89,7 +89,7 @@
   position: relative;
 }
 .card{
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   margin-top: 20px;
 }
