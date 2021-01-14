@@ -86,7 +86,7 @@
   margin: 10px 30px;
 }
 .theme--light {
-    background: rgba(202, 202, 201, 0.577);
+    background: rgba(218, 218, 216, 0.577);
 }
 .fas{
   padding-left: 7px;
