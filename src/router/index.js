@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import About from '../views/About.vue'
+import Skillset from '../views/Skillset.vue'
+import Portfolio from '../views/Portfolio.vue'
+import Contact from '../views/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -13,22 +17,22 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/About.vue')
+    component: About
   },
   {
     path: '/skillset',
     name: 'Skillset',
-    component: () => import('../views/Skillset.vue')
+    component: Skillset
   },
   {
     path: '/portfolio',
     name: 'Portfolio',
-    component: () => import('../views/Portfolio.vue')
+    component: Portfolio
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import('../views/Contact.vue')
+    component: Contact
   }
 ]
 
