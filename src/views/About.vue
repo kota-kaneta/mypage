@@ -72,9 +72,6 @@
 </template>
 
 <style scoped>
-.v-app{
-  border: 1px solid rgb(233, 230, 230);
-}
 #about{
   position: relative;
 }
@@ -86,7 +83,11 @@
   margin: 10px 30px;
 }
 .theme--light {
-    background: rgba(218, 218, 216, 0.577);
+  background: rgb(218, 218, 216, 0.577);
+}
+.theme--light.v-card {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.87);
 }
 .fas{
   padding-left: 7px;
