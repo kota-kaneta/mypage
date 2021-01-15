@@ -19,16 +19,16 @@ h2:before, h2:after {
   position: absolute;
   top: 50%;
   display: inline-block;
-  width: 530px;
+  width: 400px;
   height: 1px;
   background-color: #2c3e50;
 }
 
 h2:before {
-  left:-500px;
+  left:-370px;
 }
 h2:after {
-  right: -500px;
+  right: -370px;
 }
 </style>
 
