@@ -10,7 +10,7 @@
             <v-sheet height="120%" tile :color="color">
               <div class="bubble">
                 ※当サイト<br> <br>
-                ただいま鋭意制作中（2021年1月現在）
+                ただいま鋭意更新中（2021年1月現在）
               </div>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
@@ -67,27 +67,27 @@
           </v-carousel-item>
         </v-carousel>
       </div>
-      <div class="phone">
-        <v-app>
+    <div class="phone">
+      <v-app>
       <v-card class="mx-auto" max-width="344" @click="openModal">
-                    <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
-                    <v-card-title>
-                      <h3><i class="far fa-sticky-note"></i>mypage</h3>
-                    </v-card-title>
-                    <v-card-subtitle>
-                      <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
-                    </v-card-subtitle>
-                  </v-card>
-                  <v-card class="mx-auto" max-width="344" @click="l_openModal">
-                    <v-img src="@/assets/notifications.png" width="350" height="195" border="1"></v-img>
-                    <v-card-title>
-                      <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
-                    </v-card-title>
-                    <v-card-subtitle>
-                      <span class="sub">Rails / AWS / Capistrano ...etc</span>
-                    </v-card-subtitle>
-                 </v-card>
-        </v-app>
+        <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
+        <v-card-title>
+          <h3><i class="far fa-sticky-note"></i>mypage</h3>
+        </v-card-title>
+        <v-card-subtitle>
+          <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
+        </v-card-subtitle>
+      </v-card>
+      <v-card class="mx-auto" max-width="344" @click="l_openModal">
+        <v-img src="@/assets/notifications.png" width="350" height="195" border="1"></v-img>
+        <v-card-title>
+          <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
+        </v-card-title>
+        <v-card-subtitle>
+          <span class="sub">Rails / AWS / Capistrano ...etc</span>
+        </v-card-subtitle>
+      </v-card>
+      </v-app>
     </div>
     </div>
   </transition>
