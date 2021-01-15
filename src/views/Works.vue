@@ -29,6 +29,10 @@
           </v-carousel-item>
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
+              <div class="bubble">
+                ※1作目<br><br>
+                サーバーやインフラに力を入れました<i class="fas fa-grin-squint"></i>
+              </div>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
                   <v-card class="mx-auto" max-width="344" @click="l_openModal">
@@ -63,6 +67,28 @@
           </v-carousel-item>
         </v-carousel>
       </div>
+      <div class="phone">
+        <v-app>
+      <v-card class="mx-auto" max-width="344" @click="openModal">
+                    <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
+                    <v-card-title>
+                      <h3><i class="far fa-sticky-note"></i>mypage</h3>
+                    </v-card-title>
+                    <v-card-subtitle>
+                      <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
+                    </v-card-subtitle>
+                  </v-card>
+                  <v-card class="mx-auto" max-width="344" @click="l_openModal">
+                    <v-img src="@/assets/notifications.png" width="350" height="195" border="1"></v-img>
+                    <v-card-title>
+                      <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
+                    </v-card-title>
+                    <v-card-subtitle>
+                      <span class="sub">Rails / AWS / Capistrano ...etc</span>
+                    </v-card-subtitle>
+                 </v-card>
+        </v-app>
+    </div>
     </div>
   </transition>
   
@@ -72,9 +98,9 @@
           <div id="content">
             <div class="details">2021/01</div>
             <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-            <img src="@/assets/mypage.gif" width="350" height="195" border="1">
+            <img src="@/assets/mypage.gif" width="350" height="195" border="1"><br><br>
             <p> 
-              私が作成したポートフォリオを載せていきます。<br>
+              私が作成したポートフォリオを載せております。<br>
               お問い合わせフォームから気軽にメッセージよろしくお願いします。<br><br>
               （Vue.js / Node.js / Netlify ...etc）<br><br>
               <a href="https://kota-kaneta.netlify.app/" ontouchstart="">
@@ -305,6 +331,16 @@ a:active{
     border-left-color:#2C3E50;
     left:100%;
     top:50%;
+}
+
+@media screen and (max-width: 768px) {
+  .bubble,
+  .carousel{ 
+    display:none; 
+  }
+}
+@media screen and (min-width: 767px) {
+  .phone { display: none}
 }
 </style>
 
