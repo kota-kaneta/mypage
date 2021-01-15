@@ -4,23 +4,65 @@
       <div>
         <Header>Works<i class="fas fa-book-open"></i></Header>
         <Separation>Portfolio</Separation>
-      <div class="card">
-        <v-card class="mx-auto" max-width="344">
-          <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
-          <v-card-title>
-            <h3><i class="far fa-sticky-note"></i>mypage</h3>
-          </v-card-title>
-          <v-card-subtitle>
-             Vue.js / Node.js / Netlify ...etc
-          </v-card-subtitle>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn icon @click="openModal">
-              <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-
+        <div class="carousel">
+        <v-carousel cycle :key="color" :show-arrows="false" height="607">
+          <v-carousel-item>
+            <v-sheet height="120%" tile :color="color">
+              <v-row class="fill-height" align="center" justify="center">
+                <div class="display-3">
+                  <v-card class="mx-auto" max-width="344" @click="openModal">
+                    <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
+                    <v-card-title>
+                      <h3><i class="far fa-sticky-note"></i>mypage</h3>
+                    </v-card-title>
+                    <v-card-subtitle>
+                      <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
+                    </v-card-subtitle>
+                  </v-card>
+                </div>
+              </v-row>
+            </v-sheet>
+          </v-carousel-item>
+          <v-carousel-item>
+            <v-sheet height="120%" tile :color="color">
+              <v-row class="fill-height" align="center" justify="center">
+                <div class="display-3">
+                  <v-card class="mx-auto" max-width="344" @click="l_openModal">
+                    <v-img src="@/assets/notifications.png" width="350" height="195" border="1"></v-img>
+                    <v-card-title>
+                      <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
+                    </v-card-title>
+                    <v-card-subtitle>
+                      <span class="sub">Rails / AWS / Capistrano ...etc</span>
+                    </v-card-subtitle>
+                 </v-card>
+                </div>
+              </v-row>
+            </v-sheet>
+          </v-carousel-item>
+          <v-carousel-item>
+            <v-sheet height="120%" tile :color="color">
+              <v-row class="fill-height" align="center" justify="center">
+                <div class="display-3">
+                  <v-card class="mx-auto" max-width="344">
+                    <v-img class="coming"><span class="sub">Coming soon...</span></v-img>
+                    <v-card-title>
+                      <h3><i class="far fa-sticky-note"></i>???</h3>
+                    </v-card-title>
+                    <v-card-subtitle>
+                      <span class="sub">???</span>
+                    </v-card-subtitle>
+                  </v-card>
+                </div>
+              </v-row>
+            </v-sheet>
+          </v-carousel-item>
+        </v-carousel>
+      </div>
+    </div>
+  </transition>
+  
+<!-- モーダル -->
         <transition name="modal">
         <div id="overlay" v-show="showContent" v-on:click="closeModal">
           <div id="content">
@@ -41,23 +83,6 @@
            </div>
         </div>
         </transition>
-
-        <v-card class="mx-auto" max-width="344">
-          <v-img src="@/assets/notifications.png" width="350" height="195" border="1"></v-img>
-          <v-card-title>
-            <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
-          </v-card-title>
-          <v-card-subtitle>
-            Rails / AWS / Capistrano ...etc
-          </v-card-subtitle>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn icon @click="l_openModal">
-              <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </div>
 
         <transition name="l_modal">
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
@@ -80,34 +105,28 @@
         </div>
         </transition>
       </div>
-    </transition>
-  </div>
 </template>
 
 <style lang="scss" scoped>
 #works{
   position: relative;
 }
-.card{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
 .mx-auto{
-  margin: 40px;
+  margin-top: 130px;
+  margin-left:680px;
+  height: 360px;
   border: lightgray solid 1px;
   box-shadow: 4px 4px;
+  background-color: white;
+  color: #2c3e50;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  font-family: global-variable-exists($name: a);
 }
-@media screen and (max-width: 768px) {
-  .card{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .mx-auto{
-    margin-bottom: 20px;
-    border: lightgray solid 1px;
-  }
+.mx-auto:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .v-card__subtitle {
   text-align: left;
@@ -238,6 +257,19 @@ a:active{
     transform: scale(1);
   }
 }
+.sub{
+  color: #2c3e50;
+}
+.coming{
+  color: #2c3e50;
+  font-size: 30px;
+  width: 350px;
+  height: 200px;
+  padding-top: 65px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.521);
+  background-color: rgb(249, 246, 246);
+  font-family: global-variable-exists($name: a);
+}
 </style>
 
 <script>
@@ -246,6 +278,7 @@ import Separation from '../components/Separation.vue';
 
 export default {
   name: "#Works",
+  theme: { dark: true },
   components: {
     Header,
     Separation
@@ -253,7 +286,9 @@ export default {
   data: function(){
     return{
       showContent: false,
-      l_showContent: false
+      l_showContent: false,
+      model: 0,
+      color: '#CFD8DC'
     }
   },
   methods:{
