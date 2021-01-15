@@ -8,6 +8,10 @@
         <v-carousel cycle :key="color" :show-arrows="false" height="607">
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
+              <div class="bubble">
+                ※当サイト<br> <br>
+                ただいま鋭意制作中（2021年1月現在）
+              </div>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
                   <v-card class="mx-auto" max-width="344" @click="openModal">
@@ -70,8 +74,8 @@
             <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
             <img src="@/assets/mypage.gif" width="350" height="195" border="1">
             <p> 
-              当サイトです。<br>私が作成したサイトを載せていきます。<br>
-              Contactフォームから気軽にお問い合わせください。<br><br>
+              私が作成したポートフォリオを載せていきます。<br>
+              お問い合わせフォームから気軽にメッセージよろしくお願いします。<br><br>
               （Vue.js / Node.js / Netlify ...etc）<br><br>
               <a href="https://kota-kaneta.netlify.app/" ontouchstart="">
                 <p><i class="far fa-sticky-note"></i> mypage</p>
@@ -270,6 +274,37 @@ a:active{
   background-color: rgb(249, 246, 246);
   font-family: global-variable-exists($name: a);
   color: #cfd8dc49;
+}
+.bubble{
+  position: absolute;
+  bottom: 260px;
+  left: 250px;
+  padding-top:35px;
+  width:300px;
+  height:140px;
+  background:#2C3E50;
+  text-align:center;
+  font-size:14px;
+  border-radius:15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+}
+.bubble:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-color: rgba(44, 62, 80, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:30px;
+    border-right-width:30px;
+    margin-top: -10px;
+    border-left-color:#2C3E50;
+    left:100%;
+    top:50%;
 }
 </style>
 
