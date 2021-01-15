@@ -269,6 +269,7 @@ a:active{
   border-bottom: 1px solid rgba(211, 211, 211, 0.521);
   background-color: rgb(249, 246, 246);
   font-family: global-variable-exists($name: a);
+  color: #cfd8dc49;
 }
 </style>
 
@@ -288,7 +289,7 @@ export default {
       showContent: false,
       l_showContent: false,
       model: 0,
-      color: '#CFD8DC'
+      color: '#cfd8dc79'
     }
   },
   methods:{
