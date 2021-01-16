@@ -101,7 +101,7 @@
             <img src="@/assets/mypage.gif" width="350" height="195" border="1"><br><br>
             <p> 
               私が作成したポートフォリオを載せております。<br>
-              お問い合わせフォームから気軽にメッセージよろしくお願いします。<br><br>
+              お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
               （Vue.js / Node.js / Netlify ...etc）<br><br>
               <a href="https://kota-kaneta.netlify.app/" ontouchstart="">
                 <p><i class="far fa-sticky-note"></i> mypage</p>
