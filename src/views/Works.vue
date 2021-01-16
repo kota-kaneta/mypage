@@ -10,7 +10,7 @@
             <v-sheet height="120%" tile :color="color">
               <div class="bubble">
                 ※1作目<br><br>
-                サーバーやインフラに力を入れました<i class="fas fa-grin-squint"></i>
+                サーバーやインフラに力を入れました。
               </div>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
@@ -30,8 +30,8 @@
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
               <div class="bubble">
-                ※当サイト<br> <br>
-                ただいま鋭意更新中（2021年1月現在）
+                ※2作目（当サイト）<br> <br>
+                VueCLIを使用しました。
               </div>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
