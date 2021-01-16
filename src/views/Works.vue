@@ -9,27 +9,6 @@
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
               <div class="bubble">
-                ※当サイト<br> <br>
-                ただいま鋭意更新中（2021年1月現在）
-              </div>
-              <v-row class="fill-height" align="center" justify="center">
-                <div class="display-3">
-                  <v-card class="mx-auto" max-width="344" @click="openModal">
-                    <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
-                    <v-card-title>
-                      <h3><i class="far fa-sticky-note"></i>mypage</h3>
-                    </v-card-title>
-                    <v-card-subtitle>
-                      <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
-                    </v-card-subtitle>
-                  </v-card>
-                </div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-sheet height="120%" tile :color="color">
-              <div class="bubble">
                 ※1作目<br><br>
                 サーバーやインフラに力を入れました<i class="fas fa-grin-squint"></i>
               </div>
@@ -44,6 +23,27 @@
                       <span class="sub">Rails / AWS / Capistrano ...etc</span>
                     </v-card-subtitle>
                  </v-card>
+                </div>
+              </v-row>
+            </v-sheet>
+          </v-carousel-item>
+          <v-carousel-item>
+            <v-sheet height="120%" tile :color="color">
+              <div class="bubble">
+                ※当サイト<br> <br>
+                ただいま鋭意更新中（2021年1月現在）
+              </div>
+              <v-row class="fill-height" align="center" justify="center">
+                <div class="display-3">
+                  <v-card class="mx-auto" max-width="344" @click="openModal">
+                    <v-img src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
+                    <v-card-title>
+                      <h3><i class="far fa-sticky-note"></i>mypage</h3>
+                    </v-card-title>
+                    <v-card-subtitle>
+                      <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
+                    </v-card-subtitle>
+                  </v-card>
                 </div>
               </v-row>
             </v-sheet>
