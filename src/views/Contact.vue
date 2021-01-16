@@ -66,7 +66,7 @@
 }
 .thank{
   font-size: 35px;
-  padding-top: 25vh;
+  padding-top: 39vh;
 }
 
 .Form {
