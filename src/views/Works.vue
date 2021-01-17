@@ -15,7 +15,7 @@
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
                   <v-card class="mx-auto" max-width="344" @click="l_openModal">
-                    <v-img rel="preload" src="@/assets/notifications.png" width="350" height="195" border="1"></v-img>
+                    <v-img width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
                     <v-card-title>
                       <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
                     </v-card-title>
@@ -36,7 +36,7 @@
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
                   <v-card class="mx-auto" max-width="344" @click="openModal">
-                    <v-img rel="preload" src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
+                    <v-img width="350" height="200" border="1" :src="images.m_firstimage" key="m_firstImage"></v-img>
                     <v-card-title>
                       <h3><i class="far fa-sticky-note"></i>mypage</h3>
                     </v-card-title>
@@ -98,7 +98,7 @@
           <div id="content">
             <div class="details">2021/01</div>
             <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-            <img rel="preload" src="@/assets/mypage.gif" width="350" height="195" border="1"><br><br>
+            <img :src="images.m_secondimage" key="m_scondImage" width="350" height="195" border="1"><br><br>
             <p> 
               私が作成したポートフォリオを載せております。<br>
               お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
@@ -119,7 +119,7 @@
           <div id="l_content">
             <div class="details">2020/11</div>
             <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-            <img rel="preload" src="@/assets/l-searcher.gif" width="350" height="195" border="1"><br><br>
+            <img :src="images.l_secondimage" key="l_scondImage" width="350" height="195" border="1"><br><br>
             知人の暇な時間を確認できるアプリケーションです。<br>
             ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
             そのユーザーが登録している週のスケジュールがタイムラインに表示されます。<br><br>
@@ -360,7 +360,13 @@ export default {
       showContent: false,
       l_showContent: false,
       model: 0,
-      color: '#cfd8dc79'
+      color: '#cfd8dc79',
+      images: {
+        l_firstimage: require("@/assets/notifications.png"),
+        l_secondimage: require("@/assets/l-searcher.gif"),
+        m_firstimage: require("@/assets/contact.png"),
+        m_secondimage: require("@/assets/mypage.gif"),
+      }
     }
   },
   methods:{
