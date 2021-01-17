@@ -66,7 +66,6 @@
 .v-tabs-slider{
   color: #2c3e50;
 }
-@import url(https://fonts.googleapis.com/css?family=Exo:100);
 
 /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
 $bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
@@ -233,4 +232,19 @@ a:active { color: #ff8000; }
 export default {
   name: "#app"
 }
+
+window.WebFontConfig = {
+  google: { families: ['Montserrat:400,600'] },
+  active: function() {
+    sessionStorage.fonts = true;
+  }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = 'https://fonts.googleapis.com/css?family=Exo:100';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
 </script>
