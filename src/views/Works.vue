@@ -296,8 +296,7 @@ a:active{
   width: 350px;
   height: 200px;
   padding-top: 65px;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.521);
-  background-color: rgb(249, 246, 246);
+  border-bottom: 2px solid rgba(211, 211, 211, 0.521);
   font-family: global-variable-exists($name: a);
   color: #cfd8dc49;
 }
