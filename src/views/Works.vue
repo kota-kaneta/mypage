@@ -103,9 +103,9 @@
               私が作成したポートフォリオを載せております。<br>
               お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
               （Vue.js / Node.js / Netlify ...etc）<br><br>
-              <a href="https://kota-kaneta.netlify.app/" ontouchstart="">
+              <router-link to="/">
                 <p><i class="far fa-sticky-note"></i> mypage</p>
-              </a>
+              </router-link>
               <a href="https://github.com/kota-kaneta">
                 <p><i class="fab fa-github"></i> GitHub (mypage)</p>
               </a>
