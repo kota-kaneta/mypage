@@ -8,6 +8,9 @@
         <v-carousel cycle :key="color" :show-arrows="false" height="607">
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
+              <div class="ruby-back">
+                <img src="@/assets/ruby.svg">
+              </div>
               <div class="bubble">
                 ※1作目<br><br>
                 サーバーやインフラに力を入れました。
@@ -29,6 +32,9 @@
           </v-carousel-item>
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
+              <div class="vue-back">
+                <img src="@/assets/prog-js01.svg">
+              </div>
               <div class="bubble">
                 ※2作目（当サイト）<br> <br>
                 VueCLIを使用しました。
@@ -142,7 +148,7 @@
   position: relative;
 }
 .mx-auto{
-  margin-top: 130px;
+  margin-top: 140px;
   margin-left:680px;
   height: 360px;
   border: lightgray solid 1px;
@@ -331,7 +337,12 @@ a:active{
     left:100%;
     top:50%;
 }
-
+.ruby-back,
+.vue-back{
+  position: absolute;
+  top: 30px;
+  right: 330px;
+}
 @media screen and (max-width: 768px) {
   .bubble,
   .carousel{ 
