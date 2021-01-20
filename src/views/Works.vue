@@ -9,7 +9,7 @@
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
               <div class="ruby-back">
-                <img src="@/assets/ruby.svg">
+                <img :src="images.ruby_image" key="rubyImage">
               </div>
               <div class="bubble">
                 ※1作目<br><br>
@@ -33,7 +33,7 @@
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
               <div class="vue-back">
-                <img src="@/assets/prog-js01.svg">
+                <img :src="images.js_image" key="jsImage">
               </div>
               <div class="bubble">
                 ※2作目（当サイト）<br> <br>
@@ -376,6 +376,8 @@ export default {
         l_secondimage: require("@/assets/l-searcher.gif"),
         m_firstimage: require("@/assets/contact.png"),
         m_secondimage: require("@/assets/mypage.gif"),
+        ruby_image: require("@/assets/ruby.svg"),
+        js_image: require("@/assets/prog-js01.svg")
       }
     }
   },
