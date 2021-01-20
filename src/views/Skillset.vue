@@ -7,6 +7,11 @@
         <div class="chart">
           <chart></chart>
         </div>
+        <div class="a-git">
+          <a href="https://github.com/kota-kaneta">
+          kota-kaneta <i class="fab fa-github"></i>
+          </a>
+      </div>
       </div>
     </transition>
   </div>
@@ -26,6 +31,33 @@
 }
 .chart{
   padding-top: 30px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+a:link { color: #0000ff; }
+a:visited { color: #000080; }
+a:hover {
+  color: #ff0000;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  }
+a:active { color: #ff8000; }
+.blank{
+  padding-bottom: 20px;
+}
+.a-git{
+  position: absolute;
+  bottom: -200px;
+  right: 40px;
+  font-size: 20px;
+}
+.fab{
+  font-size: 30px;
 }
 </style>
 
