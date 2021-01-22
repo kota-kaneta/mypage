@@ -5,13 +5,8 @@
         <Header>Skillset<i class="fas fa-chart-pie"></i></Header>
         <Separation>Language / Framework</Separation>
         <div class="chart">
-          <chart></chart>
+          <chart style="margin:auto; height:55vh; width:55vw"></chart>
         </div>
-        <div class="a-git">
-          <a href="https://github.com/kota-kaneta">
-          kota-kaneta <i class="fab fa-github"></i>
-          </a>
-      </div>
       </div>
     </transition>
   </div>

@@ -26,7 +26,7 @@ export default ({
             fontSize: 22,
             fontFamily: "Georgia",
             fontColor:  "#2c3e50",
-            padding: 25
+            padding: 32
           }
         },
         animation: {
