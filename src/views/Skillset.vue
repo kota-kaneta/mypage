@@ -2,7 +2,7 @@
   <div class="Doughnut">
     <transition appear>
       <div>
-        <Header>Skillset<i class="fas fa-laptop-code"></i></Header>
+        <Header>Skillset<i class="fas fa-chart-pie"></i></Header>
         <Separation>Language / Framework</Separation>
         <div class="chart">
           <chart></chart>
