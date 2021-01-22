@@ -32,8 +32,11 @@
           </v-carousel-item>
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
-              <div class="vue-back">
+              <!-- <div class="vue-back">
                 <img :src="images.js_image" key="jsImage">
+              </div> -->
+              <div class="js">
+                <i class="fab fa-js-square"></i>
               </div>
               <div class="bubble">
                 ※2作目（当サイト）<br> <br>
@@ -56,6 +59,13 @@
           </v-carousel-item>
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
+              <div class="question">
+                <i class="fas fa-question-circle"></i>
+              </div>
+              <div class="bubble">
+                <br>
+                ......................
+              </div>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
                   <v-card class="mx-auto" max-width="344">
@@ -73,6 +83,9 @@
           </v-carousel-item>
         </v-carousel>
       </div>
+
+
+    <!-- スマホ -->
     <div class="phone">
       <v-app>
       <v-card class="mx-auto" max-width="344" @click="openModal">
@@ -123,7 +136,7 @@
         <transition name="l_modal">
         <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
           <div id="l_content">
-            <div class="details">2020/11</div>
+            <div class="details">2020/12</div>
             <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
             <img :src="images.l_secondimage" key="l_scondImage" width="350" height="195" border="1"><br><br>
             知人の暇な時間を確認できるアプリケーションです。<br>
@@ -301,7 +314,7 @@ a:active{
   font-size: 30px;
   width: 350px;
   height: 200px;
-  padding-top: 65px;
+  padding-top: 70px;
   border-bottom: 2px solid rgba(211, 211, 211, 0.521);
   font-family: global-variable-exists($name: a);
   color: #cfd8dc49;
@@ -343,6 +356,14 @@ a:active{
   top: 30px;
   right: 330px;
 }
+.question,
+.js{
+  position: absolute;
+  top: -130px;
+  right: 330px;
+  font-size: 550px;
+  color: black;
+}
 @media screen and (max-width: 768px) {
   .bubble,
   .carousel{ 
@@ -377,7 +398,7 @@ export default {
         m_firstimage: require("@/assets/contact.png"),
         m_secondimage: require("@/assets/mypage.gif"),
         ruby_image: require("@/assets/ruby.svg"),
-        js_image: require("@/assets/prog-js01.svg")
+        // js_image: require("@/assets/prog-js01.svg")
       }
     }
   },
