@@ -12,7 +12,7 @@
     </div>
     <!-- （1）アニメーションどこかで使う -->
     <!-- <div class="shutter"></div>
-    <section class="container"> -->
+    <section class="content"> -->
     <router-view/>
     <!-- <p class="github">
       <i class="fab fa-github"></i>

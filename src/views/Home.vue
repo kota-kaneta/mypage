@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+      <!-- <v-card class="mx-auto" height="256" rounded="xl" width="500" @click="go" v-show="anime">
+        Click!
+      </v-card> -->
       <div v-show="skipBefore">
         <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth"></vue-typer>
       </div>
@@ -50,6 +53,21 @@
     display:none; 
   }
 }
+.mx-auto{
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.mx-auto:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 </style>
 
 <script>
@@ -70,7 +88,8 @@ export default {
       text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form.",
       beforeButton: true,
       afterButton: false,
-      reverse: "hello!"
+      reverse: "hello!",
+      anime: true
     }
   },
   methods: {
@@ -79,6 +98,9 @@ export default {
       this.skipAfter = true,
       this.beforeButton = false,
       this.afterButton = true
+    },
+    go: function(){
+      this.anime = false
     }
   }
 }
