@@ -1,22 +1,22 @@
 <template>
   <div class="home">
-      <!-- <v-card class="mx-auto" height="256" rounded="xl" width="500" @click="go" v-show="anime">
-        Click!
-      </v-card> -->
-      <div v-show="skipBefore">
-        <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth"></vue-typer>
-      </div>
-      <div v-show="skipAfter">
-      Thank you for visiting this site！<br><br>
-      Nice to meet you, I'm Kota Kaneta.<br>
-      You can see the skills I have by looking at this site.<br>
-      You can also check the source code of the portfolio.<br><br>
-      If you are interested in me, please contact us using the contact form.
-      </div>
-      <span v-show="beforeButton" @click="skip" class="button">
-        <i class="fas fa-forward"></i>skip
-      </span>
-     <span v-show="afterButton"><i class="far fa-laugh-squint"></i></span>
+    <!-- <v-card class="mx-auto" height="256" rounded="xl" width="500" @click="go" v-show="anime">
+      Click!
+    </v-card> -->
+    <div v-show="skipBefore">
+      <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth"></vue-typer>
+    </div>
+    <div v-show="skipAfter">
+    Thank you for visiting this site！<br><br>
+    Nice to meet you, I'm Kota Kaneta.<br>
+    You can see the skills I have by looking at this site.<br>
+    You can also check the source code of the portfolio.<br><br>
+    If you are interested in me, please contact us using the contact form.
+    </div>
+    <span v-show="beforeButton" @click="skip" class="button">
+      <i class="fas fa-forward"></i>skip
+    </span>
+    <span v-show="afterButton"><i class="far fa-laugh-squint"></i></span>
   </div>
 </template>
 

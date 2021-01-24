@@ -129,7 +129,7 @@
                 <p><i class="fab fa-github"></i> GitHub (mypage)</p>
               </a>
             </p>
-           </div>
+          </div>
         </div>
         </transition>
 
