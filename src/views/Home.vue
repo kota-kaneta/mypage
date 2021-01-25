@@ -8,7 +8,7 @@
     </div>
     <div v-show="skipAfter">
     Thank you for visiting this site！<br><br>
-    Nice to meet you, I'm Kota Kaneta.<br>
+    Nice to meet you, I'm Kota Kaneta.<br><br>
     You can see the skills I have by looking at this site.<br>
     You can also check the source code of the portfolio.<br><br>
     If you are interested in me, please contact us using the contact form.
@@ -24,7 +24,7 @@
 .home{
   font-size: 42px;
   position: relative;
-  padding-top: 40px;
+  padding-top: 90px;
 }
 .button{
   position: fixed;
@@ -85,7 +85,7 @@ export default {
     return{
       skipBefore: true,
       skipAfter: false,
-      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form.",
+      text: "Thank you for visiting this site！\n\nNice to meet you, I'm Kota Kaneta.\n\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form.",
       beforeButton: true,
       afterButton: false,
       reverse: "hello!",
