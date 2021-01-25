@@ -4,7 +4,7 @@
       <div id="about">
         <Header>About<i class="fas fa-user-circle"></i></Header>
         <Separation>Profile / Career</Separation><br>
-          <v-app class="v-app">
+          <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
             <v-timeline>
               <v-timeline-item color="#FFF3E0">
                 <v-card class="elevation-2">
