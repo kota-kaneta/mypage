@@ -112,48 +112,48 @@
   </transition>
   
 <!-- モーダル -->
-        <transition name="modal">
-        <div id="overlay" v-show="showContent" v-on:click="closeModal">
-          <div id="content">
-            <div class="details">2021/01</div>
-            <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-            <img :src="images.m_secondimage" key="m_scondImage" width="350" height="195" border="1"><br><br>
-            <p> 
-              私が作成したポートフォリオを載せております。<br>
-              お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
-              （Vue.js / Node.js / Netlify ...etc）<br><br>
-              <router-link to="/">
-                <p><i class="far fa-sticky-note"></i> mypage</p>
-              </router-link>
-              <a href="https://github.com/kota-kaneta">
-                <p><i class="fab fa-github"></i> GitHub (mypage)</p>
-              </a>
-            </p>
-          </div>
-        </div>
-        </transition>
-
-        <transition name="l_modal">
-        <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
-          <div id="l_content">
-            <div class="details">2020/12</div>
-            <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-            <img :src="images.l_secondimage" key="l_scondImage" width="350" height="195" border="1"><br><br>
-            知人の暇な時間を確認できるアプリケーションです。<br>
-            ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
-            そのユーザーが登録している週のスケジュールがタイムラインに表示されます。<br><br>
-            （Rails / AWS / Capistrano ...etc）<br><br>
-            <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
-              <p><i class="far fa-sticky-note"></i>L-searcher</p>
+    <transition name="modal">
+      <div id="overlay" v-show="showContent" v-on:click="closeModal">
+        <div id="content">
+          <div class="details">2021/01</div>
+          <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
+          <img :src="images.m_secondimage" key="m_scondImage" width="350" height="195" border="1"><br><br>
+          <p> 
+            私が作成したポートフォリオを載せております。<br>
+            お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
+            （Vue.js / Node.js / Netlify ...etc）<br><br>
+            <router-link to="/">
+              <p><i class="far fa-sticky-note"></i> mypage</p>
+            </router-link>
+            <a href="https://github.com/kota-kaneta">
+              <p><i class="fab fa-github"></i> GitHub (mypage)</p>
             </a>
-            <a href="https://github.com/kota-kaneta/L-searcher">
-              <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
-            </a><br>
-            <p class="heroku">※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</p>
-          </div>
+          </p>
         </div>
-        </transition>
       </div>
+    </transition>
+
+    <transition name="l_modal">
+      <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
+        <div id="l_content">
+          <div class="details">2020/12</div>
+          <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
+          <img :src="images.l_secondimage" key="l_scondImage" width="350" height="195" border="1"><br><br>
+          知人の暇な時間を確認できるアプリケーションです。<br>
+          ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
+          そのユーザーが登録している週のスケジュールがタイムラインに表示されます。<br><br>
+          （Rails / AWS / Capistrano ...etc）<br><br>
+          <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
+            <p><i class="far fa-sticky-note"></i>L-searcher</p>
+          </a>
+          <a href="https://github.com/kota-kaneta/L-searcher">
+            <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
+          </a><br>
+          <p class="heroku">※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</p>
+        </div>
+      </div>
+    </transition>
+  </div>
 </template>
 
 <style lang="scss" scoped>
