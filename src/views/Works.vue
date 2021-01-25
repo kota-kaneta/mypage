@@ -141,7 +141,7 @@
           <img :src="images.l_secondimage" key="l_scondImage" width="350" height="195" border="1"><br><br>
           知人の暇な時間を確認できるアプリケーションです。<br>
           ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
-          そのユーザーが登録している週のスケジュールがタイムラインに表示されます。<br><br>
+          そのユーザーが登録している当日のスケジュールがタイムラインに表示されます。<br><br>
           （Rails / AWS / Capistrano ...etc）<br><br>
           <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
             <p><i class="far fa-sticky-note"></i>L-searcher</p>
