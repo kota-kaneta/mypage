@@ -11,7 +11,7 @@ export default ({
           {
             data: [20, 20, 28, 53, 14, 24],
             backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983'],
-            borderColor: 'lightgray',
+            borderColor: 'gray',
             hoverBackgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983']
           }
         ]

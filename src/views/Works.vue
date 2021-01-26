@@ -117,7 +117,7 @@
         <div id="l_content">
           <div class="details">2020/12</div>
           <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-          <img :src="images.l_secondimage" key="l_scondImage" width="550" height="300"><br><br>
+          <img :src="images.l_secondimage" key="l_scondImage" width="450" height="244"><br><br>
           知人の暇な時間を確認できるアプリケーションです。<br>
           ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
           そのユーザーが登録している当日のスケジュールがタイムラインに表示されます。<br><br>
@@ -138,8 +138,8 @@
         <div id="content">
           <div class="details">2021/01</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_secondimage" key="m_scondImage" width="550" height="300"><br><br>
-          <p> 
+          <img :src="images.m_secondimage" key="m_scondImage" width="450" height="244"><br><br>
+          <p>
             私が作成したポートフォリオを載せております。<br>
             お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
             （Vue.js / Node.js / Netlify ...etc）<br><br>
