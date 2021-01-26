@@ -22,7 +22,6 @@
 </template>
 
 <style lang="scss">
-
 .v-enter {
   transform: translate(0, 100px);
   opacity: 0;
@@ -54,7 +53,6 @@
   background-color: rgb(252, 248, 248);
   border: 2px solid rgba(233, 233, 233, 0.769);
 }
-
 #nav a {
   font-weight: bold;
   color: #2c3e50;
@@ -62,7 +60,6 @@
   font-size: 18px;
   background-color:rgb(252, 248, 248);
 }
-
 .v-tabs-slider{
   color: #2c3e50;
 }

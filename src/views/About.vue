@@ -61,15 +61,10 @@
               <p class="timeline"></p>
             </v-timeline>
           </v-app>
-        <div class="a-git">
-          <a href="https://github.com/kota-kaneta">
-          kota-kaneta <i class="fab fa-github"></i>
-          </a>
-        </div>
       </div>
     </transition>
     <p class="bottom-nav">
-    ©2020 Kota Kaneta
+    ©2021 Kota Kaneta
     </p>
   </div>
 </template>
@@ -120,11 +115,6 @@ a:hover {
 a:active { color: #ff8000; }
 .blank{
   padding-bottom: 20px;
-}
-.a-git{
-  position: absolute;
-  bottom: 0;
-  right: 10px;
 }
 .bottom-nav{
   display: flex;

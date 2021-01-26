@@ -10,7 +10,7 @@
       </div>
     </transition>
     <p class="bottom-nav">
-    ©2020 Kota Kaneta
+    ©2021 Kota Kaneta
     </p>
   </div>
 </template>
