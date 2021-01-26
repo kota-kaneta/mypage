@@ -17,6 +17,9 @@
       <i class="fas fa-forward"></i>skip
     </span>
     <span v-show="afterButton"><i class="far fa-laugh-squint"></i></span>
+    <p class="bottom-nav">
+      ©2020 Kota Kaneta
+    </p>
   </div>
 </template>
 
@@ -67,6 +70,17 @@
 .mx-auto:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+.bottom-nav{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 15px;
+  font-size: 18px;
+  background-color: rgb(16, 16, 16);
+  color: white;
+  height: 60px;
 }
 </style>
 

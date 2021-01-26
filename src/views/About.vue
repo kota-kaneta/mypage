@@ -68,6 +68,9 @@
         </div>
       </div>
     </transition>
+    <p class="bottom-nav">
+    ©2020 Kota Kaneta
+    </p>
   </div>
 </template>
 
@@ -122,6 +125,15 @@ a:active { color: #ff8000; }
   position: absolute;
   bottom: 0;
   right: 10px;
+}
+.bottom-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: rgb(16, 16, 16);
+  color: white;
+  height: 60px;
 }
 </style>
 

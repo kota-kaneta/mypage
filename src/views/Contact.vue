@@ -46,6 +46,9 @@
     <div v-if="nothing === true" class="nothing">
       <i class="fas fa-exclamation-triangle"></i>各項目はすべて必須です
     </div>
+    <p class="bottom-nav">
+    ©2020 Kota Kaneta
+    </p>
   </div>
 </template>
 
@@ -204,7 +207,7 @@
 }
 .Form-Btn {
   border-radius: 6px;
-  margin-top: 32px;
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
@@ -255,6 +258,17 @@
   .nothing { 
     display:none; 
   }
+}
+.bottom-nav{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 15px;
+  font-size: 18px;
+  background-color: rgb(16, 16, 16);
+  color: white;
+  height: 60px;
 }
 </style>
 
