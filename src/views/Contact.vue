@@ -79,26 +79,12 @@
   margin-bottom: 30px;
   max-width: 720px;
 }
-@media screen and (max-width: 480px) {
-  .Form {
-    margin-top: 40px;
-  }
-}
 .Form-Item {
   padding-top: 24px;
   padding-bottom: 24px;
   width: 100%;
   display: flex;
   align-items: center;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    flex-wrap: wrap;
-  }
 }
 .Form-Item-Label {
   width: 100%;
@@ -110,21 +96,60 @@
   justify-content: start;
   align-items: center;
 }
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
 @media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
   .Form-Item-Label {
     max-width: inherit;
     display: flex;
     align-items: center;
     font-size: 15px;
   }
-}
-.Form-Item-Label.isMsg {
-  margin-top: 8px;
-  margin-bottom: auto;
-}
-@media screen and (max-width: 480px) {
   .Form-Item-Label.isMsg {
     margin-top: 0;
+  }
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+  .nothing { 
+    display:none; 
   }
 }
 .Form-Item-Label-Required {
@@ -138,15 +163,6 @@
   background: #5bc8ac;
   color: #fff;
   font-size: 14px;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item-Label-Required {
-    border-radius: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 32px;
-    font-size: 10px;
-  }
 }
 .Form-Item-Input {
   border: 1px solid #ddd;
@@ -168,15 +184,6 @@
   box-shadow    : 4px 4px 2px #999;
   outline       : 0;
 }
-@media screen and (max-width: 480px) {
-  .Form-Item-Input {
-    margin-left: 0;
-    margin-top: 18px;
-    height: 40px;
-    flex: inherit;
-    font-size: 15px;
-  }
-}
 .Form-Item-Textarea {
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -195,15 +202,6 @@
   background    : rgba(143, 143, 143, 0.214);
   box-shadow    : 4px 4px 2px #999;
   outline       : 0;
-}
-@media screen and (max-width: 480px) {
-  .Form-Item-Textarea {
-    margin-top: 18px;
-    margin-left: 0;
-    height: 200px;
-    flex: inherit;
-    font-size: 15px;
-  }
 }
 .Form-Btn {
   border-radius: 6px;
@@ -235,15 +233,6 @@
   -webkit-transform: translateY(3px);
   transform: translateY(3px);
 }
-@media screen and (max-width: 480px) {
-  .Form-Btn {
-    margin-top: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 160px;
-    font-size: 16px;
-  }
-}
 .send{
   font-size: 17px;
 }
@@ -253,11 +242,6 @@
   color: rgb(255, 51, 0);
   top: 230px;
   left: 42vw;
-}
-@media screen and (max-width: 768px) {
-  .nothing { 
-    display:none; 
-  }
 }
 .bottom-nav{
   position: fixed;
