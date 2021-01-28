@@ -1,7 +1,16 @@
 <template id="body">
   <div id="app">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <div id="nav">
+    <div id="pc-nav">
+      <v-tabs>
+        <v-tab to="/">Home</v-tab>
+        <v-tab to="/about">About</v-tab>
+        <v-tab to="/skillset">Skillset</v-tab>
+        <v-tab to="/works">Works</v-tab>
+        <v-tab to="/contact">Contact</v-tab>
+      </v-tabs>
+    </div>
+    <div id="sp-nav">
       <v-tabs>
         <v-tab to="/">Home</v-tab>
         <v-tab to="/about">About</v-tab>
@@ -42,10 +51,24 @@
   height: 100vh;
   position: relative;
 }
-#nav {
+#pc-nav,
+#sp-nav{
   font-size: 1.3em;
   font-weight: bold;
   background-color:rgb(252, 248, 248);
+}
+@media screen and (max-width: 767px) {
+  #pc-nav{
+    display: none;
+  }
+  #sp-nav{
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px){
+  #sp-nav{
+    display: none;
+  }
 }
 .v-tabs { 
   display: flex; 
@@ -53,7 +76,8 @@
   background-color: rgb(252, 248, 248);
   border: 2px solid rgba(233, 233, 233, 0.769);
 }
-#nav a {
+#pc-nav a,
+#sp-nav a {
   font-weight: bold;
   color: #2c3e50;
   padding: 0 20px;

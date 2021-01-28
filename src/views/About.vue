@@ -167,7 +167,7 @@ a:active { color: #ff8000; }
   color: white;
   height: 60px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .v-app{
     display: none;
   }

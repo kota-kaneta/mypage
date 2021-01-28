@@ -138,7 +138,7 @@
         <div id="content">
           <div class="details">2021/01</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_secondimage" key="m_scondImage" width="450" height="244"><br>
+          <img :src="images.m_secondimage" key="m_scondImage" width="450" height="244"><br><br>
           <p>
             私が作成したポートフォリオを載せております。<br>
             お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
