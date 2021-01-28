@@ -3,7 +3,7 @@
     <!-- <v-card class="mx-auto" height="256" rounded="xl" width="500" @click="go" v-show="anime">
       Click!
     </v-card> -->
-    <div v-show="skipBefore">
+    <div v-show="skipBefore" class="typer">
       <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth"></vue-typer>
     </div>
     <div v-show="skipAfter">
@@ -12,6 +12,11 @@
     You can see the skills I have by looking at this site.<br>
     You can also check the source code of the portfolio.<br><br>
     If you are interested in me, please contact us using the contact form.
+    </div>
+    <div class="sp-home">
+      Nice to meet you,<br>I'm Kota Kaneta.<br><br>
+      You can see my skills<br> and profile on this site.<br><br>
+      please contact us using the contact form.
     </div>
     <span v-show="beforeButton" @click="skip" class="button">
       <i class="fas fa-forward"></i>skip
@@ -52,9 +57,11 @@
   transform: translateY(3px);
 }
 @media screen and (max-width: 768px) {
-  .button { 
+  .button,
+  .typer { 
     display:none; 
   }
+  
 }
 .mx-auto{
   position: fixed;
