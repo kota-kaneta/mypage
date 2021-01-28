@@ -161,7 +161,7 @@
         <div id="l_content">
           <div class="details">2020/12</div><br>
           <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-          <img :src="images.l_secondimage" key="l_scondImage" width="300" height="170"><br>
+          <img :src="images.l_firstimage" key="l_firstImage" width="300" height="170"><br>
           （Rails / AWS / Capistrano）
           <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
             <p><i class="far fa-sticky-note"></i>L-searcher</p>
@@ -178,7 +178,7 @@
         <div id="content">
           <div class="details">2021/01</div><br>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_secondimage" key="m_scondImage" width="300" height="170"><br><br>
+          <img :src="images.m_firstimage" key="m_firstImage" width="300" height="170"><br><br>
           （Vue.js / Node.js / Netlify）
             <router-link to="/">
               <p><i class="far fa-sticky-note"></i> mypage</p>
