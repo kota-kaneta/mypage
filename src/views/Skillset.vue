@@ -7,6 +7,9 @@
         <div class="chart">
           <chart style="margin:auto; height:55vh; width:55vw"></chart>
         </div>
+        <div class="sp-chart">
+          <chart></chart>
+        </div>
       </div>
     </transition>
     <p class="bottom-nav">
@@ -67,6 +70,16 @@ a:active { color: #ff8000; }
   background-color: rgb(16, 16, 16);
   color: white;
   height: 60px;
+}
+@media screen and (max-width: 480px){
+  .chart{
+    display: none;
+  }
+}
+@media screen and (min-width: 480px){
+  .sp-chart{
+    display: none;
+  }
 }
 </style>
 
