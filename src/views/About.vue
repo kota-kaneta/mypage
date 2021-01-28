@@ -17,7 +17,7 @@
               <v-timeline-item color="#FFF3E0">
                 <v-card class="elevation-2">
                   <v-card-text>
-                2006年〜2016年
+                  2006年〜2016年
                   </v-card-text>
                   小学校3年から高校3年までの10年間野球部に所属
                 </v-card>
@@ -61,6 +61,48 @@
               <p class="timeline"></p>
             </v-timeline>
           </v-app>
+        <div class="sp-about">
+          <v-card class="elevation-2">
+            <v-card-text>
+            1998年8月
+            </v-card-text>
+            群馬県にて生誕
+          </v-card>
+          <v-card class="elevation-2">
+            <v-card-text>
+            2006年〜2016年
+            </v-card-text>
+            小学校3年から高校3年までの10年間野球部に所属
+          </v-card>
+          <v-card class="elevation-2">
+            <v-card-text>
+            2017年4月
+            </v-card-text>
+            日本大学理工学部物質応用化学科に入学
+          </v-card>
+          <v-card class="elevation-2">
+            <v-card-text>
+            2020年9月
+            </v-card-text>
+            <p class="blank">
+            コロナによる研究困難により休学<br>
+            同時にプログラミングの勉強を始める<br>
+            （主にRuby on Railsを中心に開発を行う）
+            </p>
+          </v-card>
+          <v-card class="elevation-2">
+            <v-card-text>
+            2020年12月
+            </v-card-text>
+            エンジニアを目指して大学を中途退学
+          </v-card>
+          <v-card class="elevation-2">
+            <v-card-text>
+            現在
+            </v-card-text>
+            Vue.jsを学習中...
+          </v-card>
+        </div>
       </div>
     </transition>
     <p class="bottom-nav">
@@ -124,6 +166,16 @@ a:active { color: #ff8000; }
   background-color: rgb(16, 16, 16);
   color: white;
   height: 60px;
+}
+@media screen and (max-width: 480px) {
+  .v-app{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px){
+  .sp-about{
+    display: none;
+  }
 }
 </style>
 

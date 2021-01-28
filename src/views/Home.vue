@@ -61,7 +61,11 @@
   .typer { 
     display:none; 
   }
-  
+}
+@media screen and (min-width: 768px){
+  .sp-home{
+    display: none;
+  }
 }
 .mx-auto{
   position: fixed;
