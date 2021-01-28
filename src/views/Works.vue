@@ -410,10 +410,8 @@ a:active{
   .pc-modal{ 
     display:none; 
   }
-  .phone{
-    position: absolute;
-    left: -640px;
-    top: 0;
+  .mx-auto{
+    margin: 50px auto;
   }
 }
 @media screen and (min-width: 767px) {
