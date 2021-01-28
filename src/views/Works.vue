@@ -1,7 +1,7 @@
 <template>
   <div id="works">
     <transition appear>
-      <div>
+      <div class="transition">
         <Header>Works<i class="fas fa-laptop-code"></i></Header>
         <Separation>Portfolio</Separation>
         <div class="carousel">
@@ -83,11 +83,11 @@
           </v-carousel-item>
         </v-carousel>
       </div>
+      
 
 
     <!-- スマホ -->
     <div class="phone">
-      <v-app>
       <v-card class="mx-auto" max-width="344" @click="openModal">
         <v-img rel="preload" src="@/assets/contact.png" width="350" height="200" border="1"></v-img>
         <v-card-title>
@@ -106,12 +106,12 @@
           <span class="sub">Rails / AWS / Capistrano ...etc</span>
         </v-card-subtitle>
       </v-card>
-      </v-app>
     </div>
     </div>
   </transition>
   
 <!-- モーダル -->
+  <div class="pc-modal">
     <transition name="l_modal">
       <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
         <div id="l_content">
@@ -138,7 +138,7 @@
         <div id="content">
           <div class="details">2021/01</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_secondimage" key="m_scondImage" width="450" height="244"><br><br>
+          <img :src="images.m_secondimage" key="m_scondImage" width="450" height="244"><br>
           <p>
             私が作成したポートフォリオを載せております。<br>
             お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
@@ -153,6 +153,43 @@
         </div>
       </div>
     </transition>
+  </div>
+
+  <div class="sp-modal">
+    <transition name="l_modal">
+      <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
+        <div id="l_content">
+          <div class="details">2020/12</div><br>
+          <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
+          <img :src="images.l_secondimage" key="l_scondImage" width="300" height="170"><br>
+          （Rails / AWS / Capistrano）
+          <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
+            <p><i class="far fa-sticky-note"></i>L-searcher</p>
+          </a>
+          <a href="https://github.com/kota-kaneta/L-searcher">
+            <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
+          </a><br>
+        </div>
+      </div>
+    </transition>
+
+    <transition name="modal">
+      <div id="overlay" v-show="showContent" v-on:click="closeModal">
+        <div id="content">
+          <div class="details">2021/01</div><br>
+          <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
+          <img :src="images.m_secondimage" key="m_scondImage" width="300" height="170"><br><br>
+          （Vue.js / Node.js / Netlify）
+            <router-link to="/">
+              <p><i class="far fa-sticky-note"></i> mypage</p>
+            </router-link>
+            <a href="https://github.com/kota-kaneta">
+              <p><i class="fab fa-github"></i> GitHub (mypage)</p>
+            </a>
+        </div>
+      </div>
+    </transition>
+  </div>
     <p class="bottom-nav">
     ©2021 Kota Kaneta
     </p>
@@ -369,12 +406,21 @@ a:active{
 }
 @media screen and (max-width: 768px) {
   .bubble,
-  .carousel{ 
+  .carousel,
+  .pc-modal{ 
     display:none; 
+  }
+  .phone{
+    position: absolute;
+    left: -640px;
+    top: 0;
   }
 }
 @media screen and (min-width: 767px) {
-  .phone { display: none}
+  .phone,
+  .sp-modal {
+    display: none;
+  }
 }
 .bottom-nav{
   position: fixed;
