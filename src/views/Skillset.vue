@@ -68,7 +68,7 @@ a:active { color: #ff8000; }
   padding-top: 15px;
   font-size: 18px;
   background-color: rgb(16, 16, 16);
-  color: white;
+  color: #d7e4f1;
   height: 60px;
 }
 @media screen and (max-width: 480px){

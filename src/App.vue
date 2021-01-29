@@ -79,7 +79,7 @@
 #pc-nav a,
 #sp-nav a {
   font-weight: bold;
-  color: #bccddf;
+  color: #b8c6d5;
   padding: 0 20px;
   font-size: 18px;
   background-color:rgb(16, 16, 16);
