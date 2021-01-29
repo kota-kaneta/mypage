@@ -55,7 +55,7 @@
 #sp-nav{
   font-size: 1.3em;
   font-weight: bold;
-  background-color:rgb(252, 248, 248);
+  background-color:black;
 }
 @media screen and (max-width: 767px) {
   #pc-nav{
@@ -73,19 +73,19 @@
 .v-tabs { 
   display: flex; 
   justify-content: center;
-  background-color: rgb(252, 248, 248);
-  border: 2px solid rgba(233, 233, 233, 0.769);
+  background-color:rgb(16, 16, 16);
+  border: 2px solid rgba(56, 56, 56, 0.769);
 }
 #pc-nav a,
 #sp-nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #bccddf;
   padding: 0 20px;
   font-size: 18px;
-  background-color:rgb(252, 248, 248);
+  background-color:rgb(16, 16, 16);
 }
 .v-tabs-slider{
-  color: #2c3e50;
+  color: #b8c6d5;
 }
 
 /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
