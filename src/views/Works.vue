@@ -191,7 +191,7 @@
     </transition>
   </div>
     <p class="bottom-nav">
-    ©2021 Kota Kaneta
+    © 2021 Kota Kaneta
     </p>
   </div>
 </template>

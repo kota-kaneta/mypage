@@ -73,7 +73,7 @@
 .v-tabs { 
   display: flex; 
   justify-content: center;
-  background-color:rgb(16, 16, 16);
+  background-color:rgb(22, 22, 22);
   border: 2px solid rgba(56, 56, 56, 0.769);
 }
 #pc-nav a,
@@ -82,7 +82,7 @@
   color: #b8c6d5;
   padding: 0 20px;
   font-size: 18px;
-  background-color:rgb(16, 16, 16);
+  background-color:rgb(22, 22, 22);
 }
 .v-tabs-slider{
   color: #b8c6d5;

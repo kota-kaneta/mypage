@@ -47,7 +47,7 @@
       <i class="fas fa-exclamation-triangle"></i>各項目はすべて必須です
     </div>
     <p class="bottom-nav">
-    ©2021 Kota Kaneta
+    © 2021 Kota Kaneta
     </p>
   </div>
 </template>
