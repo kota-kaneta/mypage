@@ -49,7 +49,8 @@
   position: absolute;
   top: -7px;
   left: 30px;
-  color: rgb(201, 59, 59);
+  color: rgb(164, 188, 204);
+  text-shadow: 2px 2px 6px #808080;
   font-size: 35px;
   font-family: 'Kaushan Script', cursive;
 }
