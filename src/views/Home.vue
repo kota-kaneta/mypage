@@ -47,6 +47,11 @@
   cursor: pointer;
   cursor: hand;
 }
+.far{
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
 .button:hover{
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
