@@ -1,5 +1,6 @@
 <template id="body">
   <div id="app">
+    <span class="top-title">mypage</span>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <div id="pc-nav">
       <v-tabs>
@@ -44,6 +45,14 @@
   height: 100vh;
   position: relative;
 }
+.top-title{
+  position: absolute;
+  top: -7px;
+  left: 30px;
+  color: rgb(201, 59, 59);
+  font-size: 35px;
+  font-family: 'Kaushan Script', cursive;
+}
 #pc-nav,
 #sp-nav{
   font-size: 1.3em;
@@ -52,7 +61,8 @@
 }
 @media screen and (max-width: 767px) {
   #pc-nav,
-  .bottom-nav{
+  .bottom-nav,
+  .top-title{
     display: none;
   }
   #sp-nav{
