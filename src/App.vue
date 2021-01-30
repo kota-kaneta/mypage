@@ -58,7 +58,8 @@
   background-color:black;
 }
 @media screen and (max-width: 767px) {
-  #pc-nav{
+  #pc-nav,
+  .bottom-nav{
     display: none;
   }
   #sp-nav{
