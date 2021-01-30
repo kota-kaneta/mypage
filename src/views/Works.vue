@@ -32,9 +32,6 @@
           </v-carousel-item>
           <v-carousel-item>
             <v-sheet height="120%" tile :color="color">
-              <!-- <div class="vue-back">
-                <img :src="images.js_image" key="jsImage">
-              </div> -->
               <div class="js">
                 <i class="fab fa-js-square"></i>
               </div>
