@@ -71,6 +71,10 @@
     display: none;
   }
 }
+.theme--light.v-tabs > .v-tabs-bar {
+  color: rgb(22, 22, 22);
+  background-color: rgb(22, 22, 22);
+}
 .v-tabs { 
   display: flex; 
   justify-content: center;
