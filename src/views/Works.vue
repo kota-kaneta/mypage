@@ -448,7 +448,7 @@ export default {
       model: 0,
       color: '#cfd8dc79',
       images: {
-        l_firstimage: require("@/assets/L-searcherサムネ.png"),
+        l_firstimage: require("@/assets/l-searcherサムネ.png"),
         l_secondimage: require("@/assets/l-searcher.gif"),
         m_firstimage: require("@/assets/contact.png"),
         m_secondimage: require("@/assets/mypage.gif"),
