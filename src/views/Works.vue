@@ -450,7 +450,7 @@ export default {
       images: {
         l_firstimage: require("@/assets/l-searcher.png"),
         l_secondimage: require("@/assets/l-searcher.gif"),
-        m_firstimage: require("@/assets/contact.png"),
+        m_firstimage: require("@/assets/mypage.png"),
         m_secondimage: require("@/assets/mypage.gif"),
         ruby_image: require("@/assets/ruby.svg"),
         // js_image: require("@/assets/prog-js01.svg")
