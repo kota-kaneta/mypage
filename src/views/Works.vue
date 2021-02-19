@@ -13,7 +13,7 @@
               </div>
               <div class="bubble">
                 ※1作目<br><br>
-                サーバーやインフラに力を入れました。
+                暇な人を探すツール
               </div>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
@@ -37,7 +37,7 @@
               </div>
               <div class="bubble">
                 ※2作目（当サイト）<br> <br>
-                VueCLIを使用しました。
+                ポートフォリオサイト
               </div>
               <v-row class="fill-height" align="center" justify="center">
                 <div class="display-3">
