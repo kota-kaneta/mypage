@@ -4,19 +4,7 @@
       <div class="transition">
         <Header>Works<i class="fas fa-laptop-code"></i></Header>
         <Separation>Portfolio</Separation>
-        <div class="carousel">
-        <v-carousel cycle :key="color" :show-arrows="false" height="607">
-          <v-carousel-item>
-            <v-sheet height="120%" tile :color="color">
-              <div class="ruby-back">
-                <img :src="images.ruby_image" key="rubyImage">
-              </div>
-              <div class="bubble">
-                ※1作目<br><br>
-                暇な人を探すツール
-              </div>
-              <v-row class="fill-height" align="center" justify="center">
-                <div class="display-3">
+        <div class="show-flex">
                   <v-card class="mx-auto" max-width="344" @click="l_openModal">
                     <v-img width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
                     <v-card-title>
@@ -26,21 +14,6 @@
                       <span class="sub">Rails / AWS / Capistrano ...etc</span>
                     </v-card-subtitle>
                  </v-card>
-                </div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-sheet height="120%" tile :color="color">
-              <div class="js">
-                <i class="fab fa-js-square"></i>
-              </div>
-              <div class="bubble">
-                ※2作目（当サイト）<br> <br>
-                ポートフォリオサイト
-              </div>
-              <v-row class="fill-height" align="center" justify="center">
-                <div class="display-3">
                   <v-card class="mx-auto" max-width="344" @click="openModal">
                     <v-img width="350" height="200" border="1" :src="images.m_firstimage" key="m_firstImage"></v-img>
                     <v-card-title>
@@ -50,21 +23,6 @@
                       <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
                     </v-card-subtitle>
                   </v-card>
-                </div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-          <v-carousel-item>
-            <v-sheet height="120%" tile :color="color">
-              <div class="question">
-                <i class="fas fa-question-circle"></i>
-              </div>
-              <div class="bubble">
-                <br>
-                ......................
-              </div>
-              <v-row class="fill-height" align="center" justify="center">
-                <div class="display-3">
                   <v-card class="mx-auto" max-width="344">
                     <v-img class="coming"><span class="sub">Coming soon...</span></v-img>
                     <v-card-title>
@@ -74,40 +32,11 @@
                       <span class="sub">???</span>
                     </v-card-subtitle>
                   </v-card>
-                </div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-        </v-carousel>
         <div class="show">
-          <router-link to="show">一覧表示へ</router-link>
+          <router-link to="works">戻る</router-link>
         </div>
+    </div>
       </div>
-      
-
-
-    <!-- スマホ -->
-    <div class="phone">
-      <v-card class="mx-auto" max-width="344" @click="openModal">
-        <v-img rel="preload" src="@/assets/mypage.png" width="350" height="200" border="1"></v-img>
-        <v-card-title>
-          <h3><i class="far fa-sticky-note"></i>mypage</h3>
-        </v-card-title>
-        <v-card-subtitle>
-          <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
-        </v-card-subtitle>
-      </v-card>
-      <v-card class="mx-auto" max-width="344" @click="l_openModal">
-        <v-img rel="preload" src="@/assets/l-searcher.png" width="350" height="195" border="1"></v-img>
-        <v-card-title>
-          <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
-        </v-card-title>
-        <v-card-subtitle>
-          <span class="sub">Rails / AWS / Capistrano ...etc</span>
-        </v-card-subtitle>
-      </v-card>
-    </div>
-    </div>
   </transition>
   
 <!-- モーダル -->
@@ -197,12 +126,17 @@
 </template>
 
 <style lang="scss" scoped>
+.show-flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
 #works{
   position: relative;
 }
 .mx-auto{
-  margin-top: 140px;
-  margin-left:680px;
   height: 360px;
   border: lightgray solid 1px;
   box-shadow: 4px 4px;
@@ -408,8 +342,7 @@ a:active{
 @media screen and (max-width: 768px) {
   .bubble,
   .carousel,
-  .pc-modal,
-  .show{ 
+  .pc-modal{ 
     display:none; 
   }
   .mx-auto{
