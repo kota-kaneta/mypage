@@ -1,6 +1,6 @@
 # URL:https://kota-kaneta.netlify.app/
 
-## ポートフォリオを載せるサイト
+## ポートフォリオサイト
 
 ## 環境/使用技術
 
