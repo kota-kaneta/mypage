@@ -219,14 +219,11 @@
 }
 .show{
   font-size: 20px;
-  height: 200px;
-  min-height: 190px;
-  padding-bottom: 20px;
 }
 .show a{
   text-decoration: none;
   font-size: 25px;
-  color: #2c3e50;
+  color: rgb(91, 138, 199);
 }
 .show img:hover{
   transform:scale(1.2,1.2);
