@@ -1,5 +1,7 @@
 # URL:https://kota-kaneta.netlify.app/
 
+![mypage](/app/assets/mypage.png)
+
 ## ポートフォリオサイト
 
 ## 環境/使用技術
