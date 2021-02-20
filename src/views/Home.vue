@@ -17,6 +17,7 @@
     If you are interested in me, please contact us using the contact form.
     </div>
     <div class="sp-home">
+      <i class="fas fa-home"></i> Home<br><br>
       Nice to meet you,<br>I'm Kota Kaneta.<br><br>
       You can see my skills<br> and profile on this site.<br><br>
       please contact us using the contact form.

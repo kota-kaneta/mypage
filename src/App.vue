@@ -36,7 +36,7 @@
 }
 .sp-nav {
   z-index: 1;
-  font-size: 25px;
+  font-size: 33px;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,6 +46,7 @@
   width: 100%;
   background: rgba(0, 0, 0, .8);
   transition: all .2s ease-in-out;
+  padding-bottom: 80px;
 }
 .sp-nav ul {
    padding: 0;
@@ -54,6 +55,7 @@
    justify-content: center;
    align-items: center;
    height: 100%;
+   list-style: none;
 }
 .sp-nav li {
    margin: 0;
@@ -69,7 +71,7 @@
 }
 .wrapper{
   width: 100%;
-  height: 60px;
+  height: 55px;
   background-color: #2c3e50;
 }
 #hamburger {
@@ -112,6 +114,7 @@
 .close{
   padding-top:30px;
   color: #3e9af5;
+  font-size: 20px;
 }
 .v-enter {
   transform: translate(0, 100px);
