@@ -1,4 +1,4 @@
-# URL:https://kota-kaneta.netlify.app/
+# URL： https://kota-kaneta.netlify.app/
 
 ## ポートフォリオサイト
 ![mypage](/src/assets/m-change.png)
@@ -12,3 +12,4 @@
 - vue-typer　1.2.0
 - vuetify　2.2.11
 - vue-chartjs　3.5.1 
+- Photoshop
