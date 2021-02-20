@@ -5,33 +5,48 @@
         <Header>Works<i class="fas fa-laptop-code"></i></Header>
         <Separation>Portfolio</Separation>
         <div class="show-flex">
-          <v-card class="mx-auto" max-width="344" @click="l_openModal">
-            <v-img width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
-            <v-card-title>
-              <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
-            </v-card-title>
-            <v-card-subtitle>
-              <span class="sub">Rails / AWS / Capistrano ...etc</span>
-            </v-card-subtitle>
-          </v-card>
-          <v-card class="mx-auto" max-width="344" @click="openModal">
-            <v-img width="350" height="200" border="1" :src="images.m_firstimage" key="m_firstImage"></v-img>
-            <v-card-title>
-              <h3><i class="far fa-sticky-note"></i>mypage</h3>
-            </v-card-title>
-            <v-card-subtitle>
-              <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
-            </v-card-subtitle>
-          </v-card>
-          <v-card class="mx-auto" max-width="344">
-            <v-img class="coming"><span class="sub">Coming soon...</span></v-img>
-            <v-card-title>
-              <h3><i class="far fa-sticky-note"></i>???</h3>
-            </v-card-title>
-            <v-card-subtitle>
-              <span class="sub">???</span>
-            </v-card-subtitle>
-          </v-card>
+          <div class="cr">
+            <div class="balloon3">
+              暇な人を探すツール
+            </div>
+            <v-card class="mx-auto" max-width="344" @click="l_openModal">
+              <v-img width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
+              <v-card-title>
+                <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
+              </v-card-title>
+              <v-card-subtitle>
+                <span class="sub">Rails / AWS / Capistrano ...etc</span>
+              </v-card-subtitle>
+            </v-card>
+          </div>
+          <div class="cr">
+            <div class="balloon3">
+              ポートフォリオサイト
+            </div>
+            <v-card class="mx-auto" max-width="344" @click="openModal">
+              <v-img width="350" height="200" border="1" :src="images.m_firstimage" key="m_firstImage"></v-img>
+              <v-card-title>
+                <h3><i class="far fa-sticky-note"></i>mypage</h3>
+              </v-card-title>
+              <v-card-subtitle>
+                <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
+              </v-card-subtitle>
+            </v-card>
+          </div>
+          <div class="cr">
+            <div class="balloon3">
+              ......................
+            </div>
+            <v-card class="mx-auto" max-width="344">
+              <v-img class="coming"><span class="sub">Coming soon...</span></v-img>
+              <v-card-title>
+                <h3><i class="far fa-sticky-note"></i>???</h3>
+              </v-card-title>
+              <v-card-subtitle>
+                <span class="sub">???</span>
+              </v-card-subtitle>
+            </v-card>
+          </div>
         <div class="show">
           <router-link to="works"><i class="fas fa-arrow-circle-left"></i> 戻る</router-link>
         </div>
@@ -131,8 +146,39 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 70px;
 }
+.cr{
+  position: relative;
+}
+.balloon3 {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0 50px 0;
+  padding: 0 5px;
+  width: 300px;
+  height: 95px;
+  line-height: 90px;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  background: #70a6ff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background:#2C3E50;
+}
+
+.balloon3:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #2C3E50;
+  z-index: 0;
+}
+
 #works{
   position: relative;
 }
