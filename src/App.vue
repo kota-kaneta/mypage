@@ -31,6 +31,9 @@
 </template>
 
 <style lang="scss">
+.router-link{
+  color: whitesmoke;
+}
 .sp-nav {
   z-index: 1;
   font-size: 25px;
@@ -107,7 +110,7 @@
   background-color: #fff;
 }
 .close{
-  padding-top: 40px;
+  padding-top:30px;
   color: #3e9af5;
 }
 .v-enter {
@@ -236,8 +239,8 @@ a {
   cursor: pointer;
   cursor: hand;
 }
-a:link { color: #0000ff; }
-a:visited { color: #000080; }
+a:link { color: #7e7ef5; }
+a:visited { color: #5a5aec; }
 a:hover { color: #ff0000; }
 a:active { color: #ff8000; }
 </style>
