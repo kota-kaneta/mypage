@@ -11,7 +11,7 @@
         <v-tab to="/contact">Contact</v-tab>
       </v-tabs>
     </div>
-    <div id="sp-nav">
+    <!-- <div id="sp-nav">
       <v-tabs>
         <v-tab to="/">Home</v-tab>
         <v-tab to="/about">About</v-tab>
@@ -19,12 +19,106 @@
         <v-tab to="/works">Works</v-tab>
         <v-tab to="/contact">Contact</v-tab>
       </v-tabs>
+    </div> -->
+    <nav class="sp-nav" v-show="nav_sp">
+      <ul>
+        <li @click="close"><router-link to="/">Home</router-link></li>
+        <li @click="close"><router-link to="/about">About</router-link></li>
+        <li @click="close"><router-link to="skillset">Skillset</router-link></li>
+        <li @click="close"><router-link to="works">Works</router-link></li>
+        <li @click="close"><router-link to="/contact">CONTACT</router-link></li>
+        <li @click="close"><p class="close"><i class="fas fa-times"></i> 閉じる</p></li>
+       </ul>
+     </nav>
+    <div class="wrapper">
+      <div id="hamburger" @click="open">
+        <span></span>
+      </div>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+.sp-nav {
+  z-index: 1;
+  font-size: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  transition: all .2s ease-in-out;
+}
+.sp-nav ul {
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.sp-nav li {
+   margin: 0;
+   padding: 0;
+}
+.sp-nav li span {
+   font-size: 15px;
+   color: #fff;
+}
+.sp-nav li a, .sp-nav li span {
+   display: block;
+   padding: 20px 0;
+}
+.wrapper{
+  width: 100%;
+  height: 60px;
+  background-color: #2c3e50;
+}
+#hamburger {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 25px;
+  margin: 0 0 0 auto;
+}
+#hamburger span {
+  position: absolute;
+  top: 28px;
+  left: -20px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(253, 251, 251);
+  transform: translateY(-50%);
+}
+#hamburger::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+#hamburger::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: -20px;
+  width: 70%;
+  height: 2px;
+  background-color: #fff;
+}
+.close{
+  padding-top: 40px;
+  color: #3e9af5;
+}
 .v-enter {
   transform: translate(0, 100px);
   opacity: 0;
@@ -62,8 +156,7 @@
 }
 @media screen and (max-width: 767px) {
   #pc-nav,
-  .bottom-nav,
-  .top-title{
+  .bottom-nav{
     display: none;
   }
   #sp-nav{
@@ -71,7 +164,8 @@
   }
 }
 @media screen and (min-width: 768px){
-  #sp-nav{
+  #sp-nav,
+  .wrapper{
     display: none;
   }
 }
@@ -162,7 +256,20 @@ a:active { color: #ff8000; }
 <script>
 
 export default {
-  name: "#app"
+  name: "#app",
+  data: function(){
+    return{
+      nav_sp: false
+    }
+  },
+  methods:{
+    open: function(){
+      this.nav_sp = true
+    },
+    close: function(){
+      this.nav_sp = false
+    }
+  }
 }
 
 window.WebFontConfig = {
