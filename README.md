@@ -2,7 +2,6 @@
 
 ## ポートフォリオサイト
 ![mypage](/src/assets/m-change.png)
-![mypage](/src/assets/contact.png)
 
 ## 環境/使用技術
 
