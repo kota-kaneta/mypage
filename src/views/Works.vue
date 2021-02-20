@@ -146,7 +146,7 @@
             <router-link to="/">
               <p><i class="far fa-sticky-note"></i> mypage</p>
             </router-link>
-            <a href="https://github.com/kota-kaneta">
+            <a href="https://github.com/kota-kaneta/mypage">
               <p><i class="fab fa-github"></i> GitHub (mypage)</p>
             </a>
           </p>
@@ -183,7 +183,7 @@
             <router-link to="/">
               <p><i class="far fa-sticky-note"></i> mypage</p>
             </router-link>
-            <a href="https://github.com/kota-kaneta">
+            <a href="https://github.com/kota-kaneta/mypage">
               <p><i class="fab fa-github"></i> GitHub (mypage)</p>
             </a>
         </div>
