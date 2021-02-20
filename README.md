@@ -1,4 +1,4 @@
-# URL　:　https://kota-kaneta.netlify.app/
+# URL： https://kota-kaneta.netlify.app/
 
 ## ポートフォリオサイト
 ![mypage](/src/assets/m-change.png)
