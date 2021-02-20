@@ -11,15 +11,6 @@
         <v-tab to="/contact">Contact</v-tab>
       </v-tabs>
     </div>
-    <!-- <div id="sp-nav">
-      <v-tabs>
-        <v-tab to="/">Home</v-tab>
-        <v-tab to="/about">About</v-tab>
-        <v-tab to="/skillset">Skillset</v-tab>
-        <v-tab to="/works">Works</v-tab>
-        <v-tab to="/contact">Contact</v-tab>
-      </v-tabs>
-    </div> -->
     <nav class="sp-nav" v-show="nav_sp">
       <ul>
         <li @click="close"><router-link to="/">Home</router-link></li>
