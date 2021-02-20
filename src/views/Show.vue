@@ -5,35 +5,35 @@
         <Header>Works<i class="fas fa-laptop-code"></i></Header>
         <Separation>Portfolio</Separation>
         <div class="show-flex">
-                  <v-card class="mx-auto" max-width="344" @click="l_openModal">
-                    <v-img width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
-                    <v-card-title>
-                      <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
-                    </v-card-title>
-                    <v-card-subtitle>
-                      <span class="sub">Rails / AWS / Capistrano ...etc</span>
-                    </v-card-subtitle>
-                 </v-card>
-                  <v-card class="mx-auto" max-width="344" @click="openModal">
-                    <v-img width="350" height="200" border="1" :src="images.m_firstimage" key="m_firstImage"></v-img>
-                    <v-card-title>
-                      <h3><i class="far fa-sticky-note"></i>mypage</h3>
-                    </v-card-title>
-                    <v-card-subtitle>
-                      <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
-                    </v-card-subtitle>
-                  </v-card>
-                  <v-card class="mx-auto" max-width="344">
-                    <v-img class="coming"><span class="sub">Coming soon...</span></v-img>
-                    <v-card-title>
-                      <h3><i class="far fa-sticky-note"></i>???</h3>
-                    </v-card-title>
-                    <v-card-subtitle>
-                      <span class="sub">???</span>
-                    </v-card-subtitle>
-                  </v-card>
+          <v-card class="mx-auto" max-width="344" @click="l_openModal">
+            <v-img width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
+            <v-card-title>
+              <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
+            </v-card-title>
+            <v-card-subtitle>
+              <span class="sub">Rails / AWS / Capistrano ...etc</span>
+            </v-card-subtitle>
+          </v-card>
+          <v-card class="mx-auto" max-width="344" @click="openModal">
+            <v-img width="350" height="200" border="1" :src="images.m_firstimage" key="m_firstImage"></v-img>
+            <v-card-title>
+              <h3><i class="far fa-sticky-note"></i>mypage</h3>
+            </v-card-title>
+            <v-card-subtitle>
+              <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
+            </v-card-subtitle>
+          </v-card>
+          <v-card class="mx-auto" max-width="344">
+            <v-img class="coming"><span class="sub">Coming soon...</span></v-img>
+            <v-card-title>
+              <h3><i class="far fa-sticky-note"></i>???</h3>
+            </v-card-title>
+            <v-card-subtitle>
+              <span class="sub">???</span>
+            </v-card-subtitle>
+          </v-card>
         <div class="show">
-          <router-link to="works">戻る</router-link>
+          <router-link to="works"><i class="fas fa-arrow-circle-left"></i> 戻る</router-link>
         </div>
     </div>
       </div>

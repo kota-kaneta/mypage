@@ -80,7 +80,7 @@
           </v-carousel-item>
         </v-carousel>
         <div class="show">
-          <router-link to="show">一覧表示へ</router-link>
+          <router-link to="show">一覧表示へ<i class="fas fa-arrow-circle-right"></i></router-link>
         </div>
       </div>
       

@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <!-- <div class="mypage">
+      <v-img rel="preload" src="@/assets/mypage.png" border="1"></v-img>
+    </div> -->
     <!-- <v-card class="mx-auto" height="256" rounded="xl" width="500" @click="go" v-show="anime">
       Click!
     </v-card> -->
@@ -29,6 +32,13 @@
 </template>
 
 <style scoped lang="scss">
+// .mypage{
+//   position:fixed;
+//   top:-50px;
+//   left:0;
+//   right:0;
+//   background-image: url();
+// }
 .home{
   font-size: 42px;
   position: relative;
