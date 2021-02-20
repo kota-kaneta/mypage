@@ -146,6 +146,8 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  background-color: rgba(211, 211, 211, 0.527);
+  padding-bottom: 100px;
 }
 .cr{
   position: relative;
@@ -163,7 +165,7 @@
   font-size: 20px;
   font-weight: bold;
   background: #70a6ff;
-  border-radius: 50%;
+  border-radius: 20px;
   box-sizing: border-box;
   background:#2C3E50;
 }
