@@ -15,8 +15,8 @@
       <ul>
         <li @click="close"><router-link to="/">Home</router-link></li>
         <li @click="close"><router-link to="/about">About</router-link></li>
-        <li @click="close"><router-link to="skillset">Skillset</router-link></li>
-        <li @click="close"><router-link to="works">Works</router-link></li>
+        <li @click="close"><router-link to="/skillset">Skillset</router-link></li>
+        <li @click="close"><router-link to="/works">Works</router-link></li>
         <li @click="close"><router-link to="/contact">CONTACT</router-link></li>
         <li @click="close"><p class="close"><i class="fas fa-times"></i> 閉じる</p></li>
        </ul>
