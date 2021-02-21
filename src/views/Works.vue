@@ -117,7 +117,7 @@
         <div id="l_content">
           <div class="details">2020/12</div>
           <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-          <img :src="images.l_firstimage" key="l_firstImage" width="450" height="244"><br><br>
+          <img class="img" :src="images.l_firstimage" key="l_firstImage" width="450" height="244"><br><br>
           知人の暇な時間を確認できるアプリケーションです。<br>
           ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
           そのユーザーが登録している当日のスケジュールがタイムラインに表示されます。<br><br>
@@ -138,7 +138,7 @@
         <div id="content">
           <div class="details">2021/01</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
+          <img class="img" :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
           <p>
             私が作成したポートフォリオを載せております。<br>
             お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
@@ -438,6 +438,10 @@ a:active{
   top: 150px;
   right: 130px;
   font-size: 25px;
+}
+.img{
+  border: 1px solid rgba(188, 191, 192, 0.692);
+  border-radius: 10px;
 }
 </style>
 

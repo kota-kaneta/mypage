@@ -10,7 +10,7 @@
               暇な人を探すツール
             </div>
             <v-card class="mx-auto" max-width="344" @click="l_openModal">
-              <v-img width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
+              <v-img  width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
               <v-card-title>
                 <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
               </v-card-title>
@@ -61,7 +61,7 @@
         <div id="l_content">
           <div class="details">2020/12</div>
           <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-          <img :src="images.l_firstimage" key="l_firstImage" width="450" height="244"><br><br>
+          <img class="img" :src="images.l_firstimage" key="l_firstImage" width="450" height="244"><br><br>
           知人の暇な時間を確認できるアプリケーションです。<br>
           ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
           そのユーザーが登録している当日のスケジュールがタイムラインに表示されます。<br><br>
@@ -82,7 +82,7 @@
         <div id="content">
           <div class="details">2021/01</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
+          <img class="img" :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
           <p>
             私が作成したポートフォリオを載せております。<br>
             お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
@@ -141,6 +141,10 @@
 </template>
 
 <style lang="scss" scoped>
+.img{
+  border: 1px solid rgba(188, 191, 192, 0.692);
+  border-radius: 10px;
+}
 .show-flex{
   display: flex;
   justify-content: space-around;
@@ -155,19 +159,18 @@
 .balloon3 {
   position: relative;
   display: inline-block;
-  margin: 20px 0 50px 0;
+  margin: 40px 0 50px 0;
   padding: 0 5px;
   width: 300px;
-  height: 95px;
-  line-height: 90px;
+  height: 70px;
+  line-height: 70px;
   text-align: center;
   color: #FFF;
   font-size: 20px;
   font-weight: bold;
-  background: #70a6ff;
   border-radius: 20px;
   box-sizing: border-box;
-  background:#2C3E50;
+  background:#77a1ca;
 }
 
 .balloon3:before {
@@ -177,7 +180,7 @@
   left: 50%;
   margin-left: -15px;
   border: 15px solid transparent;
-  border-top: 15px solid #2C3E50;
+  border-top: 15px solid #77a1ca;
   z-index: 0;
 }
 
