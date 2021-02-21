@@ -117,7 +117,7 @@
         <div id="l_content">
           <div class="details">2020/12</div>
           <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-          <img :src="images.l_secondimage" key="l_scondImage" width="450" height="244"><br><br>
+          <img :src="images.l_firstimage" key="l_firstImage" width="450" height="244"><br><br>
           知人の暇な時間を確認できるアプリケーションです。<br>
           ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
           そのユーザーが登録している当日のスケジュールがタイムラインに表示されます。<br><br>
@@ -138,7 +138,7 @@
         <div id="content">
           <div class="details">2021/01</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_secondimage" key="m_scondImage" width="450" height="244"><br><br>
+          <img :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
           <p>
             私が作成したポートフォリオを載せております。<br>
             お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
@@ -460,9 +460,7 @@ export default {
       color: '#cfd8dc79',
       images: {
         l_firstimage: require("@/assets/wood.png"),
-        l_secondimage: require("@/assets/l-searcher.gif"),
         m_firstimage: require("@/assets/mypage.png"),
-        m_secondimage: require("@/assets/mypage.gif"),
         ruby_image: require("@/assets/ruby.svg"),
         // js_image: require("@/assets/prog-js01.svg")
       }
