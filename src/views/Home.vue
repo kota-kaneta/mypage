@@ -11,7 +11,7 @@
       Click!
     </v-card> -->
     <div v-show="skipBefore" class="typer">
-      <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth"></vue-typer>
+      <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth" pre-type-delay="200"></vue-typer>
     </div>
     <div v-show="skipAfter">
     Thank you for visiting this site！<br><br>
