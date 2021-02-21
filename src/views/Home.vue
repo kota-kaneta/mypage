@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <transition appear>
+      <Header><i class="fas fa-home"></i> Home</Header>
+    </transition>
+    <div class="blank"></div>
     <!-- <div class="mypage">
       <v-img rel="preload" src="@/assets/mypage.png" border="1"></v-img>
     </div> -->
@@ -43,7 +47,17 @@
 .home{
   font-size: 42px;
   position: relative;
-  padding-top: 90px;
+  padding-top: 0px;
+}
+.v-enter {
+  transform: translate(0, -100px);
+  opacity: 0;
+}
+.v-enter-to {
+  opacity: 1;
+}
+.v-enter-active {
+  transition: all 1.5s 0s ease;
 }
 .button{
   position: fixed;
@@ -109,11 +123,15 @@
   color:#d7e4f1;
   height: 60px;
 }
+.blank{
+  height: 30px;
+}
 </style>
 
 <script>
 import { VueTyper } from 'vue-typer'
 // import { KinesisContainer, KinesisElement} from 'vue-kinesis'
+import Header from "@/components/Header.vue";
 
 export default {
   name: "home",
@@ -121,6 +139,7 @@ export default {
     'vue-typer': VueTyper,
     // 'kinesis-container': KinesisContainer,
     // 'kinesis-element': KinesisElement
+    Header
   },
   data: function(){
     return{

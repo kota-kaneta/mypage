@@ -1,5 +1,5 @@
 <template>
-    <h2 class="separation"><slot></slot></h2>
+    <h2 class="separation"><slot></slot> <i class="fas fa-pen"></i></h2>
 </template>
 
 <style>
