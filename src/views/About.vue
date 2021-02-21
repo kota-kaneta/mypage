@@ -85,8 +85,8 @@
             2020年9月
             </v-card-text>
             <p class="blank">
-            コロナによる研究困難により休学<br>
-            同時にプログラミングの勉強を始める<br>
+            キャンパス入館制限による研究困難により休学<br>
+            同時期にプログラミングの勉強を始める<br>
             （主にRuby on Railsを中心に開発を行う）
             </p>
           </v-card>
@@ -94,13 +94,13 @@
             <v-card-text>
             2020年12月
             </v-card-text>
-            エンジニアを目指して大学を中途退学
+            Web業界を目指して大学を中途退学
           </v-card>
           <v-card class="elevation-2">
             <v-card-text>
             現在
             </v-card-text>
-            Vue.jsを学習中...
+            Vue.jsなどを学習中...
           </v-card>
         </div>
       </div>
