@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <transition appear>
-      <Header class="sp-home"><i class="fas fa-home"></i> Home</Header>
+      <Header class="pc-home"><i class="fas fa-home"></i> Home</Header>
     </transition>
     <div class="blank"></div>
     <!-- <div class="mypage">
@@ -89,7 +89,7 @@
 @media screen and (max-width: 768px) {
   .button,
   .typer,
-  .sp-home{ 
+  .pc-home{ 
     display:none; 
   }
 }
