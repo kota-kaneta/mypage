@@ -142,7 +142,7 @@
 
 <style lang="scss" scoped>
 .img{
-  border: 1px solid rgba(188, 191, 192, 0.692);
+  border: 1px solid rgba(223, 224, 224, 0.692);
   border-radius: 10px;
 }
 .show-flex{

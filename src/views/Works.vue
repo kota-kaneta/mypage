@@ -440,7 +440,7 @@ a:active{
   font-size: 25px;
 }
 .img{
-  border: 1px solid rgba(188, 191, 192, 0.692);
+  border: 1px solid rgba(220, 221, 221, 0.692);
   border-radius: 10px;
 }
 </style>
