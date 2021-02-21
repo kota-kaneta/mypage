@@ -98,7 +98,7 @@
         </v-card-subtitle>
       </v-card>
       <v-card class="mx-auto" max-width="344" @click="l_openModal">
-        <v-img rel="preload" src="@/assets/l-searcher.png" width="350" height="195" border="1"></v-img>
+        <v-img rel="preload" src="@/assets/wood.png" width="350" height="195" border="1"></v-img>
         <v-card-title>
           <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
         </v-card-title>
@@ -459,7 +459,7 @@ export default {
       model: 0,
       color: '#cfd8dc79',
       images: {
-        l_firstimage: require("@/assets/l-searcher.png"),
+        l_firstimage: require("@/assets/wood.png"),
         l_secondimage: require("@/assets/l-searcher.gif"),
         m_firstimage: require("@/assets/mypage.png"),
         m_secondimage: require("@/assets/mypage.gif"),
