@@ -168,7 +168,8 @@ a:active { color: #ff8000; }
   height: 60px;
 }
 @media screen and (max-width: 767px) {
-  .v-app{
+  .v-app,
+  .bottom-nav{
     display: none;
   }
 }

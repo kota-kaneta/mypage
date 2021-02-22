@@ -27,6 +27,9 @@
       </div>
     </div>
     <router-view/>
+    <p class="sp-bottom-nav">
+    © 2021 Kota Kaneta
+    </p>
   </div>
 </template>
 
@@ -162,7 +165,8 @@
 }
 @media screen and (min-width: 768px){
   #sp-nav,
-  .wrapper{
+  .wrapper,
+  .sp-bottom-nav{
     display: none;
   }
 }
@@ -191,7 +195,17 @@
 .bottom-nav{
   font-family: 'Kaushan Script', cursive;
 }
-
+.sp-bottom-nav{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 15px;
+  font-size: 18px;
+  background-color: rgb(16, 16, 16);
+  color: #d7e4f1;
+  height: 60px;
+  font-family: 'Kaushan Script', cursive;
+}
 /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
 $bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
 $bg-width: 50px;

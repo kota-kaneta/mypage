@@ -90,7 +90,8 @@
 @media screen and (max-width: 768px) {
   .button,
   .typer,
-  .pc-home{ 
+  .pc-home,
+  .bottom-nav{ 
     display:none; 
   }
 }
