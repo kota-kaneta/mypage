@@ -11,7 +11,8 @@
         <v-tab to="/contact">Contact</v-tab>
       </v-tabs>
     </div>
-    <nav class="sp-nav" v-show="nav_sp">
+    <transition name="sp">
+    <nav class="sp-nav" v-show="nav_sp" @click="close">
       <ul>
         <li @click="close"><router-link to="/">Home</router-link></li>
         <li @click="close"><router-link to="/about">About</router-link></li>
@@ -19,8 +20,9 @@
         <li @click="close"><router-link to="/works">Works</router-link></li>
         <li @click="close"><router-link to="/contact">CONTACT</router-link></li>
         <li @click="close"><p class="close"><i class="fas fa-times"></i> 閉じる</p></li>
-       </ul>
+      </ul>
      </nav>
+    </transition>
     <div class="wrapper">
       <div id="hamburger" @click="open">
         <span></span>
@@ -39,15 +41,15 @@
 }
 .sp-nav {
   z-index: 1;
-  font-size: 33px;
+  font-size: 38px;
   position: fixed;
-  top: 0;
+  top: -40px;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: block;
   width: 100%;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(24, 24, 24, 0.8);
   transition: all .2s ease-in-out;
   padding-bottom: 80px;
 }
@@ -128,6 +130,16 @@
 }
 .v-enter-active {
   transition: all 1.5s 0s ease;
+}
+.sp-enter{
+  transform: translate(0, -100px);
+  opacity: 0;
+}
+.sp-enter-to{
+  opacity: 0.5s;
+}
+.sp-enter-active{
+  transition: all 0.5s 0s ease;
 }
 #app {
   font-family: global-variable-exists($name: a);
