@@ -12,7 +12,7 @@ header {
   font-size: 20px;
   font-family: 'Kaushan Script', cursive;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 20px;
   left: 30px;
   color: rgb(203, 180, 147);
@@ -32,7 +32,7 @@ header {
   border-right: 1680px solid transparent;
   border-left: 0 solid transparent;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 </style>
 

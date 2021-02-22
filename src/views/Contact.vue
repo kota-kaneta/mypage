@@ -1,8 +1,8 @@
 <template>
   <div class="contact">
+    <Header v-if="isSubmit === false">Contact <i class="fab fa-telegram"></i></Header>
     <transition appear>
       <div>
-        <Header v-if="isSubmit === false">Contact <i class="fab fa-telegram"></i></Header>
         <Separation v-if="isSubmit === false">
           Contact Form
         </Separation>

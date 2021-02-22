@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <transition appear>
-      <Header class="pc-home"><i class="fas fa-home"></i> Home</Header>
-    </transition>
+      <Header class="pc-home">Home <i class="fas fa-home"></i></Header>
+    <!-- <div class="triangle2"></div> -->
+    <div class="triangle3"></div>
     <div class="blank"></div>
     <!-- <div class="mypage">
       <v-img rel="preload" src="@/assets/mypage.png" border="1"></v-img>
@@ -13,7 +13,7 @@
     <div v-show="skipBefore" class="typer">
       <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth" pre-type-delay="200"></vue-typer>
     </div>
-    <div v-show="skipAfter">
+    <div v-show="skipAfter" class="typer">
     Thank you for visiting this site！<br><br>
     Nice to meet you, I'm Kota Kaneta.<br><br>
     You can see the skills I have by looking at this site.<br>
@@ -29,7 +29,7 @@
     <span v-show="beforeButton" @click="skip" class="button">
       <i class="fas fa-forward"></i>skip
     </span>
-    <span v-show="afterButton"><i class="far fa-laugh-squint"></i></span>
+    <span v-show="afterButton" class="face"><i class="far fa-laugh-squint"></i></span>
     <p class="bottom-nav">
       © 2021 Kota Kaneta
     </p>
@@ -72,6 +72,15 @@
   transform: scale(1);
   cursor: pointer;
   cursor: hand;
+  z-index: 3;
+  color: rgb(250, 226, 215);
+}
+.face{
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  color: rgb(164, 212, 224);
+  z-index: 5;
 }
 .far{
   position: fixed;
@@ -91,7 +100,8 @@
   .button,
   .typer,
   .pc-home,
-  .bottom-nav{ 
+  .bottom-nav,
+  .triangle3{ 
     display:none; 
   }
   .blank{
@@ -131,9 +141,26 @@
   background-color: rgb(16, 16, 16);
   color:#d7e4f1;
   height: 60px;
+  z-index: 30;
 }
 .blank{
   height: 150px;
+}
+.typer{
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
+.triangle3{
+  border-bottom: 130px solid #2c3e50;
+  border-right: 0px solid transparent;
+  border-left: 1680px solid transparent;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: -677px;
+  z-index: 2;
 }
 </style>
 

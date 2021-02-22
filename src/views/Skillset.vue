@@ -1,8 +1,8 @@
 <template>
   <div class="Doughnut">
+    <Header>Skillset <i class="fas fa-chart-pie"></i></Header>
     <transition appear>
       <div>
-        <Header>Skillset <i class="fas fa-chart-pie"></i></Header>
         <Separation>Language / Framework</Separation>
         <div class="chart">
           <chart style="margin:auto; height:55vh; width:55vw"></chart>

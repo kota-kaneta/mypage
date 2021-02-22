@@ -1,8 +1,8 @@
 <template>
   <div id="works">
+    <Header>Works <i class="fas fa-laptop-code"></i></Header>
     <transition appear>
       <div class="transition">
-        <Header>Works <i class="fas fa-laptop-code"></i></Header>
         <Separation>Portfolio</Separation>
         <div class="show-flex">
           <div class="cr">
