@@ -1,6 +1,6 @@
 <template id="body">
   <div id="app">
-    <span class="top-title">mypage</span>
+    <router-link to="/" class="top-title">mypage</router-link>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <div id="pc-nav">
       <v-tabs>
@@ -265,10 +265,8 @@ a {
   cursor: pointer;
   cursor: hand;
 }
-a:link { color: #7e7ef5; }
-a:visited { color: #5a5aec; }
-a:hover { color: #ff0000; }
-a:active { color: #ff8000; }
+a:link { color: #7777ac; }
+a:visited { color: #8a8acc; }
 </style>
 
 <script src="https://kit.fontawesome.com/4194671020.js" crossorigin="anonymous"></script>
