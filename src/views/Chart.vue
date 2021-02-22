@@ -6,7 +6,7 @@ export default ({
   data() {
     return {
       datas: {
-        labels: ['HTML5', 'CSS3', 'Ruby', 'Rails', 'JavaScript', 'Vue.js'],
+        labels: ['HTML5', 'CSS3', 'Ruby', 'Ruby on Rails', 'JavaScript', 'Vue.js'],
         datasets: [
           {
             data: [20, 20, 28, 53, 14, 24],
@@ -26,7 +26,7 @@ export default ({
             fontSize: 22,
             fontFamily: 'Kaushan Script',
             fontColor:  "#2c3e50",
-            padding: 32
+            padding: 25
           }
         },
         animation: {
