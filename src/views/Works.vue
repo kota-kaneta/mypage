@@ -80,7 +80,7 @@
           </v-carousel-item>
         </v-carousel>
         <div class="show">
-          <router-link to="show">一覧表示へ<i class="fas fa-arrow-circle-right"></i></router-link>
+          <router-link to="show">Full list <i class="fas fa-arrow-circle-right"></i></router-link>
         </div>
       </div>
       
@@ -357,7 +357,7 @@ a:active{
   height: 200px;
   padding-top: 70px;
   border-bottom: 2px solid rgba(211, 211, 211, 0.521);
-  font-family: global-variable-exists($name: a);
+  font-family: 'Kaushan Script', cursive;
   color: #cfd8dc49;
 }
 .bubble{

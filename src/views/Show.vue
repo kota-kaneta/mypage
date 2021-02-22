@@ -48,7 +48,7 @@
             </v-card>
           </div>
         <div class="show">
-          <router-link to="works"><i class="fas fa-arrow-circle-left"></i> 戻る</router-link>
+          <router-link to="works"><i class="fas fa-arrow-circle-left"></i> Back</router-link>
         </div>
     </div>
       </div>
@@ -339,7 +339,7 @@ a:active{
   height: 200px;
   padding-top: 70px;
   border-bottom: 2px solid rgba(211, 211, 211, 0.521);
-  font-family: global-variable-exists($name: a);
+  font-family: 'Kaushan Script', cursive;
   color: #cfd8dc49;
 }
 .bubble{
