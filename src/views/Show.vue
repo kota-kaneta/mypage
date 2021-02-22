@@ -80,7 +80,7 @@
     <transition name="modal">
       <div id="overlay" v-show="showContent" v-on:click="closeModal">
         <div id="content">
-          <div class="details">2021/01</div>
+          <div class="details">2021/02</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
           <img class="img" :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
           <p>
@@ -170,7 +170,7 @@
   font-weight: bold;
   border-radius: 20px;
   box-sizing: border-box;
-  background:#77a1ca;
+  background:#2c3e50;
 }
 
 .balloon3:before {
@@ -180,7 +180,7 @@
   left: 50%;
   margin-left: -15px;
   border: 15px solid transparent;
-  border-top: 15px solid #77a1ca;
+  border-top: 15px solid #2c3e50;
   z-index: 0;
 }
 

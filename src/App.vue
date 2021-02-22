@@ -280,8 +280,8 @@ a {
   cursor: pointer;
   cursor: hand;
 }
-a:link { color: #7777ac; }
-a:visited { color: #8a8acc; }
+a:link { color: #5c5cdd; }
+a:visited { color: #5c5cdd; }
 </style>
 
 <script src="https://kit.fontawesome.com/4194671020.js" crossorigin="anonymous"></script>

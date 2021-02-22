@@ -136,7 +136,7 @@
     <transition name="modal">
       <div id="overlay" v-show="showContent" v-on:click="closeModal">
         <div id="content">
-          <div class="details">2021/01</div>
+          <div class="details">2021/02</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
           <img class="img" :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
           <p>
