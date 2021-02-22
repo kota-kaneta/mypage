@@ -40,7 +40,7 @@
   color: whitesmoke;
 }
 .sp-nav {
-  z-index: 1;
+  z-index: 3;
   font-size: 38px;
   position: fixed;
   top: -40px;
