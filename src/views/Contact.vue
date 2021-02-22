@@ -2,7 +2,7 @@
   <div class="contact">
     <transition appear>
       <div>
-        <Header v-if="isSubmit === false">Contact<i class="fab fa-telegram"></i></Header>
+        <Header v-if="isSubmit === false">Contact <i class="fab fa-telegram"></i></Header>
         <Separation v-if="isSubmit === false">
           Contact Form
         </Separation>

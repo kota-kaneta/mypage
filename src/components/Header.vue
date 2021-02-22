@@ -1,15 +1,38 @@
 <template>    
-  <header>
-    <h1><slot></slot></h1>
-  </header>
+  <div>
+    <header>
+      <h1><slot></slot></h1>
+    </header>
+    <div class="triangle"></div>
+  </div>
 </template>
 
 <style>
 header {
   font-size: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   font-family: 'Kaushan Script', cursive;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 30px;
+  color: rgb(203, 180, 147);
+}
+@media screen and (max-width: 767px) {
+  header{
+    left: 0;
+    right: 0;
+    color: #2c3e50;
+  }
+  .triangle{
+    display: none;
+  }
+}
+.triangle{
+  border-top: 130px solid #2c3e50;
+  border-right: 1680px solid transparent;
+  border-left: 0 solid transparent;
+  position: absolute;
+  z-index: 1;
 }
 </style>
 

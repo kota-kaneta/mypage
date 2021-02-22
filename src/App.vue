@@ -122,7 +122,7 @@
   font-size: 20px;
 }
 .v-enter {
-  transform: translate(0, 100px);
+  transform: translate(0, -100px);
   opacity: 0;
 }
 .v-enter-to {
@@ -154,7 +154,7 @@
 .top-title{
   position: absolute;
   top: -7px;
-  left: 30px;
+  right: 30px;
   color: rgb(164, 188, 204);
   text-shadow: 2px 2px 6px #808080;
   font-size: 35px;
@@ -170,6 +170,10 @@
   #pc-nav,
   .bottom-nav{
     display: none;
+  }
+  .top-title{
+    top: -7px;
+    left: 30px;
   }
   #sp-nav{
     display: flex;

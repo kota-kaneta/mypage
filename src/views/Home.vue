@@ -94,6 +94,12 @@
   .bottom-nav{ 
     display:none; 
   }
+  .blank{
+    display: none;
+  }
+  .home{
+    padding-top: 30px;
+  }
 }
 @media screen and (min-width: 768px){
   .sp-home{
@@ -127,7 +133,7 @@
   height: 60px;
 }
 .blank{
-  height: 30px;
+  height: 150px;
 }
 </style>
 

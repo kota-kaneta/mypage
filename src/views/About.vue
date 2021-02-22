@@ -2,7 +2,7 @@
   <div>
     <transition appear>
       <div id="about">
-        <Header>About<i class="fas fa-user-circle"></i></Header>
+        <Header>About <i class="fas fa-user-circle"></i></Header>
         <Separation>Profile / Career</Separation><br>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
             <v-timeline>
