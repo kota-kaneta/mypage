@@ -48,6 +48,7 @@
   font-size: 42px;
   position: relative;
   padding-top: 0px;
+  font-family: 'Kaushan Script', cursive;
 }
 .v-enter {
   transform: translate(0, -100px);

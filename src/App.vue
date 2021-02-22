@@ -175,6 +175,7 @@
   justify-content: center;
   background-color:rgb(22, 22, 22);
   border: 2px solid rgba(56, 56, 56, 0.769);
+  font-family: 'Kaushan Script', cursive;
 }
 #pc-nav a,
 #sp-nav a {

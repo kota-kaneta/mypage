@@ -9,7 +9,7 @@ header {
   font-size: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
-  
+  font-family: 'Kaushan Script', cursive;
 }
 </style>
 

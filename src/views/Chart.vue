@@ -24,7 +24,7 @@ export default ({
           position: 'bottom',
           labels : {
             fontSize: 22,
-            fontFamily: "Georgia",
+            fontFamily: 'Kaushan Script',
             fontColor:  "#2c3e50",
             padding: 32
           }

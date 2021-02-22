@@ -7,6 +7,7 @@
   padding-top: 30px;
   font-size: 27px;
   padding-bottom: 30px;
+  font-family: 'Kaushan Script', cursive;
 }
 </style>
 
