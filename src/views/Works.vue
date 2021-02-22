@@ -265,7 +265,7 @@ a:active{
   color : #26a69a;
 }
 #overlay{
-  z-index:1;
+  z-index:4;
 
   position:fixed;
   top:0;
@@ -279,7 +279,7 @@ a:active{
   justify-content: center;
 }
 #l_overlay{
-  z-index:1;
+  z-index:4;
 
   position:fixed;
   top:0;

@@ -29,7 +29,7 @@
               </p>
               <textarea class="Form-Item-Textarea" v-model="message" name="message"></textarea>
             </div>
-              <button type="submit" class="Form-Btn"><span class="send">送信する</span></button>
+              <button type="submit" class="Form-Btn"><span class="send">SEND</span></button>
           </div>
         </form>
         <form name="contact" netlify netlify-honeypot="bot-field" hidden>
@@ -222,6 +222,7 @@
   outline: none;
   border: solid 1px #627295;
   border-radius: 15px;
+  font-family: 'Kaushan Script', cursive;
 }
 .Form-Btn:hover{
   -webkit-transform: scale(1.05,1.05);
