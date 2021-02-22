@@ -83,7 +83,6 @@
           <router-link to="show">Full list <i class="fas fa-arrow-circle-right"></i></router-link>
         </div>
       </div>
-      
 
 
     <!-- スマホ -->
@@ -109,6 +108,7 @@
     </div>
     </div>
   </transition>
+  <div class="sp-blank"></div>
   
 <!-- モーダル -->
   <div class="pc-modal">

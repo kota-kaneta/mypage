@@ -166,7 +166,8 @@
 @media screen and (min-width: 768px){
   #sp-nav,
   .wrapper,
-  .sp-bottom-nav{
+  .sp-bottom-nav,
+  .sp-blank{
     display: none;
   }
 }
@@ -196,6 +197,7 @@
   font-family: 'Kaushan Script', cursive;
 }
 .sp-bottom-nav{
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -254,6 +256,9 @@ body {
   -moz-animation-timing-function:    linear;
   -o-animation-timing-function:      linear;
   animation-timing-function:         linear;
+}
+.sp-blank{
+  height: 100px;
 }
 a {
   text-decoration: none;

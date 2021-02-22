@@ -105,6 +105,7 @@
         </div>
       </div>
     </transition>
+    <div class="sp-blank"></div>
     <p class="bottom-nav">
     © 2021 Kota Kaneta
     </p>

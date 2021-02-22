@@ -46,6 +46,7 @@
     <div v-if="nothing === true" class="nothing">
       <i class="fas fa-exclamation-triangle"></i>各項目はすべて必須です
     </div>
+    <div class="sp-blank"></div>
     <p class="bottom-nav">
     © 2021 Kota Kaneta
     </p>
