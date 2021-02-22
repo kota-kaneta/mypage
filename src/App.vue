@@ -172,8 +172,7 @@
     display: none;
   }
   .top-title{
-    top: -7px;
-    left: 30px;
+    display: none;
   }
   #sp-nav{
     display: flex;
