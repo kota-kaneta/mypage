@@ -68,18 +68,21 @@
             </v-card-text>
             群馬県にて生誕
           </v-card>
+            ⬇︎
           <v-card class="elevation-2">
             <v-card-text>
             2006年〜2016年
             </v-card-text>
             小学校3年から高校3年までの10年間野球部に所属
           </v-card>
+          ⬇︎
           <v-card class="elevation-2">
             <v-card-text>
             2017年4月
             </v-card-text>
             日本大学理工学部物質応用化学科に入学
           </v-card>
+          ⬇︎
           <v-card class="elevation-2">
             <v-card-text>
             2020年9月
@@ -90,12 +93,14 @@
             （主にRuby on Railsを中心に開発を行う）
             </p>
           </v-card>
+          ⬇︎
           <v-card class="elevation-2">
             <v-card-text>
             2020年12月
             </v-card-text>
             Web業界を目指して大学を中途退学
           </v-card>
+          ⬇︎
           <v-card class="elevation-2">
             <v-card-text>
             現在
