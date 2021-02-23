@@ -443,6 +443,8 @@ a:active{
   border: 1px solid rgba(220, 221, 221, 0.692);
   border-radius: 10px;
 }
+a:link { color: #5c5cdd; }
+a:visited { color: #5c5cdd; }
 </style>
 
 <script>

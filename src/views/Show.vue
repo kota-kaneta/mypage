@@ -420,6 +420,8 @@ a:active{
   right: 130px;
   font-size: 25px;
 }
+a:link { color: #4f4fee; }
+a:visited { color: #4848eb; }
 </style>
 
 <script>
