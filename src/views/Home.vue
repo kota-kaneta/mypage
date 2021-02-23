@@ -79,7 +79,7 @@
   position: fixed;
   bottom: 100px;
   right: 100px;
-  color: rgb(164, 212, 224);
+  color: rgb(250, 226, 215);
   z-index: 5;
 }
 .far{
@@ -161,6 +161,12 @@
   height: 200px;
   bottom: -677px;
   z-index: 2;
+}
+.vue-typer {
+  color: #2c3e50;
+  .custom.char {
+    color: #2c3e50;
+  }
 }
 </style>
 
