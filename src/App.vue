@@ -66,7 +66,8 @@
 }
 @media screen and (max-width: 767px) {
   #pc-nav,
-  .bottom-nav{
+  .bottom-nav,
+  .triangle{
     display: none;
   }
   #sp-nav{
