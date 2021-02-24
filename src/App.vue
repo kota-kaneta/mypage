@@ -49,12 +49,14 @@
 }
 .top-title{
   position: absolute;
-  top: -7px;
+  top: 0;
   right: 30px;
   color: rgb(164, 188, 204);
   text-shadow: 2px 2px 6px #808080;
   font-size: 35px;
   font-family: 'Kaushan Script', cursive;
+  line-height: 1.1;
+  -webkit-box-reflect: below -15px -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0) 10%,rgba(0, 0, 0, 0.4));
 }
 #pc-nav,
 #sp-nav{
