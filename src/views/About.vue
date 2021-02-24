@@ -6,55 +6,41 @@
         <Separation>Profile / Career</Separation><br>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
             <v-timeline>
-              <v-timeline-item color="#FFF3E0">
+              <v-timeline-item color="#CFD8DC">
+                <span slot="opposite" class="opposite">1998 / 08</span>
                 <v-card class="elevation-2">
-                  <v-card-text>
-                  1998年8月
-                  </v-card-text>
                   群馬県にて生誕
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="#FFF3E0">
+              <v-timeline-item color="#CFD8DC">
+                <span slot="opposite" class="opposite">2006 〜 2016</span>
                 <v-card class="elevation-2">
-                  <v-card-text>
-                  2006年〜2016年
-                  </v-card-text>
                   小学校3年から高校3年までの10年間野球部に所属
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="#FFF3E0">
+              <v-timeline-item color="#CFD8DC">
+                <span slot="opposite" class="opposite">2017 / 04</span>
                 <v-card class="elevation-2">
-                  <v-card-text>
-                  2017年4月
-                  </v-card-text>
                   日本大学理工学部物質応用化学科に入学
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="#FFF3E0">
+              <v-timeline-item color="#CFD8DC">
+                <span slot="opposite" class="opposite">2020 / 09</span>
                 <v-card class="elevation-2">
-                  <v-card-text>
-                  2020年9月
-                  </v-card-text>
-                  <p class="blank">
                   キャンパス入館制限による研究困難により休学<br>
                   同時期にプログラミングの勉強を始める<br>
-                  （主にRuby on Railsを中心に開発を行う）
-                  </p>
+                  （主にRuby on Railsを中心に開発）
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="#FFF3E0">
+              <v-timeline-item color="#CFD8DC">
+                <span slot="opposite" class="opposite">2020 / 12</span>
                 <v-card class="elevation-2">
-                  <v-card-text>
-                  2020年12月
-                  </v-card-text>
                   Web業界を目指して大学を中途退学
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#FFA726" large>
+                <span slot="opposite" class="opposite">2021 / 01 〜</span>
                 <v-card class="elevation-2">
-                  <v-card-text>
-                  現在
-                  </v-card-text>
                   Vue.jsなどを学習中...
                 </v-card>
               </v-timeline-item>
@@ -90,7 +76,7 @@
             <p class="blank">
             キャンパス入館制限による研究困難により休学<br>
             同時期にプログラミングの勉強を始める<br>
-            （主にRuby on Railsを中心に開発を行う）
+            （主にRuby on Railsを中心に開発）
             </p>
           </v-card>
           ⬇︎
@@ -120,6 +106,9 @@
 <style scoped>
 #about{
   position: relative;
+}
+.v-app{
+  padding-top: 60px;
 }
 .timeline{
   margin-bottom: 21px;
@@ -183,6 +172,15 @@ a:active { color: #ff8000; }
   .sp-about{
     display: none;
   }
+  .elevation-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.opposite{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 25px;
 }
 </style>
 

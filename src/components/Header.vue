@@ -23,13 +23,10 @@ header {
     right: 0;
     color: #2c3e50;
   }
-  .triangle{
-    display: none;
-  }
 }
 .triangle{
   border-top: 130px solid #2c3e50;
-  border-right: 1680px solid transparent;
+  border-right: 100vw solid transparent;
   border-left: 0 solid transparent;
   position: absolute;
   z-index: 2;

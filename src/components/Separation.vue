@@ -4,8 +4,8 @@
 
 <style>
 .separation{
-  padding-top: 150px;
-  font-size: 28px;
+  padding-top: 145px;
+  font-size: 31px;
   padding-bottom: 30px;
   font-family: 'Kaushan Script', cursive;
 }

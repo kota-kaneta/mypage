@@ -69,11 +69,13 @@
   .bottom-nav{
     display: none;
   }
-  .top-title{
-    display: none;
-  }
   #sp-nav{
     display: flex;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top-title{
+    display: none;
   }
 }
 @media screen and (min-width: 768px){

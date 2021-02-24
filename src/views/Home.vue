@@ -155,11 +155,11 @@
 .triangle3{
   border-bottom: 130px solid #2c3e50;
   border-right: 0px solid transparent;
-  border-left: 1680px solid transparent;
-  position: absolute;
+  border-left: 100vw solid transparent;
+  position: fixed;
   width: 100%;
   height: 200px;
-  bottom: -677px;
+  bottom: 60px;
   z-index: 2;
 }
 .vue-typer {
