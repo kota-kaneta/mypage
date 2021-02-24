@@ -280,6 +280,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   cursor: hand;
+  font-family: 'Kaushan Script', cursive;
 }
 a:link { color: rgb(250, 226, 215); }
 a:visited { color: rgb(250, 226, 215) }
