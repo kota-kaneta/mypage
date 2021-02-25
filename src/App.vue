@@ -24,9 +24,9 @@
      </nav>
     </transition>
     <div class="wrapper">
-      <div id="hamburger" @click="open">
-        <span></span>
-      </div>
+      <span class="list" @click="open">
+        <i class="fas fa-list"></i>
+      </span>
     </div>
     <router-view/>
     <p class="sp-bottom-nav">
@@ -219,42 +219,12 @@
   height: 55px;
   background-color: #2c3e50;
 }
-#hamburger {
-  position: relative;
-  display: block;
-  width: 30px;
-  height: 25px;
-  margin: 0 0 0 auto;
-}
-#hamburger span {
+.list{
+  color: white;
   position: absolute;
-  top: 28px;
-  left: -20px;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: rgb(253, 251, 251);
-  transform: translateY(-50%);
-}
-#hamburger::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 15px;
-  left: -20px;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-}
-#hamburger::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -15px;
-  left: -20px;
-  width: 70%;
-  height: 2px;
-  background-color: #fff;
+  top: 6px;
+  right: 15px;
+  font-size: 40px;
 }
 .close{
   padding-top:30px;
