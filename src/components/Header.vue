@@ -22,6 +22,7 @@ header {
     left: 0;
     right: 0;
     color: #2c3e50;
+    z-index: 1;
   }
 }
 .triangle{
