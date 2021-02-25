@@ -170,7 +170,7 @@
   font-weight: bold;
   border-radius: 20px;
   box-sizing: border-box;
-  background:#2c3e50;
+  background:#384f66;
 }
 
 .balloon3:before {
@@ -180,7 +180,7 @@
   left: 50%;
   margin-left: -15px;
   border: 15px solid transparent;
-  border-top: 15px solid #2c3e50;
+  border-top: 15px solid #384f66;
   z-index: 0;
 }
 

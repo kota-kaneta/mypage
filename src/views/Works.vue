@@ -368,7 +368,7 @@ a:active{
   padding-top:35px;
   width:300px;
   height:140px;
-  background:#2C3E50;
+  background:#384f66;
   text-align:center;
   font-size:15px;
   border-radius:15px;
@@ -388,7 +388,7 @@ a:active{
     border-left-width:30px;
     border-right-width:30px;
     margin-top: -10px;
-    border-left-color:#2C3E50;
+    border-left-color:#384f66;
     left:100%;
     top:50%;
 }
