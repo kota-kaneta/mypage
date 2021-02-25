@@ -80,7 +80,7 @@
           </v-carousel-item>
         </v-carousel>
         <div class="show">
-          <router-link to="show">Full list <i class="fas fa-long-arrow-alt-right"></i></router-link>
+          <router-link to="show">Full list <i class="fas fa-door-open"></i></router-link>
         </div>
       </div>
 

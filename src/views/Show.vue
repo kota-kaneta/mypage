@@ -48,7 +48,7 @@
             </v-card>
           </div>
         <div class="show">
-          <router-link to="works"><i class="fas fa-long-arrow-alt-left"></i> Back</router-link>
+          <router-link to="works">Back <i class="fas fa-door-open"></i></router-link>
         </div>
     </div>
       </div>
