@@ -90,7 +90,6 @@
 .button:hover{
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  color: #ff8000;
 }
 .button:active {
   -webkit-transform: translateY(3px);
