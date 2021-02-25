@@ -97,7 +97,6 @@
   transform: translateY(3px);
 }
 @media screen and (max-width: 768px) {
-  .button,
   .typer,
   .pc-home,
   .bottom-nav,
@@ -109,6 +108,11 @@
   }
   .home{
     padding-top: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .button{
+    display: none;
   }
 }
 @media screen and (min-width: 768px){

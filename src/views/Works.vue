@@ -115,7 +115,7 @@
     <transition name="l_modal">
       <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
         <div id="l_content">
-          <div class="details">2020/12</div>
+          <div class="details">2020 / 12</div>
           <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
           <img class="img" :src="images.l_firstimage" key="l_firstImage" width="450" height="244"><br><br>
           知人の暇な時間を確認できるアプリケーションです。<br>
@@ -136,7 +136,7 @@
     <transition name="modal">
       <div id="overlay" v-show="showContent" v-on:click="closeModal">
         <div id="content">
-          <div class="details">2021/02</div>
+          <div class="details">2021 / 02</div>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
           <img class="img" :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
           <p>
@@ -159,7 +159,7 @@
     <transition name="l_modal">
       <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
         <div id="l_content">
-          <div class="details">2020/12</div><br>
+          <div class="details">2020 / 12</div><br>
           <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
           <img :src="images.l_firstimage" key="l_firstImage" width="300" height="170"><br>
           （Rails / AWS / Capistrano）
@@ -176,7 +176,7 @@
     <transition name="modal">
       <div id="overlay" v-show="showContent" v-on:click="closeModal">
         <div id="content">
-          <div class="details">2021/01</div><br>
+          <div class="details">2021 / 01</div><br>
           <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
           <img :src="images.m_firstimage" key="m_firstImage" width="300" height="170"><br><br>
           （Vue.js / Node.js / Netlify）
@@ -304,6 +304,7 @@ a:active{
   position: absolute;
   left: 10px;
   top: 10px;
+  font-family: 'Kaushan Script', cursive;
 }
 #l_content{
   position: relative;
