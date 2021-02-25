@@ -183,7 +183,7 @@
   z-index: 3;
   font-size: 38px;
   position: fixed;
-  top: -40px;
+  top: -50px;
   left: 0;
   width: 100%;
   height: 110vh;

@@ -370,7 +370,7 @@ a:active{
   height:140px;
   background:#2C3E50;
   text-align:center;
-  font-size:14px;
+  font-size:15px;
   border-radius:15px;
   -webkit-border-radius:15px;
   -moz-border-radius:15px;

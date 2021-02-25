@@ -166,7 +166,7 @@
   line-height: 70px;
   text-align: center;
   color: #FFF;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   border-radius: 20px;
   box-sizing: border-box;
