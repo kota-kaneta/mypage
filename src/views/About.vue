@@ -9,39 +9,39 @@
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite">1998 / 08</span>
                 <v-card class="elevation-2">
-                  群馬県にて生誕
+                  <i>群馬県にて生誕</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite">2006 〜 2016</span>
                 <v-card class="elevation-2">
-                  小学校3年から高校3年までの10年間野球部に所属
+                  <i>小学校3年から高校3年までの10年間野球部に所属</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite">2017 / 04</span>
                 <v-card class="elevation-2">
-                  日本大学理工学部物質応用化学科に入学
+                  <i>日本大学理工学部物質応用化学科に入学</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite">2020 / 09</span>
                 <v-card class="elevation-2">
-                  キャンパス入館制限による研究困難により休学<br>
+                  <i>キャンパス入館制限による研究困難により休学<br>
                   同時期にプログラミングの勉強を始める<br>
-                  （主にRuby on Railsを中心に開発）
+                  （主にRuby on Railsを中心に開発）</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite">2020 / 12</span>
                 <v-card class="elevation-2">
-                  Web業界を目指して大学を中途退学
+                  <i>Web業界を目指して大学を中途退学</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#FFA726" large>
                 <span slot="opposite" class="opposite">2021 / 01 〜</span>
                 <v-card class="elevation-2">
-                  Vue.jsなどを学習中...
+                  <i>Vue.jsなどを学習中...</i>
                 </v-card>
               </v-timeline-item>
               <p class="timeline"></p>
@@ -52,21 +52,21 @@
             <v-card-text>
             1998年8月
             </v-card-text>
-            群馬県にて生誕
+            <i>群馬県にて生誕</i>
           </v-card>
             ⬇︎
           <v-card class="elevation-2">
             <v-card-text>
             2006年〜2016年
             </v-card-text>
-            小学校3年から高校3年までの10年間野球部に所属
+            <i>小学校3年から高校3年までの10年間野球部に所属</i>
           </v-card>
           ⬇︎
           <v-card class="elevation-2">
             <v-card-text>
             2017年4月
             </v-card-text>
-            日本大学理工学部物質応用化学科に入学
+            <i>日本大学理工学部物質応用化学科に入学</i>
           </v-card>
           ⬇︎
           <v-card class="elevation-2">
@@ -74,9 +74,9 @@
             2020年9月
             </v-card-text>
             <p class="blank">
-            キャンパス入館制限による研究困難により休学<br>
+            <i>キャンパス入館制限による研究困難により休学<br>
             同時期にプログラミングの勉強を始める<br>
-            （主にRuby on Railsを中心に開発）
+            （主にRuby on Railsを中心に開発）</i>
             </p>
           </v-card>
           ⬇︎
@@ -84,14 +84,14 @@
             <v-card-text>
             2020年12月
             </v-card-text>
-            Web業界を目指して大学を中途退学
+            <i>Web業界を目指して大学を中途退学</i>
           </v-card>
           ⬇︎
           <v-card class="elevation-2">
             <v-card-text>
             現在
             </v-card-text>
-            Vue.jsなどを学習中...
+            <i>Vue.jsなどを学習中...</i>
           </v-card>
         </div>
       </div>
