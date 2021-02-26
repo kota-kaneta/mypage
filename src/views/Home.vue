@@ -98,8 +98,7 @@
 @media screen and (max-width: 768px) {
   .typer,
   .pc-home,
-  .bottom-nav,
-  .triangle3{ 
+  .bottom-nav{ 
     display:none; 
   }
   .blank{
@@ -110,7 +109,8 @@
   }
 }
 @media screen and (max-width: 1200px) {
-  .button{
+  .button,
+  .triangle3{
     display: none;
   }
 }
