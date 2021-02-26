@@ -30,7 +30,7 @@
     </div>
     <router-view/>
     <p class="sp-bottom-nav">
-    © 2021 Kota Kaneta
+    © 2021 Kota Kaneta All right reserved.
     </p>
   </div>
 </template>
