@@ -31,7 +31,7 @@
     </span>
     <span v-show="afterButton" class="face"><i class="far fa-laugh-squint"></i></span>
     <p class="bottom-nav">
-      © 2021 Kota Kaneta All right reserved.
+      © 2021 Kota Kaneta All rights reserved.
     </p>
   </div>
 </template>

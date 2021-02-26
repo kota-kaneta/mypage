@@ -98,7 +98,7 @@
     </transition>
     <div class="sp-blank"></div>
     <p class="bottom-nav">
-    © 2021 Kota Kaneta All right reserved.
+    © 2021 Kota Kaneta All rights reserved.
     </p>
   </div>
 </template>
