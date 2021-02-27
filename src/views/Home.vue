@@ -4,6 +4,7 @@
     <!-- <div class="triangle2"></div> -->
     <div class="triangle3"></div>
     <div class="blank"></div>
+    <div class="hand"><i class="fas fa-hand-point-up"></i></div>
     <!-- <div class="mypage">
       <v-img rel="preload" src="@/assets/mypage.png" border="1"></v-img>
     </div> -->
@@ -14,7 +15,7 @@
       <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth" pre-type-delay="200"></vue-typer>
     </div>
     <div v-show="skipAfter" class="typer">
-    Thank you for visiting this site！<br><br>
+    Thank you for visiting this site!<br><br>
     Nice to meet you, I'm Kota Kaneta.<br><br>
     You can see the skills I have by looking at this site.<br>
     You can also check the source code of the portfolio.<br><br>
@@ -22,9 +23,12 @@
     </div>
     <transition appear>
       <div class="sp-home">
-        Nice to meet you,<br>I'm Kota Kaneta.<br><br>
-        You can see my skills<br> and profile on this site.<br><br>
-        please contact us using the contact form.
+        Thank you for<br>
+        visiting this site！<br><br>
+        Nice to meet you, I'm Kota Kaneta.<br><br>
+        You can see my skills<br>
+        from the navigation in the upper right. <i class="fas fa-bomb"></i><br><br>
+
       </div>
     </transition>
     <span v-show="beforeButton" @click="skip" class="button">
@@ -50,6 +54,7 @@
   position: relative;
   padding-top: 0px;
   font-family: 'Kaushan Script', cursive;
+  background-color: #fefef7;
 }
 .v-enter {
   transform: translate(0, -100px);
@@ -115,8 +120,9 @@
     display: none;
   }
 }
-@media screen and (min-width: 768px){
-  .sp-home{
+@media screen and (min-width: 767px){
+  .sp-home,
+  .hand{
     display: none;
   }
 }
@@ -171,6 +177,22 @@
   .custom.char {
     color: #2c3e50;
   }
+}
+.hand{
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  -webkit-animation: blink 1s ease infinite;
+	animation: blink 1.8s ease infinite;
+  font-size: 45px;
+}
+@-webkit-keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 </style>
 

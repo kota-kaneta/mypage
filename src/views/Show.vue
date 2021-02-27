@@ -103,16 +103,16 @@
     <transition name="l_modal">
       <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
         <div id="l_content">
-          <div class="details">2020 / 12</div><br>
-          <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-          <img :src="images.l_firstimage" key="l_firstImage" width="300" height="170"><br>
-          （Rails / AWS / Capistrano）
+          <div class="ur">✔︎暇人管理アプリ</div>
+          <div class="details">2020 / 12</div><br><br>
+          <img class="img" :src="images.l_firstimage" key="l_firstImage" width="300" height="170"><br>
+          （Rails / AWS / Capistrano）<br><br>
           <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
             <p><i class="far fa-sticky-note"></i>L-searcher</p>
           </a>
           <a href="https://github.com/kota-kaneta/L-searcher">
             <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
-          </a><br>
+          </a>
         </div>
       </div>
     </transition>
@@ -120,10 +120,10 @@
     <transition name="modal">
       <div id="overlay" v-show="showContent" v-on:click="closeModal">
         <div id="content">
-          <div class="details">2021 / 01</div><br>
-          <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_firstimage" key="m_firstImage" width="300" height="170"><br><br>
-          （Vue.js / Node.js / Netlify）
+          <div class="ur">✔︎当サイト</div>
+          <div class="details">2021 / 01</div><br><br>
+          <img class="img" :src="images.m_firstimage" key="m_firstImage" width="300" height="170"><br>
+          （Vue.js / Node.js / Netlify）<br><br>
             <router-link to="/">
               <p><i class="far fa-sticky-note"></i> mypage</p>
             </router-link>
@@ -391,7 +391,8 @@ a:active{
 @media screen and (max-width: 768px) {
   .bubble,
   .carousel,
-  .pc-modal{ 
+  .pc-modal,
+  .show{ 
     display:none; 
   }
   .mx-auto{
@@ -420,6 +421,13 @@ a:active{
   top: 150px;
   right: 130px;
   font-size: 25px;
+}
+.ur{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: #ee8262;
 }
 a:link { color: #4f4fee; }
 a:visited { color: #4848eb; }

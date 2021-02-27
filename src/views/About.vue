@@ -106,6 +106,7 @@
 <style scoped>
 #about{
   position: relative;
+  background-color: #fefef7;
 }
 .v-app{
   padding-top: 60px;

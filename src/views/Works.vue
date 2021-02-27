@@ -87,25 +87,51 @@
 
     <!-- スマホ -->
     <div class="phone">
-      <v-card class="mx-auto" max-width="344" @click="openModal">
-        <v-img rel="preload" src="@/assets/mypage.png" width="350" height="200" border="1"></v-img>
-        <v-card-title>
-          <h3><i class="far fa-sticky-note"></i>mypage</h3>
-        </v-card-title>
-        <v-card-subtitle>
-          <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
-        </v-card-subtitle>
-      </v-card>
-      <v-card class="mx-auto" max-width="344" @click="l_openModal">
-        <v-img rel="preload" src="@/assets/wood.png" width="350" height="195" border="1"></v-img>
-        <v-card-title>
-          <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
-        </v-card-title>
-        <v-card-subtitle>
-          <span class="sub">Rails / AWS / Capistrano ...etc</span>
-        </v-card-subtitle>
-      </v-card>
-    </div>
+      <div class="show-flex">
+          <div class="cr">
+            <div class="balloon3">
+              暇な人を探すツール
+            </div>
+            <v-card class="mx-auto" max-width="344" @click="l_openModal">
+              <v-img  width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
+              <v-card-title>
+                <h3><i class="far fa-sticky-note"></i>L-searcher</h3>
+              </v-card-title>
+              <v-card-subtitle>
+                <span class="sub">Rails / AWS / Capistrano ...etc</span>
+              </v-card-subtitle>
+            </v-card>
+          </div>
+          <div class="cr">
+            <div class="balloon3">
+              ポートフォリオサイト
+            </div>
+            <v-card class="mx-auto" max-width="344" @click="openModal">
+              <v-img width="350" height="200" border="1" :src="images.m_firstimage" key="m_firstImage"></v-img>
+              <v-card-title>
+                <h3><i class="far fa-sticky-note"></i>mypage</h3>
+              </v-card-title>
+              <v-card-subtitle>
+                <span class="sub">Vue.js / Node.js / Netlify ...etc</span>
+              </v-card-subtitle>
+            </v-card>
+          </div>
+          <div class="cr">
+            <div class="balloon3">
+              ......................
+            </div>
+            <v-card class="mx-auto" max-width="344">
+              <v-img class="coming"><span class="sub">Coming soon...</span></v-img>
+              <v-card-title>
+                <h3><i class="far fa-sticky-note"></i>???</h3>
+              </v-card-title>
+              <v-card-subtitle>
+                <span class="sub">???</span>
+              </v-card-subtitle>
+            </v-card>
+          </div>
+        </div>
+      </div>
     </div>
   </transition>
   <div class="sp-blank"></div>
@@ -159,16 +185,16 @@
     <transition name="l_modal">
       <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
         <div id="l_content">
-          <div class="details">2020 / 12</div><br>
-          <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-          <img :src="images.l_firstimage" key="l_firstImage" width="300" height="170"><br>
-          （Rails / AWS / Capistrano）
+          <div class="ur">✔︎暇人管理アプリ</div>
+          <div class="details">2020 / 12</div><br><br>
+          <img class="img" :src="images.l_firstimage" key="l_firstImage" width="300" height="170"><br>
+          （Rails / AWS / Capistrano）<br><br>
           <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
             <p><i class="far fa-sticky-note"></i>L-searcher</p>
           </a>
           <a href="https://github.com/kota-kaneta/L-searcher">
             <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
-          </a><br>
+          </a>
         </div>
       </div>
     </transition>
@@ -176,10 +202,10 @@
     <transition name="modal">
       <div id="overlay" v-show="showContent" v-on:click="closeModal">
         <div id="content">
-          <div class="details">2021 / 01</div><br>
-          <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img :src="images.m_firstimage" key="m_firstImage" width="300" height="170"><br><br>
-          （Vue.js / Node.js / Netlify）
+          <div class="ur">✔︎当サイト</div>
+          <div class="details">2021 / 01</div><br><br>
+          <img class="img" :src="images.m_firstimage" key="m_firstImage" width="300" height="170"><br>
+          （Vue.js / Node.js / Netlify）<br><br>
             <router-link to="/">
               <p><i class="far fa-sticky-note"></i> mypage</p>
             </router-link>
@@ -199,6 +225,7 @@
 <style lang="scss" scoped>
 #works{
   position: relative;
+  background-color: #fefef7;
 }
 .mx-auto{
   margin-top: 140px;
@@ -419,7 +446,8 @@ a:active{
 }
 @media screen and (min-width: 767px) {
   .phone,
-  .sp-modal {
+  .sp-modal,
+  .show{
     display: none;
   }
 }
@@ -443,6 +471,40 @@ a:active{
 .img{
   border: 1px solid rgba(220, 221, 221, 0.692);
   border-radius: 10px;
+}
+.ur{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: #ee8262;
+}
+.balloon3 {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 0 5px;
+  width: 250px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background:#384f66;
+}
+
+.balloon3:before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #384f66;
+  z-index: 0;
 }
 a:link { color: #5c5cdd; }
 a:visited { color: #5c5cdd; }
