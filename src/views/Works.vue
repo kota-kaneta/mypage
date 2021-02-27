@@ -446,8 +446,7 @@ a:active{
 }
 @media screen and (min-width: 767px) {
   .phone,
-  .sp-modal,
-  .show{
+  .sp-modal{
     display: none;
   }
 }
