@@ -212,7 +212,7 @@
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 280px;
+  width: 260px;
   display: block;
   letter-spacing: 0.05em;
   background:  #2c3e50;

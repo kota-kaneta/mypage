@@ -7,38 +7,38 @@
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
             <v-timeline>
               <v-timeline-item color="#CFD8DC">
-                <span slot="opposite" class="opposite">1998 / 08</span>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 1998 / 08</span>
                 <v-card class="elevation-2">
                   <i>群馬県にて生誕</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
-                <span slot="opposite" class="opposite">2006 〜 2016</span>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2006 〜 2016</span>
                 <v-card class="elevation-2">
                   <i>小学校3年から高校3年までの10年間野球部に所属</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
-                <span slot="opposite" class="opposite">2017 / 04</span>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2017 / 04</span>
                 <v-card class="elevation-2">
                   <i>日本大学理工学部物質応用化学科に入学</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
-                <span slot="opposite" class="opposite">2020 / 09</span>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2020 / 09</span>
                 <v-card class="elevation-2">
                   <i>キャンパス入館制限による研究困難により休学<br>
                   同時期にプログラミングの勉強を始める</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
-                <span slot="opposite" class="opposite">2020 / 12</span>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2020 / 12</span>
                 <v-card class="elevation-2">
                   <i>Web業界を目指して大学を中途退学</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#FFA726" large>
-                <span slot="opposite" class="opposite">2021 / 01 〜</span>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2021 / 01 〜</span>
                 <v-card class="elevation-2">
                   <i>Vue.jsなどを学習中...</i>
                 </v-card>
