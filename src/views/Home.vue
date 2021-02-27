@@ -4,7 +4,10 @@
     <!-- <div class="triangle2"></div> -->
     <div class="triangle3"></div>
     <div class="blank"></div>
-    <div class="hand"><i class="fas fa-hand-point-up"></i></div>
+    <div class="hand">
+      <i class="fas fa-hand-point-up"></i>
+      <p class="click">click!</p>
+    </div>
     <!-- <div class="mypage">
       <v-img rel="preload" src="@/assets/mypage.png" border="1"></v-img>
     </div> -->
@@ -185,6 +188,11 @@
   -webkit-animation: blink 1s ease infinite;
 	animation: blink 1.8s ease infinite;
   font-size: 45px;
+}
+.click{
+  font-size: 15px;
+  position: absolute;
+  top: 60px;
 }
 @-webkit-keyframes blink {
 	0% {opacity: 0;}
