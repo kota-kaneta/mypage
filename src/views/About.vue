@@ -28,8 +28,7 @@
                 <span slot="opposite" class="opposite">2020 / 09</span>
                 <v-card class="elevation-2">
                   <i>キャンパス入館制限による研究困難により休学<br>
-                  同時期にプログラミングの勉強を始める<br>
-                  （主にRuby on Railsを中心に開発）</i>
+                  同時期にプログラミングの勉強を始める</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
@@ -75,8 +74,7 @@
             </v-card-text>
             <p class="blank">
             <i>キャンパス入館制限による研究困難により休学<br>
-            同時期にプログラミングの勉強を始める<br>
-            （主にRuby on Railsを中心に開発）</i>
+            同時期にプログラミングの勉強を始める</i>
             </p>
           </v-card>
           <div class="arrow">⬇︎</div>

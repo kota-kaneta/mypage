@@ -56,6 +56,7 @@
 <style scoped>
 .contact{
   position: relative;
+  background-color: #fefef7;
 }
 .fas{
   font-size: 25px;

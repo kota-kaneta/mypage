@@ -29,6 +29,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  background-color: #fefef7;
 }
 .chart{
   padding-top: 30px;

@@ -59,20 +59,20 @@
     <transition name="l_modal">
       <div id="l_overlay" v-show="l_showContent" v-on:click="l_closeModal">
         <div id="l_content">
-          <div class="details">2020 / 12</div>
-          <h3><i class="far fa-sticky-note"></i>L-searcher</h3><br>
-          <img class="img" :src="images.l_firstimage" key="l_firstImage" width="450" height="244"><br><br>
+          <div class="details">2020 / 12</div><br><br>
+          <img class="img" :src="images.l_firstimage" key="l_firstImage" width="520" height="290"><br><br>
+          <i>
           知人の暇な時間を確認できるアプリケーションです。<br>
           ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
           そのユーザーが登録している当日のスケジュールがタイムラインに表示されます。<br><br>
-          （Rails / AWS / Capistrano ...etc）<br><br>
+          （Rails / AWS / Capistrano ...etc）<br><br></i>
           <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
             <p><i class="far fa-sticky-note"></i>L-searcher</p>
           </a>
           <a href="https://github.com/kota-kaneta/L-searcher">
             <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
           </a><br>
-          <p class="heroku">※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</p>
+          <p class="heroku"><i>※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</i></p>
         </div>
       </div>
     </transition>
@@ -80,13 +80,13 @@
     <transition name="modal">
       <div id="overlay" v-show="showContent" v-on:click="closeModal">
         <div id="content">
-          <div class="details">2021 / 02</div>
-          <h3><i class="far fa-sticky-note"></i>mypage</h3><br>
-          <img class="img" :src="images.m_firstimage" key="m_firstImage" width="450" height="244"><br><br>
-          <p>
+          <div class="details">2021 / 02</div><br><br>
+          <div class="ur">✔︎当サイト</div>
+          <img class="img" :src="images.m_firstimage" key="m_firstImage" width="520" height="290"><br><br>
+          <p><i>
             私が作成したポートフォリオを載せております。<br>
             お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
-            （Vue.js / Node.js / Netlify ...etc）<br><br>
+            （Vue.js / Node.js / Netlify ...etc）<br><br></i>
             <router-link to="/">
               <p><i class="far fa-sticky-note"></i> mypage</p>
             </router-link>
