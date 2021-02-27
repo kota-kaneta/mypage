@@ -19,8 +19,9 @@ header {
 }
 @media screen and (max-width: 767px) {
   header{
-    left: 10px;
-    top: 10px;
+    left: 15px;
+    top: 15px;
+    font-size: 18px;
   }
 }
 .triangle{
