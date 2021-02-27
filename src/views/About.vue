@@ -13,7 +13,7 @@
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
-                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2006 〜 2016</span>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2006 〜2016</span>
                 <v-card class="elevation-2">
                   <i>小学校3年から高校3年までの10年間野球部に所属</i>
                 </v-card>
