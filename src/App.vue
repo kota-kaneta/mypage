@@ -66,8 +66,7 @@
 }
 @media screen and (max-width: 767px) {
   #pc-nav,
-  .bottom-nav,
-  .triangle{
+  .bottom-nav{
     display: none;
   }
   #sp-nav{
@@ -76,7 +75,7 @@
 }
 @media screen and (max-width: 900px) {
   .top-title{
-    display: none;
+    left: 30px;
   }
 }
 @media screen and (min-width: 768px){
@@ -180,7 +179,7 @@
   color: whitesmoke;
 }
 .sp-nav {
-  z-index: 3;
+  z-index: 100;
   font-size: 38px;
   position: fixed;
   top: -50px;
@@ -217,7 +216,8 @@
 .wrapper{
   width: 100%;
   height: 55px;
-  background-color: #2c3e50;
+  background-color: #252525;
+  border: #474747af 2px solid;
 }
 .list{
   color: white;
