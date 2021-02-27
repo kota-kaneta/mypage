@@ -20,11 +20,13 @@
     You can also check the source code of the portfolio.<br><br>
     If you are interested in me, please contact us using the contact form.
     </div>
-    <div class="sp-home">
-      Nice to meet you,<br>I'm Kota Kaneta.<br><br>
-      You can see my skills<br> and profile on this site.<br><br>
-      please contact us using the contact form.
-    </div>
+    <transition appear>
+      <div class="sp-home">
+        Nice to meet you,<br>I'm Kota Kaneta.<br><br>
+        You can see my skills<br> and profile on this site.<br><br>
+        please contact us using the contact form.
+      </div>
+    </transition>
     <span v-show="beforeButton" @click="skip" class="button">
       <i class="fas fa-forward"></i>skip
     </span>

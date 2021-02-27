@@ -20,10 +20,11 @@ header {
 @media screen and (max-width: 767px) {
   header{
     left: 10px;
+    top: 10px;
   }
 }
 .triangle{
-  border-top: 140px solid #2c3e50;
+  border-top: 130px solid #2c3e50;
   border-right: 100vw solid transparent;
   border-left: 0 solid transparent;
   position: absolute;
