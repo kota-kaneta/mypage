@@ -37,7 +37,7 @@
     <span v-show="beforeButton" @click="skip" class="button">
       <i class="fas fa-forward"></i>skip
     </span>
-    <span v-show="afterButton" class="face"><i class="far fa-laugh-squint"></i></span>
+    <span v-show="afterButton" class="face"><i class="fab fa-fort-awesome"></i></span>
     <p class="bottom-nav">
       © 2021 Kota Kaneta All rights reserved.
     </p>
@@ -86,7 +86,7 @@
 }
 .face{
   position: fixed;
-  bottom: 100px;
+  bottom: 90px;
   right: 100px;
   color: rgb(250, 226, 215);
   z-index: 5;
