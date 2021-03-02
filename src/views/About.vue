@@ -5,6 +5,11 @@
       <div>
         <Separation>Profile / Career</Separation><br>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
+            <!-- <div class="introduction">
+              <div class="name">名前：金田浩太</div>
+              <div class="age">年齢：22歳</div>
+              <div class="favorite">趣味：ライブ鑑賞（アニソン、バンド）</div>
+            </div> -->
             <v-timeline>
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 1998 / 08</span>
@@ -184,6 +189,38 @@ a:active { color: #ff8000; }
 .arrow{
   font-size: 30px;
 }
+/* .introduction{
+  position: absolute;
+  top:  40px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 420px;
+  height: 110px;
+  z-index: 3;
+  font-size: 20px;
+  color: #fffbfb;
+  border: 1px solid rgb(71, 151, 160);
+  border-radius: 10px;
+  background-color: rgb(67, 158, 165);
+  padding-top: 10px;
+}
+.name{
+  position: absolute;
+  left: 15px;
+}
+.age{
+  position: absolute;
+  left: 15px;
+  top: 40px;
+}
+
+.favorite{
+  position: absolute;
+  left: 15px;
+  top: 70px;
+} */
 </style>
 
 <script>
