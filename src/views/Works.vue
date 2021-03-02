@@ -90,7 +90,7 @@
       <div class="show-flex">
           <div class="cr">
             <div class="balloon3">
-              暇な人を探すツール
+              ✔︎ 暇な人を探すツール
             </div>
             <v-card class="mx-auto" max-width="344" @click="l_openModal">
               <v-img  width="350" height="195" :src="images.l_firstimage" key="l_firstImage"></v-img>
@@ -104,7 +104,7 @@
           </div>
           <div class="cr">
             <div class="balloon3">
-              ポートフォリオサイト
+              ✔︎ ポートフォリオサイト
             </div>
             <v-card class="mx-auto" max-width="344" @click="openModal">
               <v-img width="350" height="200" border="1" :src="images.m_firstimage" key="m_firstImage"></v-img>
