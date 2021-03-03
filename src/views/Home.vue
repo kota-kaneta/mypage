@@ -40,6 +40,7 @@
     <span v-show="afterButton" class="face"><i class="fab fa-fort-awesome"></i></span>
     <p class="bottom-nav">
       © 2021 Kota Kaneta All rights reserved.
+      <span class="seo">金田浩太</span>
     </p>
   </div>
 </template>
@@ -155,6 +156,13 @@
   color:#d7e4f1;
   height: 60px;
   z-index: 30;
+}
+.seo{
+  position: absolute;
+  right: 3ch;
+  text-shadow: none;
+  color: rgb(16, 16, 16);
+  font-size: 1px;
 }
 .blank{
   height: 150px;
