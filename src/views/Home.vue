@@ -157,13 +157,6 @@
   height: 60px;
   z-index: 30;
 }
-.seo{
-  position: absolute;
-  right: 3ch;
-  text-shadow: none;
-  color: rgb(16, 16, 16);
-  font-size: 1px;
-}
 .blank{
   height: 150px;
 }

@@ -218,6 +218,7 @@
   </div>
     <p class="bottom-nav">
     © 2021 Kota Kaneta All rights reserved.
+    <span class="seo">金田浩太</span>
     </p>
   </div>
 </template>

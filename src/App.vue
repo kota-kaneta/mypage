@@ -31,6 +31,7 @@
     <router-view/>
     <p class="sp-bottom-nav">
     © 2021 Kota Kaneta All rights reserved.
+    <span class="seo">金田浩太</span>
     </p>
   </div>
 </template>
@@ -122,6 +123,13 @@
   color: #d7e4f1;
   height: 60px;
   font-family: 'Kaushan Script', cursive;
+}
+.seo{
+  position: absolute;
+  right: 3ch;
+  text-shadow: none;
+  color: rgb(16, 16, 16);
+  font-size: 1px;
 }
 /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
 // $bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
