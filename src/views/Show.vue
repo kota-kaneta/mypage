@@ -81,9 +81,9 @@
       <div id="overlay" v-show="showContent" v-on:click="closeModal">
         <div id="content">
           <div class="details">2021 / 02</div><br><br>
-          <div class="ur">✔︎当サイト</div>
           <img class="img" :src="images.m_firstimage" key="m_firstImage" width="520" height="290"><br><br>
           <p><i>
+            当サイトです。<br>
             私が作成したポートフォリオを載せております。<br>
             お問い合わせフォームから気軽にメッセージお待ちしております。<br><br>
             （Vue.js / Node.js / Netlify ...etc）<br><br></i>
