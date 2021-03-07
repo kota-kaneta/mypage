@@ -6,16 +6,10 @@ import Skillset from '../views/Skillset.vue'
 import Works from '../views/Works.vue'
 import Show from '../views/Show.vue'
 import Contact from '../views/Contact.vue'
-import Single from '../views/Single.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/single',
-    name: 'Single',
-    component: Single
-  },
   {
     path: '/',
     name: 'Home',
