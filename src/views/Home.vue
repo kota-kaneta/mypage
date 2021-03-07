@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-      <Header>Home <i class="fas fa-home"></i></Header>
+      <Header>Home<i class="fas fa-home"></i></Header>
     <!-- <div class="triangle2"></div> -->
     <div class="triangle3"></div>
     <div class="blank"></div>
@@ -46,29 +46,12 @@
 </template>
 
 <style scoped lang="scss">
-// .mypage{
-//   position:fixed;
-//   top:-50px;
-//   left:0;
-//   right:0;
-//   background-image: url();
-// }
 .home{
   font-size: 42px;
   position: relative;
   padding-top: 0px;
   font-family: 'Kaushan Script', cursive;
   background-color: #fefef7;
-}
-.v-enter {
-  transform: translate(0, -100px);
-  opacity: 0;
-}
-.v-enter-to {
-  opacity: 1;
-}
-.v-enter-active {
-  transition: all 1.5s 0s ease;
 }
 .button{
   position: fixed;
@@ -91,11 +74,6 @@
   right: 100px;
   color: rgb(250, 226, 215);
   z-index: 5;
-}
-.far{
-  position: fixed;
-  bottom: 100px;
-  right: 100px;
 }
 .button:hover{
   -webkit-transform: scale(1.2);
@@ -145,18 +123,6 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.bottom-nav{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-top: 15px;
-  font-size: 18px;
-  background-color: rgb(16, 16, 16);
-  color:#d7e4f1;
-  height: 60px;
-  z-index: 30;
-}
 .blank{
   height: 150px;
 }
@@ -195,6 +161,9 @@
   position: absolute;
   top: 60px;
 }
+.fas{
+  padding-left: 7px;
+}
 @-webkit-keyframes blink {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
@@ -207,15 +176,12 @@
 
 <script>
 import { VueTyper } from 'vue-typer'
-// import { KinesisContainer, KinesisElement} from 'vue-kinesis'
 import Header from "@/components/Header.vue";
 
 export default {
   name: "home",
   components: {
     'vue-typer': VueTyper,
-    // 'kinesis-container': KinesisContainer,
-    // 'kinesis-element': KinesisElement
     Header
   },
   data: function(){

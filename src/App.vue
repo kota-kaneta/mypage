@@ -111,6 +111,16 @@
 }
 .bottom-nav{
   font-family: 'Kaushan Script', cursive;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 15px;
+  font-size: 18px;
+  background-color: rgb(16, 16, 16);
+  color: #d7e4f1;
+  height: 60px;
+  z-index: 30;
 }
 .sp-bottom-nav{
   position: fixed;
@@ -131,55 +141,6 @@
   color: rgb(16, 16, 16);
   font-size: 1px;
 }
-/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-// $bg-url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC";
-// $bg-width: 50px;
-// $bg-height: 50px;
-
-/* 常時アニメーション */
-// @-webkit-keyframes bg-scrolling-reverse {
-//   100% { background-position: $bg-width $bg-height; }
-// }
-// @-moz-keyframes    bg-scrolling-reverse {
-//   100% { background-position: $bg-width $bg-height; }
-// }
-// @-o-keyframes      bg-scrolling-reverse {
-//   100% { background-position: $bg-width $bg-height; }
-// }
-// @keyframes         bg-scrolling-reverse {
-//   100% { background-position: $bg-width $bg-height; }
-// }
-
-// @-webkit-keyframes bg-scrolling {
-//   0% { background-position: $bg-width $bg-height; }
-// }
-// @-moz-keyframes    bg-scrolling {
-//   0% { background-position: $bg-width $bg-height; }
-// }
-// @-o-keyframes      bg-scrolling {
-//   0% { background-position: $bg-width $bg-height; }
-// }
-// @keyframes         bg-scrolling {
-//   0% { background-position: $bg-width $bg-height; }
-// }
-
-// /* Main styles */
-// body {
-//   color: #999;
-//   font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
-//   text-align: center;
-//   /* img size is 50x50 */
-//   background: url($bg-url) repeat 0 0;
-  
-//   -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
-//   -moz-animation:    bg-scrolling-reverse .92s infinite; /* Fx 5+ */
-//   -o-animation:      bg-scrolling-reverse .92s infinite; /* Opera 12+ */
-//   animation:         bg-scrolling-reverse .92s infinite; /* IE 10+ */
-//   -webkit-animation-timing-function: linear;
-//   -moz-animation-timing-function:    linear;
-//   -o-animation-timing-function:      linear;
-//   animation-timing-function:         linear;
-// }
 .sp-blank{
   height: 100px;
 }
@@ -258,6 +219,9 @@
 }
 .sp-enter-active{
   transition: all 0.5s 0s ease;
+}
+.fas{
+  padding-left: 7px;
 }
 a {
   text-decoration: none;

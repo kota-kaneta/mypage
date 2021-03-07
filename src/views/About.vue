@@ -5,11 +5,6 @@
       <div>
         <Separation>Profile / Career</Separation><br>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
-            <!-- <div class="introduction">
-              <div class="name">名前：金田浩太</div>
-              <div class="age">年齢：22歳</div>
-              <div class="favorite">趣味：ライブ鑑賞（アニソン、バンド）</div>
-            </div> -->
             <v-timeline>
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 1998 / 08</span>
@@ -115,9 +110,6 @@
 .v-app{
   padding-top: 60px;
 }
-.timeline{
-  margin-bottom: 21px;
-}
 .elevation-2{
   min-height: 95px;
   margin: 10px 30px;
@@ -125,36 +117,6 @@
 .theme--light {
   background: rgb(218, 218, 216, 0.577);
 }
-.theme--light.v-card {
-    background-color: #FFFFFF;
-    color: rgba(0, 0, 0, 0.87);
-}
-.fas{
-  padding-left: 7px;
-}
-.fab{
-  padding-right: 7px;
-  font-size: 30px;
-}
-
-.g-tag{
-  font-size: 20px;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  transition: .3s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-a:link { color: #0000ff; }
-a:visited { color: #000080; }
-a:hover {
-  color: #ff0000;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  }
-a:active { color: #ff8000; }
 .blank{
   padding-bottom: 20px;
 }
@@ -162,10 +124,7 @@ a:active { color: #ff8000; }
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  background-color: rgb(16, 16, 16);
-  color: #d7e4f1;
-  height: 60px;
+  padding-top: 0ch;
 }
 @media screen and (max-width: 767px) {
   .v-app,
@@ -190,38 +149,6 @@ a:active { color: #ff8000; }
 .arrow{
   font-size: 30px;
 }
-/* .introduction{
-  position: absolute;
-  top:  40px;
-  left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 420px;
-  height: 110px;
-  z-index: 3;
-  font-size: 20px;
-  color: #fffbfb;
-  border: 1px solid rgb(71, 151, 160);
-  border-radius: 10px;
-  background-color: rgb(67, 158, 165);
-  padding-top: 10px;
-}
-.name{
-  position: absolute;
-  left: 15px;
-}
-.age{
-  position: absolute;
-  left: 15px;
-  top: 40px;
-}
-
-.favorite{
-  position: absolute;
-  left: 15px;
-  top: 70px;
-} */
 </style>
 
 <script>
