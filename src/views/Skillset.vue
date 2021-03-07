@@ -20,12 +20,6 @@
 </template>
 
 <style scoped>
-.fas{
-  padding-left: 7px;
-}
-.lf{
-  padding: 40px 0 10px 0;
-}
 .Doughnut{
   position: relative;
   justify-content: center;
@@ -34,44 +28,6 @@
 }
 .chart{
   padding-top: 30px;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  transition: .3s;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-a:link { color: #0000ff; }
-a:visited { color: #000080; }
-a:hover {
-  color: #ff0000;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  }
-a:active { color: #ff8000; }
-.blank{
-  padding-bottom: 20px;
-}
-.a-git{
-  position: absolute;
-  bottom: -200px;
-  right: 40px;
-  font-size: 20px;
-}
-.fab{
-  font-size: 30px;
-}
-.bottom-nav{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-top: 15px;
-  font-size: 18px;
-  background-color: rgb(16, 16, 16);
-  color: #d7e4f1;
-  height: 60px;
 }
 @media screen and (max-width: 480px){
   .chart{

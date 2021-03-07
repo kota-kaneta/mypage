@@ -207,9 +207,6 @@
   text-align: left;
   padding-top: 10px;
 }
-.fas{
-  padding-left: 7px;
-}
 .far{
   font-size: 25px;
   padding-right: 5px;
@@ -409,29 +406,11 @@ a:active{
     display: none;
   }
 }
-.bottom-nav{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-top: 15px;
-  font-size: 18px;
-  background-color: rgb(16, 16, 16);
-  color: #d7e4f1;
-  height: 60px;
-}
 .show{
   position: absolute;
   top: 150px;
   right: 130px;
   font-size: 25px;
-}
-.ur{
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 20px;
-  color: #ee8262;
 }
 a:link { color: #4f4fee; }
 a:visited { color: #4848eb; }
