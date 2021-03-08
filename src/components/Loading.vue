@@ -2,7 +2,7 @@
   <div>
     <div class="fullview">
       <div class="loading-spacer"></div>
-        <vue-loaders name="line-scale-pulse-out-rapid" color="lightseagreen" scale="1.8"></vue-loaders>
+        <vue-loaders name="line-scale-pulse-out-rapid" color="lightseagreen" scale="1.5"></vue-loaders>
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@
   z-index: 2;
 }
 .loading-spacer {
-  height: 38%;
+  height: 40%;
 }
 </style>
 
