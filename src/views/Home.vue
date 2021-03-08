@@ -123,6 +123,7 @@
   font-size: 15px;
   position: absolute;
   top: 60px;
+  left: 8px;
 }
 @-webkit-keyframes blink {
 	0% {opacity: 0;}
