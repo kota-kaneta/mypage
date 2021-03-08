@@ -253,19 +253,4 @@ export default {
     }
   }
 }
-
-window.WebFontConfig = {
-  google: { families: ['Montserrat:400,600'] },
-  active: function() {
-    sessionStorage.fonts = true;
-  }
-};
-(function() {
-  var wf = document.createElement('script');
-  wf.src = 'https://fonts.googleapis.com/css?family=Exo:100';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();
 </script>
