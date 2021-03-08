@@ -38,9 +38,9 @@
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#FFA726" large>
-                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2021 / 01 〜</span>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2021 / 03</span>
                 <v-card class="elevation-2">
-                  <i>Vue.jsなどを学習中...</i>
+                  <i>✔︎ Web制作会社に入社</i>
                 </v-card>
               </v-timeline-item>
               <p class="timeline"></p>
@@ -87,9 +87,9 @@
           <div class="arrow">⬇︎</div>
           <v-card class="elevation-2">
             <v-card-text>
-            現在
+            2021年3月
             </v-card-text>
-            <i>Vue.jsなどを学習中...</i>
+            <i>Web制作会社に入社</i>
           </v-card>
         </div>
       </div>
