@@ -508,7 +508,7 @@ export default {
       color: '#cfd8dc79',
       images: {
         l_firstimage: require("@/assets/wood.png"),
-        m_firstimage: require("@/assets/mypage.png"),
+        m_firstimage: require("@/assets/m-change.png"),
         ruby_image: require("@/assets/ruby.svg"),
         // js_image: require("@/assets/prog-js01.svg")
       }
