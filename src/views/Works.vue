@@ -537,7 +537,7 @@ export default {
     setTimeout(() => {
       this.loading = false,
       this.loaded = true
-    }, 1800);
+    }, 2000);
   }
 }
 </script>
