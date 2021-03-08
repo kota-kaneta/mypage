@@ -1,8 +1,9 @@
 <template>
   <div id="works">
+    <Loading v-show="loading"></Loading>
     <Header>Works <i class="fas fa-laptop-code"></i></Header>
     <transition appear>
-      <div class="transition">
+      <div v-show="loaded" class="transition">
         <Separation>Portfolio</Separation>
         <div class="carousel">
         <v-carousel cycle :key="color" :show-arrows="false" height="607">
@@ -133,7 +134,7 @@
         </div>
       </div>
     </div>
-  </transition>
+    </transition>
   <div class="sp-blank"></div>
   
 <!-- モーダル -->
@@ -492,13 +493,15 @@ a:visited { color: #5c5cdd; }
 <script>
 import Header from "@/components/Header.vue";
 import Separation from '../components/Separation.vue';
+import Loading from '@/components/Loading';
 
 export default {
   name: "#Works",
   theme: { dark: true },
   components: {
     Header,
-    Separation
+    Separation,
+    Loading
   },
   data: function(){
     return{
@@ -511,7 +514,9 @@ export default {
         m_firstimage: require("@/assets/m-change.png"),
         ruby_image: require("@/assets/ruby.svg"),
         // js_image: require("@/assets/prog-js01.svg")
-      }
+      },
+      loading: true,
+      loaded: false
     }
   },
   methods:{
@@ -527,6 +532,12 @@ export default {
     l_closeModal: function(){
       this.l_showContent = false
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.loading = false,
+      this.loaded = true
+    }, 1700);
   }
 }
 </script>

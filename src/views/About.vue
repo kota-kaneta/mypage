@@ -160,12 +160,6 @@ export default {
   components: {
     Header,
     Separation
-  },
-  data: function(){
-    return{
-      profile: "Profile",
-      value: "GitHub"
-    }
   }
 };
 </script>
