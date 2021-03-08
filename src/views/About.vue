@@ -117,8 +117,8 @@
 .theme--light {
   background: rgb(218, 218, 216, 0.577);
 }
-.blank{
-  padding-bottom: 20px;
+.v-sheet.v-card:not(.v-sheet--outlined) {
+    background-color: white;
 }
 .bottom-nav{
   display: flex;
