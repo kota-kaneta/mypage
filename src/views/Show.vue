@@ -48,7 +48,7 @@
             </v-card>
           </div>
         <div class="show">
-          <router-link to="works">Back <i class="fas fa-door-open"></i></router-link>
+          <a href="javascript:history.back()">Back <i class="fas fa-door-open"></i></a>
         </div>
     </div>
       </div>
