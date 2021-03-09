@@ -149,11 +149,11 @@
           ユーザーIDを用いてアカウントを検索してフォローすることで、<br>
           そのユーザーが登録している当日のスケジュールがタイムラインに表示されます。<br><br>
           （Rails / AWS / Capistrano ...etc）<br><br></i>
-          <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
-            <p><i class="far fa-sticky-note"></i>L-searcher</p>
+          <a href="javascript:void(0);">
+            <p><s>L-searcher</s>（封鎖中）</p>
           </a>
           <a href="https://github.com/kota-kaneta/L-searcher">
-            <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
+            <p><i class="fab fa-github"></i> GitHub</p>
           </a><br>
           <p class="heroku"><i>※2021年1月10日にデプロイ先をAWSからHerokuに変更いたしました。</i></p>
         </div>
@@ -190,11 +190,11 @@
           <div class="details">2020 / 12</div><br><br>
           <img class="img" :src="images.l_firstimage" key="l_firstImage" width="300" height="170"><br>
           （Rails / AWS / Capistrano）<br><br>
-          <a href="https://l-searcher.herokuapp.com/" ontouchstart="">
-            <p><i class="far fa-sticky-note"></i>L-searcher</p>
+          <a href="javascript:void(0);">
+            <p><s>L-searcher</s>（封鎖中）</p>
           </a>
           <a href="https://github.com/kota-kaneta/L-searcher">
-            <p><i class="fab fa-github"></i> GitHub (L-searcher)</p>
+            <p><i class="fab fa-github"></i> GitHub</p>
           </a>
         </div>
       </div>
