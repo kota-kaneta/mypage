@@ -44,7 +44,7 @@
       お問い合わせありがとうございました<i class="far fa-laugh-squint"></i>
     </div>
     <div v-if="nothing === true" class="nothing">
-      <i class="fas fa-exclamation-triangle"></i>各項目はすべて必須です
+      <i class="fas fa-exclamation-triangle"></i> Please fill in all items
     </div>
     <div class="sp-blank"></div>
     <p class="bottom-nav">
@@ -60,7 +60,7 @@
   background-color: #fefef7;
 }
 .fas{
-  font-size: 25px;
+  font-size: 20px;
   padding-right: 5px;
 }
 .far{
