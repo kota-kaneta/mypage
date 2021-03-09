@@ -53,7 +53,7 @@
   transform: translate(0,0);
 }
 .v-enter-active {
-  transition: all 3.0s 0s ease;
+  transition: all 4.0s 0s ease;
 }
 .button{
   position: fixed;
