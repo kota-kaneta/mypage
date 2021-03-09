@@ -169,6 +169,11 @@ export default {
       this.skipAfter = true,
       this.beforeButton = false
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.beforeButton = false
+    }, 10200);
   }
 }
 </script>
