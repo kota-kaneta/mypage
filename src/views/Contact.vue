@@ -155,18 +155,6 @@
     display:none; 
   }
 }
-.Form-Item-Label-Required {
-  border-radius: 6px;
-  margin-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 48px;
-  display: inline-block;
-  text-align: center;
-  background: #5bc8ac;
-  color: #fff;
-  font-size: 14px;
-}
 .Form-Item-Input {
   border: 1px solid #ddd;
   border-radius: 6px;
