@@ -2,21 +2,25 @@
   <div class="home">
       <Header>Home<i class="fas fa-home"></i></Header>
     <div class="triangle3"></div>
-    <div class="blank"></div>
-    <div class="hand">
-      <i class="fas fa-hand-point-up"></i>
-      <p class="click">click!</p>
-    </div>
-    <div v-show="skipBefore" class="typer">
-      <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth" pre-type-delay="200"></vue-typer>
-    </div>
-    <div v-show="skipAfter" class="typer">
-    Thank you for visiting this site!<br><br>
-    Nice to meet you, I'm Kota Kaneta.<br><br>
-    You can see the skills I have by looking at this site.<br>
-    You can also check the source code of the portfolio.<br><br>
-    If you are interested in me, please contact us using the contact form.
-    </div>
+    <transition appear>
+      <div>
+        <div class="blank"></div>
+        <div class="hand">
+          <i class="fas fa-hand-point-up"></i>
+          <p class="click">click!</p>
+        </div>
+        <div v-show="skipBefore" class="typer">
+          <vue-typer :text="text" repeat= "0" typeDelay="40" caretAnimation="smooth" pre-type-delay="200"></vue-typer>
+        </div>
+        <div v-show="skipAfter" class="typer">
+        Thank you for visiting this site!<br><br>
+        Nice to meet you, I'm Kota Kaneta.<br><br>
+        You can see the skills I have by looking at this site.<br>
+        You can also check the source code of the portfolio.<br><br>
+        If you are interested in me, please contact us using the contact form.
+        </div>
+      </div>
+    </transition>
     <transition appear>
       <div class="sp-home">
         Thank you for<br>
@@ -44,6 +48,12 @@
   padding-top: 0px;
   font-family: 'Kaushan Script', cursive;
   background-color: #fefef7;
+}
+.v-enter {
+  transform: translate(0,0);
+}
+.v-enter-active {
+  transition: all 3.0s 0s ease;
 }
 .button{
   position: fixed;
