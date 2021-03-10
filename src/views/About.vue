@@ -6,11 +6,11 @@
         <Separation>Profile / Career</Separation><br>
         <div class="line-name">
           <div class="line"></div>
+          <div class="line2"></div>
           <div class="name">
             <strong><p class="kanji">金田浩太</p></strong>
             <p class="en">KOTA KANETA</p>
           </div>
-          <div class="line2"></div>
         </div>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
             <v-timeline>
