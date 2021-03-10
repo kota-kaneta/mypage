@@ -4,6 +4,14 @@
     <transition appear>
       <div>
         <Separation>Profile / Career</Separation><br>
+        <div class="line-name">
+          <div class="line"></div>
+          <div class="name">
+            <strong><p class="kanji">金田浩太</p></strong>
+            <p class="en">KOTA KANETA</p>
+          </div>
+          <div class="line2"></div>
+        </div>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
             <v-timeline>
               <v-timeline-item color="#CFD8DC">
@@ -110,6 +118,30 @@
 .v-app{
   padding-top: 60px;
 }
+.line{
+  width: 60px;
+  height: 100px;
+  background-image: linear-gradient(310deg, transparent 49%, #2c3e50 50%, transparent 51%);
+  position: absolute;
+  top: 110px;
+  right: 290px;
+}
+.line2{
+  width: 60px;
+  height: 100px;
+  background-image: linear-gradient(310deg, transparent 49%, #2c3e50 50%, transparent 51%);
+  position: absolute;
+  top: 160px;
+  right: 155px;
+}
+.name{
+  position: absolute;
+  top: 151px;
+  right: 203px;
+}
+.kanji{
+  padding-bottom: 15px;
+}
 .elevation-2{
   min-height: 95px;
   margin: 10px 30px;
@@ -128,7 +160,8 @@
 }
 @media screen and (max-width: 767px) {
   .v-app,
-  .bottom-nav{
+  .bottom-nav,
+  .line-name{
     display: none;
   }
 }
