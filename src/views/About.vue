@@ -118,6 +118,9 @@
 .v-app{
   padding-top: 60px;
 }
+.line-name{
+  text-shadow: none;
+}
 .line{
   width: 60px;
   height: 100px;
