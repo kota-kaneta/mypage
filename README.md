@@ -1,6 +1,6 @@
 # URL： https://kota-kaneta.netlify.app/
 
-## ポートフォリオサイト
+## ポートフォリオサイト（金田浩太）
 ![mypage](/src/assets/m-change.png)
 
 ## 環境/使用技術
