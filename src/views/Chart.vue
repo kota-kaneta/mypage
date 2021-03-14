@@ -6,12 +6,12 @@ export default ({
   data() {
     return {
       datas: {
-        labels: ['HTML5', 'CSS3', 'Ruby', 'Ruby on Rails', 'JavaScript', 'Vue.js'],
+        labels: ['HTML5', 'CSS3', 'Ruby', 'Ruby on Rails', 'JavaScript', 'Vue.js', 'jQuery'],
         datasets: [
           {
-            data: [20, 20, 20, 40, 14, 35],
-            backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983'],
-            hoverBackgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983']
+            data: [20, 20, 20, 38, 14, 30, 10],
+            backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983', 'rgb(24, 185, 185)'],
+            hoverBackgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983', 'rgb(24, 185, 185)']
           }
         ]
       },
@@ -25,7 +25,7 @@ export default ({
             fontSize: 22,
             fontFamily: 'Kaushan Script',
             fontColor:  "#2c3e50",
-            padding: 25
+            padding: 30
           }
         },
         animation: {
@@ -54,3 +54,8 @@ export default ({
   }
 })
 </script>
+<style scoped>
+l{
+  color: rgb(24, 75, 185);
+}
+</style>
