@@ -10,8 +10,8 @@ export default ({
         datasets: [
           {
             data: [20, 20, 20, 38, 14, 30, 10],
-            backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983', 'rgb(24, 185, 185)'],
-            hoverBackgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983', 'rgb(24, 185, 185)']
+            backgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983', 'rgb(24, 126, 185)'],
+            hoverBackgroundColor: ['#e44b23', '#563d7c', '#701516', 'red', '#f1e05a', ' #42b983', 'rgb(24, 126, 185)']
           }
         ]
       },
@@ -54,8 +54,3 @@ export default ({
   }
 })
 </script>
-<style scoped>
-l{
-  color: rgb(24, 75, 185);
-}
-</style>
