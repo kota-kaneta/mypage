@@ -34,6 +34,7 @@ header {
 </style>
 
 <script>
+
 export default {
   name: 'Header'
 }

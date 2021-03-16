@@ -236,7 +236,6 @@ a:visited { color: rgb(250, 226, 215) }
 <script src="https://kit.fontawesome.com/4194671020.js" crossorigin="anonymous"></script>
 
 <script>
-
 export default {
   name: "#app",
   data: function(){
