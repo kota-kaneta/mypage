@@ -13,7 +13,7 @@
                 <!-- <span class="Form-Item-Label-Required">必須</span> -->
                 <i class="fas fa-user-circle"></i>氏名
               </p>
-              <input type="text" v-model="name" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
+              <input type="text" v-model="name" name="name" class="Form-Item-Input" placeholder="例）taro yamada">
             </div>
             <div class="Form-Item">
               <p class="Form-Item-Label">
