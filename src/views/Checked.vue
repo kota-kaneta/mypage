@@ -9,7 +9,7 @@
         <input type="checkbox" name="riyu" value="5" />腹肉
         <input type="checkbox" name="riyu" value="6" />トーク力
         <input type="checkbox" name="riyu" value="7" />髪型
-        <input type="checkbox" name="riyu" value="8" />
+        <input type="checkbox" name="riyu" value="8" />匂い
       </div>
       <p>
         <input type="submit" value="送信する" />
@@ -22,14 +22,5 @@
 </style>
 
 <script>
-import Header from "@/components/Header.vue";
-import Separation from "@/components/Separation.vue";
 
-export default {
-  name: "#about",
-  components: {
-    Header,
-    Separation,
-  },
-};
 </script>
