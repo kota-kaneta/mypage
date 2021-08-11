@@ -19,8 +19,6 @@
 </template>
 
 <style scoped lang="scss">
-#checked {
-}
 </style>
 
 <script>
