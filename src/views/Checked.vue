@@ -1,7 +1,7 @@
 <template>
   <div id="checked">
     <form action="cgi-bin/abc.cgi" method="post">
-      <p>
+      <div>
         <input type="checkbox" name="riyu" value="1" checked="checked" />マインド
         <input type="checkbox" name="riyu" value="2" />服装
         <input type="checkbox" name="riyu" value="3" />靴
@@ -10,7 +10,7 @@
         <input type="checkbox" name="riyu" value="6" />トーク力
         <input type="checkbox" name="riyu" value="7" />髪型
         <input type="checkbox" name="riyu" value="8" />
-      </p>
+      </div>
       <p>
         <input type="submit" value="送信する" />
       </p>
