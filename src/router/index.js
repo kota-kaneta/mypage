@@ -6,7 +6,7 @@ import Skillset from '../views/Skillset.vue'
 import Works from '../views/Works.vue'
 import Show from '../views/Show.vue'
 import Contact from '../views/Contact.vue'
-import Checked from '../views/Checked.vue'
+import Checked from '../views/Checked.vue' 
 
 Vue.use(VueRouter)
 
