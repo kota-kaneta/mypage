@@ -8,8 +8,8 @@
           <div class="line"></div>
           <div class="line2"></div>
           <div class="name">
-            <strong><p class="kanji">金田浩太</p></strong>
-            <p class="en">Kota Kaneta</p>
+            <strong><p class="kanji">水瀬しおん</p></strong>
+            <p class="en">Shion Minase</p>
           </div>
         </div>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
@@ -35,20 +35,26 @@
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2020 / 09</span>
                 <v-card class="elevation-2">
-                  <i>キャンパス入館制限による研究困難により休学<br>
+                  <i>-コロナ襲来-<br>キャンパス内で研究ができないため休学<br>
                   同時期にプログラミングの勉強を始める</i>
                 </v-card>
               </v-timeline-item>
               <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2020 / 12</span>
                 <v-card class="elevation-2">
-                  <i>Web業界を目指して大学を中途退学</i>
+                  <i>化学系からWeb業界を目指して大学を中途退学</i>
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="#FFA726" large>
+              <v-timeline-item color="#CFD8DC">
                 <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2021 / 03</span>
                 <v-card class="elevation-2">
                   <i>Web制作会社に入社</i>
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item color="#FFA726" large>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2021 / 10</span>
+                <v-card class="elevation-2">
+                  <i>HANG OVER -ALBA- 入店</i>
                 </v-card>
               </v-timeline-item>
               <p class="timeline"></p>
@@ -81,7 +87,7 @@
             2020年9月
             </v-card-text>
             <p class="blank">
-            <i>キャンパス入館制限による研究困難により休学<br>
+            <i>-コロナ襲来-<br>キャンパス内で研究ができないため休学<br>
             同時期にプログラミングの勉強を始める</i>
             </p>
           </v-card>
@@ -90,7 +96,7 @@
             <v-card-text>
             2020年12月
             </v-card-text>
-            <i>Web業界を目指して大学を中途退学</i>
+            <i>化学系からWeb業界を目指して大学を中途退学</i>
           </v-card>
           <div class="arrow">⬇︎</div>
           <v-card class="elevation-2">
@@ -104,8 +110,8 @@
     </transition>
     <div class="sp-blank"></div>
     <p class="bottom-nav">
-    © 2021 Kota Kaneta All rights reserved.
-    <span class="seo">金田浩太</span>
+    © 2021 Shion Minase All rights reserved.
+    <span class="seo">水瀬しおん</span>
     </p>
   </div>
 </template>
@@ -117,6 +123,9 @@
 }
 .v-app{
   padding-top: 60px;
+}
+.v-timeline {
+  padding: 30px 0;
 }
 .line-name{
   text-shadow: none;
@@ -151,6 +160,7 @@
 }
 .theme--light {
   background: rgb(218, 218, 216, 0.577);
+  
 }
 .v-sheet.v-card:not(.v-sheet--outlined) {
     background-color: white;
