@@ -13,7 +13,7 @@
           </div>
         </div>
         <figure class="img">
-          <img src="../../src/assets/kota01.JPG" alt="金田浩太">
+          <img src="../../src/assets/kota01.jpeg" alt="金田浩太">
         </figure>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
             <v-timeline>
