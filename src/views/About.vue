@@ -54,10 +54,16 @@
                   <i>Web制作会社に入社</i>
                 </v-card>
               </v-timeline-item>
-              <v-timeline-item color="#FFA726" large>
+              <v-timeline-item color="#FFA726">
                 <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2021 / 10</span>
                 <v-card class="elevation-2">
-                  <i>HANGOVER -ALBA- 入店</i>
+                  <i>ホストクラブ入店</i>
+                </v-card>
+              </v-timeline-item>
+              <v-timeline-item color="#FFA726" large>
+                <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2022 / 02</span>
+                <v-card class="elevation-2">
+                  <i>キャバクラの黒服として働き始める</i>
                 </v-card>
               </v-timeline-item>
               <p class="timeline"></p>
@@ -108,6 +114,20 @@
             </v-card-text>
             <i>Web制作会社に入社</i>
           </v-card>
+          <div class="arrow">⬇︎</div>
+          <v-card class="elevation-2">
+            <v-card-text>
+            2021年10月
+            </v-card-text>
+            <i>ホストクラブ入店</i>
+          </v-card>
+          <div class="arrow">⬇︎</div>
+          <v-card class="elevation-2">
+            <v-card-text>
+            2022年2月
+            </v-card-text>
+            <i>キャバクラの黒服として働き始める</i>
+          </v-card>
         </div>
       </div>
     </transition>
@@ -119,7 +139,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #about{
   position: relative;
   background-color: #fefef7;
@@ -173,6 +193,13 @@
   justify-content: center;
   align-items: center;
   padding-top: 0ch;
+}
+.img{
+  img{
+    border-radius: 30px;
+    border: solid rgb(85, 85, 85) 3px;
+    box-shadow: rgba(20, 20, 20, 0.555) 3px 3px 6px;
+  }
 }
 @media screen and (max-width: 767px) {
   .v-app,
