@@ -63,7 +63,7 @@
               <v-timeline-item color="#FFA726" large>
                 <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2022 / 02</span>
                 <v-card class="elevation-2">
-                  <i>キャバクラの黒服として働き始める</i>
+                  <i>キャバクラに黒服として入社</i>
                 </v-card>
               </v-timeline-item>
               <p class="timeline"></p>
@@ -126,7 +126,7 @@
             <v-card-text>
             2022年2月
             </v-card-text>
-            <i>キャバクラの黒服として働き始める</i>
+            <i>キャバクラに黒服として入社</i>
           </v-card>
         </div>
       </div>
