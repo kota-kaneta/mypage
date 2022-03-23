@@ -8,10 +8,13 @@
           <div class="line"></div>
           <div class="line2"></div>
           <div class="name">
-            <strong><p class="kanji">水瀬しおん</p></strong>
-            <p class="en">Shion Minase</p>
+            <strong><p class="kanji">金田浩太</p></strong>
+            <p class="en">Kota Kaneta</p>
           </div>
         </div>
+        <figure class="img">
+          <img src="../../src/assets/shion01.png" alt="金田浩太">
+        </figure>
           <v-app class="v-app" :style="{ background: $vuetify.theme.themes.light.background }">
             <v-timeline>
               <v-timeline-item color="#CFD8DC">
@@ -54,7 +57,7 @@
               <v-timeline-item color="#FFA726" large>
                 <span slot="opposite" class="opposite"><i class="far fa-calendar-alt"></i> 2021 / 10</span>
                 <v-card class="elevation-2">
-                  <i>HANG OVER -ALBA- 入店</i>
+                  <i>HANGOVER -ALBA- 入店</i>
                 </v-card>
               </v-timeline-item>
               <p class="timeline"></p>
@@ -110,8 +113,8 @@
     </transition>
     <div class="sp-blank"></div>
     <p class="bottom-nav">
-    © 2021 Shion Minase All rights reserved.
-    <span class="seo">水瀬しおん</span>
+    © 2021 Kota Kaneta All rights reserved.
+    <span class="seo">金田浩太</span>
     </p>
   </div>
 </template>

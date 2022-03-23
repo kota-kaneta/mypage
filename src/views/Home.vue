@@ -14,7 +14,7 @@
         </div>
         <div v-show="skipAfter" class="typer">
         Thank you for visiting this site!<br><br>
-        Nice to meet you, I'm Shion Minase.<br><br>
+        Nice to meet you, I'm Kota Kaneta.<br><br>
         You can see the skills I have by looking at this site.<br>
         You can also check the source code of the portfolio.<br><br>
         If you are interested in me, please contact us using the contact form.
@@ -25,7 +25,7 @@
       <div class="sp-home">
         Thank you for<br>
         visiting this site!<br><br>
-        Nice to meet you, I'm Shion Minase.<br><br>
+        Nice to meet you, I'm Kota Kaneta.<br><br>
         You can see my skills<br>
         from the navigation in the upper right. <i class="fas fa-bomb"></i><br><br>
 
@@ -35,8 +35,8 @@
       <i class="fas fa-forward"></i>skip
     </span>
     <p class="bottom-nav">
-      © 2021 Shion Minase All rights reserved.
-      <span class="seo">水瀬しおん</span>
+      © 2021 Kota Kaneta All rights reserved.
+      <span class="seo">金田浩太</span>
     </p>
   </div>
 </template>
@@ -159,7 +159,7 @@ export default {
     return{
       skipBefore: true,
       skipAfter: false,
-      text: "Thank you for visiting this site!\n\nNice to meet you, I'm Shion Minase.\n\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form.",
+      text: "Thank you for visiting this site!\n\nNice to meet you, I'm Kota Kaneta.\n\nYou can see the skills I have by looking at this site.\nYou can also check the source code of the portfolio.\n\nIf you are interested in me, please contact us using the contact form.",
       beforeButton: true
     }
   },
